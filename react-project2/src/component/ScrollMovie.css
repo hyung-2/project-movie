@@ -1,0 +1,16 @@
+.ScrollMovie{
+  width: 85%;
+  height: 200px;
+  border: 1px solid white;
+  margin: 1rem;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: center;
+
+  overflow-x: scroll;
+}
+.ScrollMovie::-webkit-scrollbar{
+  display: none;
+}
