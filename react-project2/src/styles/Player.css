@@ -1,0 +1,13 @@
+.player{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.player-img{
+    width: 400px;
+    height: 400px;
+}
