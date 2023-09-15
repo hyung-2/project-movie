@@ -1,6 +1,7 @@
-.match-container{
+.tournament-page{
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 100px auto;
+    margin-top: 2rem;
 }
