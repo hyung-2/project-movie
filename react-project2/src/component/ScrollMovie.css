@@ -1,8 +1,10 @@
 .ScrollMovie{
-  width: 85%;
+  width: 80%;
   height: 200px;
   border: 1px solid white;
-  margin: 1rem;
+  /* box-shadow: 0 0 10px var(--main-color); */
+  margin: 1rem 2rem;
+  margin-left: 7rem;
 
   display: flex;
   /* flex-wrap: wrap; */
@@ -10,6 +12,7 @@
   align-items: center;
 
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .ScrollMovie::-webkit-scrollbar{
   display: none;

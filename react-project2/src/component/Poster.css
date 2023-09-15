@@ -1,12 +1,12 @@
 .Poster{
   height: 100%;
   /* flex: 1; */
-  margin-right: 5px;
-  /* width: 200px; */
+  margin-right: 15px;
+  width: 140px;
 }
 .img-box{
-  width: 130px;
-  height: 97%;
+  width: 140px;
+  height: 100%;
   cursor: pointer;
 }
 .img-box img{

@@ -19,7 +19,10 @@ class App extends Component {
       <div className="App">
         <Routes>
           <Route exact path='/' element={<Homepage/>}></Route>
-          <Route exact path='/more' element={<MoreGenre/>}></Route>
+          <Route exact path='/more' element={<MoreGenre/>}>
+            <Route path=':genreId' element={<MoreGenre/>}/>
+
+          </Route>
         </Routes>
       </div>
     );
