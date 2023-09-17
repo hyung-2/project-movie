@@ -13,6 +13,7 @@ function Tournament(){
     
 
     const [ loading, setLoading ] = useState(false)
+    const [ isVisible, setIsVisible ] = useState(true)
 
     const [ match, setMatch ] = useState([])
     const [ movies, setMovies ] = useState([])
@@ -40,10 +41,6 @@ function Tournament(){
             console.log(playerList)
         }
         
-        
-
-        
-        
     }, [loading])
 
     const selectMovie = (e) => { 
@@ -51,6 +48,8 @@ function Tournament(){
         const name = e.target.className
         const parentName = e.target.parentElement.className
         const grandName = e.target.parentElement.parentElement.className
+
+        setIsVisible(false)
 
         if(name.includes('left') || parentName.includes('left') || grandName.includes('left')){
             changeMatch(match[0])
@@ -77,14 +76,21 @@ function Tournament(){
                 setWinners([])
             }
         }
-
     }
+
+    useEffect(() => {
+        setIsVisible(true)
+    }, [match])
 
     return (
         <div className="tournament-page">
             <TimeBar/>
             {match.length === 0 ? "" : 
-                <Match match={match} handleClick={selectMovie}/>
+                <Match 
+                    match={match} 
+                    handleClick={selectMovie}
+                    isVisible={isVisible}    
+                />
             }
             
         </div>

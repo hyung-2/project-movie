@@ -1,7 +1,7 @@
 .timeBar-container{
     width: 45rem;
     height: 3rem;
-    border: 1px solid #ddd;
+    border: 1px solid #696969;
     position: relative;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 .bar{
     width: 80%;
     height: .4rem;
-    background-color: #ddd;
+    background-color: #696969;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,5 +28,5 @@
     width: .4rem;
     height: .4rem;
     border-radius: 50%;
-    border: .3rem solid #ddd;
+    border: .3rem solid #696969;
 }
