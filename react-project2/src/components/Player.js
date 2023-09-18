@@ -17,9 +17,9 @@ function Player({ player, handleClick, direction, isVisible }){
 
                     LayoutGroup
                     whileTap={{ scale: 1.1 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
+                    // initial={{ opacity: 0, y: 20 }}
+                    // animate={{ opacity: 1, y: 0 }}
+                    // exit={{ opacity: 0, y: 20 }}
                 >
                     <div className="player-img">
                         <img src={`${player.large_cover_image}`} alt={`${player.title}`}/>

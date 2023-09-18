@@ -6,7 +6,6 @@ import TimeBar from "../components/Timebar";
 
 import '../styles/Tournament.css'
 
-const round = ["16강", "8강", "4강", "결승"]
 const playerList = []
 
 function Tournament(){
@@ -20,7 +19,8 @@ function Tournament(){
     const [ winners, setWinners ] = useState([])
 
     const [ winner, setWinner ] = useState([])
-    
+    const [ counter, setCounter ] = useState(16)
+
     useEffect(() => {
         
         if(!loading){
@@ -31,6 +31,7 @@ function Tournament(){
                 console.log(movies)
                 movies.map((movie) => {
                     playerList.push(movie)
+                    return movie
                 })
                 
             }).then(() => setLoading(true))
@@ -50,6 +51,7 @@ function Tournament(){
         const grandName = e.target.parentElement.parentElement.className
 
         setIsVisible(false)
+        setCounter(counter - 1)
 
         if(name.includes('left') || parentName.includes('left') || grandName.includes('left')){
             changeMatch(match[0])
@@ -84,13 +86,15 @@ function Tournament(){
 
     return (
         <div className="tournament-page">
-            <TimeBar/>
+            <TimeBar counter={counter}/>
             {match.length === 0 ? "" : 
+                winner.length === 0 ?            
                 <Match 
                     match={match} 
                     handleClick={selectMovie}
                     isVisible={isVisible}    
-                />
+                /> :
+                console.log(winner)
             }
             
         </div>

@@ -1,26 +1,20 @@
 .timeBar-container{
-    width: 45rem;
+    width: 25rem;
     height: 3rem;
-    border: 1px solid #696969;
-    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bar{
-    width: 80%;
-    height: .4rem;
-    background-color: #696969;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.timeBar-container > span{
+    color:#fff;
 }
+
 .point-container{
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .point{
     z-index: 1;
@@ -29,4 +23,22 @@
     height: .4rem;
     border-radius: 50%;
     border: .3rem solid #696969;
+}
+.point.active{
+    border-color: rgb(182, 12, 12, .7);
+}
+
+.bar.background{
+    background-color: #696969;
+    width: calc(80%);
+    height: .4rem;
+    position: relative;
+}
+.bar.round{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(182, 12, 12, .7);
+    left: calc(10% + .4rem);
 }

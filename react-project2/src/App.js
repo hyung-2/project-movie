@@ -6,7 +6,8 @@ import { Main, Tournament, Winner } from './pages'
 function App() {
   return (
     <div className="App">
-      <Tournament></Tournament>
+      {/* <Tournament></Tournament> */}
+      <Main></Main>
     </div>
   );
 }
