@@ -6,15 +6,24 @@
     position: relative;
     overflow: hidden;
     background: url('https://i.ibb.co/vXqDmnh/background.jpg') center no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10rem;
+    box-sizing: border-box;
 }
+
 svg text{
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: 'Black Ops One', cursive;
+    stroke-dasharray: 80;
+    stroke: #fff;
+    stroke-width: 1px;
 }

@@ -4,35 +4,45 @@ import { motion } from "framer-motion"
 import '../styles/Main.css'
 
 function Main(){
-    const variants = {
-        start: { strokeDashoffset: 39, fill: "rgba(255, 255, 255, 0)" },
-        end: {strokeDashoffset: 0, fill: "rgba(255, 255, 255, 1)" }
+    const textContainer = {
+        start: { strokeDashoffset: 80, fill: "rgba(255, 255, 255, 0)" },
+        end: {
+            strokeDashoffset: 0, 
+            fill: "rgba(255, 255, 255, 1)",
+            transition: {
+                when: "beforeChildren",
+                staggerChildren: 0.5
+            }            
+         }
     };
+    const textContents = {
+        start: { strokeDashoffset: 80, fill: "rgba(255, 255, 255, 0)" },
+        end: { strokeDashoffset: 0, fill: "rgba(255, 255, 255, 1)"},
+    }
 
     return (
         <div className="main-page">
             <div className="main-text">
-                <svg viewBox="0 0 400 500">
-                    <motion.text 
-                        x="0" y="50"
-                        
-                        strokeDasharray="39"
-                        stroke="#fff"
-                        strokeWidth="1px"
-                        fontSize="3rem"
+                <motion.svg 
+                    viewBox="0 0 400 500"
 
-                        variants={variants}
-                        initial="start"
-                        animate="end"
-                        transition={{
-                            default: { duration: 2 },
-                            fill: { duration: 1, delay: 2 }
-                        }}
-                        
-                    >
-                        What is your favorite movie ?
+                    variants={textContainer}
+                    initial="start"
+                    animate="end"
+                >
+                    <motion.text x="30" y="40" variants={textContents}>
+                        What is
                     </motion.text>
-                </svg>
+                    <motion.text x="30" y="70" variants={textContents}>
+                        Your
+                    </motion.text>
+                    <motion.text x="30" y="100" variants={textContents}>
+                        Favorite
+                    </motion.text>
+                    <motion.text x="30" y="130" variants={textContents}>
+                        Movie ?
+                    </motion.text>
+                </motion.svg>
             </div>
             
         </div>
