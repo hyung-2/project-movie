@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Match from "../components/Match";
 import Player from "../components/Player";
@@ -70,6 +71,7 @@ function Tournament(){
 
             if(winners.length === 0){
                 setWinner([player])
+                setIsVisible(true)
             }else{
                 let updatedMovies = [...winners, player]
                 updatedMovies.sort(() => Math.random() - 0.5)
@@ -84,17 +86,22 @@ function Tournament(){
         setIsVisible(true)
     }, [match])
 
+    const navigate = useNavigate()
+    const moveToResult = () => navigate('/result', { state: {winner} })
+
     return (
         <div className="tournament-page">
             <TimeBar counter={counter}/>
             {match.length === 0 ? "" : 
-                winner.length === 0 ?            
+                winner.length === 1 ?            
+                ""
+                :
+                
                 <Match 
                     match={match} 
                     handleClick={selectMovie}
                     isVisible={isVisible}    
-                /> :
-                console.log(winner)
+                /> 
             }
             
         </div>

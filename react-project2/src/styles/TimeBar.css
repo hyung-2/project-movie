@@ -18,14 +18,12 @@
 }
 .point{
     z-index: 1;
-    background-color: #333;
-    width: .4rem;
-    height: .4rem;
-    border-radius: 50%;
-    border: .3rem solid #696969;
+    background-color: #696969;
+    width: .2rem;
+    height: 1rem;
 }
 .point.active{
-    border-color: rgb(182, 12, 12, .7);
+    background-color: rgb(182, 12, 12, .7);
 }
 
 .bar.background{

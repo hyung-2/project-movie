@@ -35,7 +35,7 @@ function TimeBar({ counter }){
             <span>{round[0]}</span>
             
             <div className="point-container">
-                <div className={`point start ${sixteen? "active" : ""}`}></div>
+                <div className={`point start active`}></div>
                 <div className="bar background">
                     <div className="bar round" style={{ width: `${roundBar}px`}}></div>
                 </div>
