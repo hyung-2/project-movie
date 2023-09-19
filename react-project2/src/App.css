@@ -1,19 +1,14 @@
-<<<<<<< HEAD
+@import url('./global.css');
+
 body{
   background-color: black;
 }
-.App {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-=======
-@import url('./global.css');
+
 
 .App {
   text-align: center;
   background-color: var(--bg-color);
-  width: 100%; height: 100vh;
->>>>>>> 611e3f2bb4f68412cb4883a13ccba68c82ee900a
+  width: 100vw; height: 100vh;
 }
 
 .App-logo {
