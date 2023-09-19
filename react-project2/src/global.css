@@ -1,7 +1,7 @@
 :root{
   --main-color: red;
   --bg-color: black;
-  --hover-color: rgb(206, 0, 0);
+  --hover-color: rgba(182, 12, 12, .7);
   --font-color: #fff;
   --line-color: #333
 }

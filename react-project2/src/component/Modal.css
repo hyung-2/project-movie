@@ -5,7 +5,7 @@
   padding: 20px;
   text-align: left;
   background-color: var(--bg-color);
-  border: 1px solid var(--line-color);
+  border: 2px solid var(--line-color);
   z-index: 1;
   overflow: hidden;
 
