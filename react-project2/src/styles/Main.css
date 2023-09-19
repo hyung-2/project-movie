@@ -11,19 +11,34 @@
     justify-content: center;
     align-items: center;
 }
-
-.main-text{
+.main-page > div{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    padding: 10rem;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.main-text{
+    justify-content: end;
 }
 
 svg text{
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: 'Black Ops One', cursive;
-    stroke-dasharray: 80;
+    stroke-dasharray: 150;
     stroke: #fff;
     stroke-width: 1px;
+}
+
+.clapperboard-container{
+    justify-content: start;
+}
+.clapperboard-container svg{
+    cursor: pointer;
+}
+#clapperboard:hover #clapperboard-upper{
+    transform-origin: 0 32%;
+    transform: rotate(10deg);
 }
