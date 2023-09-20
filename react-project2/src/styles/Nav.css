@@ -1,13 +1,15 @@
 @import url(../global.css);
 
 .Nav{
-  /* background-color: rgb(70, 70, 70); */
+  background-color: var(--bg-color);
   /* padding: 10px 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--line-color);
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .logobox{
   width: 20%;
@@ -19,6 +21,7 @@
   height: 60px;
   scale: .6;
   margin-left: -55px;
+  cursor: pointer;
 
 }
 /* .logo{

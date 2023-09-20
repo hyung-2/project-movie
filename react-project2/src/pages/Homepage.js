@@ -1,5 +1,6 @@
 import React,{ useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion"
 import '../styles/Homepage.css'
 import Nav from '../components/Nav'
 import ScrollMoive from "../components/ScrollMovie";
@@ -29,6 +30,7 @@ function Homepage(){
       .then(data => {
         const {data: {movies}} = data
         console.log(movies)
+        setLoading(false)
         setMovies(movies)
       })
     },[])
@@ -78,53 +80,98 @@ function Homepage(){
       console.log(pickMovie)
       return setOpen(true)
     }
-  
-  return(
-    <div className={`Homepage`}>
-      <Nav></Nav>
-      
-      
-        {/* 코드중복있어서 나중에 수정 */}
-        {test.map((test, id) => {
-          return (
-            <div key={id} className={`scroll-box`}>
-              <h3>{test}</h3>
-              <div className="box">
-                <ScrollMoive
-                movies={
-                  copyMovies.filter((movie) => {
-                    return movie.genres.includes(test)
-                  })
-                }
-                pickPoster={pickPoster}
-                ></ScrollMoive>
-                <Button btnClass='moreBtn' handleClick={movePage}>더보기</Button>
-              </div>
-            </div>
-          )
-        })}
-    
+    if(loading){
+      const textContainer = {
+        start: { strokeDashoffset: 50, fill: "rgba(255, 255, 255, 0)" },
+        end: {
+            strokeDashoffset: 0, 
+            fill: "rgba(255, 255, 255, .7)",
+            transition: {
+                when: "beforeChildren",
+                staggerChildren: .5
+            }            
+         }
+      };
+      const textContents = {
+        start: { x: 1, fill: "rgba(255, 255, 255, 0)" },
+        end: { x: 0, fill: "rgba(255, 255, 255, 1)"}
+      }
+      return (
+        <div className="loading">
+          
+          <motion.svg 
+                    viewBox="0 0 300 300"
+                    width="30rem"
+                    height="30rem"
+
+                    variants={textContainer}
+                    initial="start"
+                    animate="end"
+                    strokeWidth=".7"
+                    transition={{ default: { duration: 0.1 }}}
+                    
+                >
+                    <motion.text x="0" y="160" variants={textContents}>L</motion.text>
+                    <motion.text x="42" y="160" variants={textContents}>o</motion.text>
+                    <motion.text x="83" y="160" variants={textContents}>a</motion.text>
+                    <motion.text x="125" y="160" variants={textContents}>d</motion.text>
+                    <motion.text x="166" y="160" variants={textContents}>i</motion.text>
+                    <motion.text x="185" y="160" variants={textContents}>n</motion.text>
+                    <motion.text x="226" y="160" variants={textContents}>g</motion.text>
+                    
+                </motion.svg>
+        </div>
+      )
+    }else{
+      return(
+        <div className={`Homepage`}>
+          <Nav></Nav>
+          
+          
+            {/* 코드중복있어서 나중에 수정 */}
+            {test.map((test, id) => {
+              return (
+                <div key={id} className={`scroll-box`}>
+                  <h3>{test}</h3>
+                  <div className="box">
+                    <ScrollMoive
+                    movies={
+                      copyMovies.filter((movie) => {
+                        return movie.genres.includes(test)
+                      })
+                    }
+                    pickPoster={pickPoster}
+                    ></ScrollMoive>
+                    <Button btnClass='moreBtn' handleClick={movePage}>더보기</Button>
+                  </div>
+                </div>
+              )
+            })}
         
-      <Modal open={open}>
-       {open && (
-        <>
-           <div className='img-box'>
-              <img src={pickMovie.large_cover_image}></img>
-            </div>
-            <div className="content-box">
-              <h2>{pickMovie.title} ({pickMovie && pickMovie.year})</h2>
-              <h4>장르: {pickMovie.genres.length !== 0 && pickMovie.genres.join(', ')}</h4>
-              <h4>평점: {pickMovie.rating}</h4>
-              <p>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
-            </div>
-        </>
-       )}
-      
-      <Button btnClass='closeBtn' handleClick={close}>x</Button>
-      </Modal>
-      
-    </div>
-  )
+            
+          <Modal open={open}>
+           {open && (
+            <>
+               <div className='img-box'>
+                  <img src={pickMovie.large_cover_image}></img>
+                </div>
+                <div className="content-box">
+                  <video src={`https://www.youtube.com/watch?v=${pickMovie.yt_trailer_code}`}></video>
+                  <h2>{pickMovie.title} ({pickMovie && pickMovie.year})</h2>
+                  <h4>장르: {pickMovie.genres.length !== 0 && pickMovie.genres.join(', ')}</h4>
+                  <h4>평점: {pickMovie.rating}</h4>
+                  <p>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
+                </div>
+            </>
+           )}
+          
+          <Button btnClass='closeBtn' handleClick={close}>x</Button>
+          </Modal>
+          
+        </div>
+      )
+
+    }
 }
 
 export default Homepage

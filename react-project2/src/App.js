@@ -1,8 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Homepage, MoreGenre } from './pages'
-import { Main, Tournament, Winner } from './pages'
+import { Homepage, MoreGenre, Main, Tournament, Winner } from './pages'
 
 class App extends Component {
   homeMenu = [
@@ -24,8 +23,6 @@ class App extends Component {
           <Route exact path='/result' element={<Winner/>}/>
           <Route exact path='/home' element={<Homepage/>}></Route>
           <Route exact path='/more' element={<MoreGenre/>}>
-            <Route path=':genreId' element={<MoreGenre/>}/>
-
           </Route>
         </Routes>
       </div>
