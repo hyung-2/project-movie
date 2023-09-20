@@ -6,6 +6,7 @@ import Nav from '../components/Nav'
 import ScrollMoive from "../components/ScrollMovie";
 import Button from "../components/Button";
 import Modal from "../components/Modal";
+import YouTube from 'react-youtube'
 
 
 function Homepage(){
@@ -156,11 +157,25 @@ function Homepage(){
                   <img src={pickMovie.large_cover_image}></img>
                 </div>
                 <div className="content-box">
-                  <video src={`https://www.youtube.com/watch?v=${pickMovie.yt_trailer_code}`}></video>
-                  <h2>{pickMovie.title} ({pickMovie && pickMovie.year})</h2>
-                  <h4>장르: {pickMovie.genres.length !== 0 && pickMovie.genres.join(', ')}</h4>
-                  <h4>평점: {pickMovie.rating}</h4>
-                  <p>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
+                  <div>
+                    <h2>{pickMovie.title} ({pickMovie && pickMovie.year})</h2>
+                    <h4>장르: {pickMovie.genres.length !== 0 && pickMovie.genres.join(', ')}</h4>
+                    <h4>평점: {pickMovie.rating}</h4>
+                    <p>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
+                  </div>
+                  <YouTube className='youtube' 
+                    videoId={pickMovie.yt_trailer_code} 
+                    opts={{
+                    width: '100%',
+                    playerVars: {
+                    autoplay: 1, //자동 재생 여부 
+                    loop: 1, //반복 재생
+                    fs:0, //전체화면버튼없앰
+                    disablekb:1, //키보드조작막기
+                    controls:0, //동영상컨트롤 표시 x
+                    modestbranding: 1,
+                    //안먹히는기분
+                  },}} onReady={(e)=> {e.target.mute()}} />
                 </div>
             </>
            )}
