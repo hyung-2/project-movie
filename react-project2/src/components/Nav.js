@@ -1,7 +1,7 @@
 import React from "react";
-import Button from './Button'
-import './Nav.css'
-import logo from './logo.png'
+import Button from "./Button";
+import '../styles/Nav.css'
+import logo from '../assets/logo.png'
 
 function Nav(){
   return(

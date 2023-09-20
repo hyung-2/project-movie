@@ -1,5 +1,5 @@
 import React from "react";
-import './Poster.css'
+import '../styles/Poster.css'
 
 
 function Poster({ pickPoster, cover, id, openModal }){

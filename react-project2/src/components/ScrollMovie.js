@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import './ScrollMovie.css'
+import '../styles/ScrollMovie.css'
 import Poster from "./Poster";
 import Button from "./Button";
 

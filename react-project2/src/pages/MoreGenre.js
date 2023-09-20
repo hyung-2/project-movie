@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import './MoreGenre.css'
-import Nav from '../component/Nav'
-import Modal from "../component/Modal";
-import Button from "../component/Button";
-import Movies from '../component/Movies'
+import '../styles/MoreGenre.css'
+import Nav from '../components/Nav'
+import Modal from "../components/Modal";
+import Button from "../components/Button";
+import Movies from '../components/Movies'
 
 
 function MoreGenre(){

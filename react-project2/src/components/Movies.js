@@ -1,6 +1,6 @@
 import React from "react";
-import './Movies.css'
-import Poster from "./Poster";
+import '../styles/Movies.css'
+import Poster from "../components/Poster";
 
 function Movies({pickPoster, movieLists, }){
   return(

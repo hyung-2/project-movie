@@ -1,10 +1,10 @@
 import React,{ useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './Homepage.css'
-import Nav from '../component/Nav'
-import ScrollMoive from "../component/ScrollMovie";
-import Button from "../component/Button";
-import Modal from "../component/Modal";
+import '../styles/Homepage.css'
+import Nav from '../components/Nav'
+import ScrollMoive from "../components/ScrollMovie";
+import Button from "../components/Button";
+import Modal from "../components/Modal";
 
 
 function Homepage(){
@@ -22,7 +22,7 @@ function Homepage(){
     }
   
     const [movies, setMovies] = useState([])
-    
+    //API가져오기
     useEffect(() => {
       fetch('https://yts.mx/api/v2/list_movies.json?limit=50')
       .then(res => res.json())
@@ -33,12 +33,13 @@ function Homepage(){
       })
     },[])
     
+    //추후 1등영화의 장르가 들어올 배열
     const test = ['Action', 'Crime', 'Drama', 'Horror', "Romance"]
 
     
     const copyMovies = [...movies]
 
-    //
+    //장르별 객체배열
     const filter = test.map(test => {
       const filtered = copyMovies.filter((movie) => {
         return movie.genres.includes(test)
