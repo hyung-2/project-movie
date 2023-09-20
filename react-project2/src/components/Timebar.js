@@ -12,14 +12,6 @@ function TimeBar({ counter }){
     const [ final, setFinal ] = useState(0)
 
     useEffect(() => {
-        console.log(counter)
-        // if(counter === 8){
-        //     setQuarter(true)
-        // }else if(counter === 4){
-        //     setSemi(true)
-        // }else if(counter === 2){
-        //     setFinal(true)
-        // }
 
         if(counter > 8){
             setSixteen(sixteen + 2)

@@ -4,7 +4,7 @@ import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
 
 import '../styles/Player.css'
 
-function Player({ player, handleClick, direction, isVisible }){
+function Player({ player, handleClick, direction, isVisible, isMatch }){
     
     return (
         <AnimatePresence>
@@ -23,8 +23,19 @@ function Player({ player, handleClick, direction, isVisible }){
                 >
                     <div className="player-img">
                         <img src={`${player.large_cover_image}`} alt={`${player.title}`}/>
+                        {isMatch? 
+                            <div className="genres-container">
+                                <div className="genre">{player.genres[0]}</div>
+                                <div className="genre">{player.genres[1]}</div>
+                                <div className="genre">{player.genres[2]}</div>
+                                <div className="genre">{player.genres[3]}</div>
+                                <div className="genre">{player.genres[4]}</div>
+                            </div> 
+                            : ""
+                        }
+                                               
                     </div>
-                    <div className="player-name"></div>
+                    
                 </motion.div>            
             )}
              
