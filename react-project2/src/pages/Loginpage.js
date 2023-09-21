@@ -53,6 +53,7 @@ function Loginpage(){
             <input type='checkbox' id='action' />
             <label for='action'>액션</label>
           </div>
+          <Button>가입완료하기</Button>
           <Button handleClick={goLogin}>로그인하기</Button>
         </div>
       </div>

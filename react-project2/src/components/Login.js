@@ -19,6 +19,11 @@ function Login({handleClick}){
       e.target.previousElementSibling.classList.remove('forcusing')
     }
   }
+  //로그인 누르면 홈페이지로 이동
+  const navigate = useNavigate()
+  const login = () => {
+    navigate('/home')
+  }
 
   return(
     <div className="Login">
@@ -30,7 +35,7 @@ function Login({handleClick}){
         <p className="labelname">비밀번호를 입력하세요</p>
         <input onKeyUp={addClass} type='password' id='loginUserPw'></input>
       </label>
-      <Button btnClass='loginbtn'>로그인</Button>
+      <Button btnClass='loginbtn' handleClick={login}>로그인</Button>
       <p className="registerbtn" onClick={handleClick}>아직 회원이 아니신가요?</p>
     </div>
   )

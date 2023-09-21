@@ -6,8 +6,8 @@
 }
 
 img{
-  margin-top: 4rem;
-  scale: .8;
+  margin-top: 8rem;
+  scale: .7;
 }
 
 .loginbox{
@@ -30,11 +30,14 @@ img{
   transition: .3s;
   left: 0;
 }
+.input-box{
+  width: 670px;
+}
 .input-box label{
   color: var(--font-color);
   width: 55px;
 }
 
 .gogoleft{
-  left: -945px;
+  left: -1167px;
 }
