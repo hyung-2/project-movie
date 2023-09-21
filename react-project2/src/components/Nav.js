@@ -13,7 +13,10 @@ function Nav(){
   return(
     <div className={`Nav`}>
     <img src={logo} onClick={toHome}></img>
-      {/* <Button>버튼</Button> */}
+    <div className="btn-box">
+      <Button>즐겨찾기</Button>
+      <Button>로그아웃</Button>
+    </div>
     </div>
   )
 }

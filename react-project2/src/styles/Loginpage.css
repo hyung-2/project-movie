@@ -1,0 +1,40 @@
+.Loginpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  margin-top: 4rem;
+  scale: .8;
+}
+
+.loginbox{
+  border: 1px solid var(--line-color);
+  width: 670px;
+  height: 50%;
+  margin-top: 2rem;
+  overflow: hidden;
+
+  display: flex;
+}
+.check-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 670px;
+  margin: 0 173px;
+  position: relative;
+  transition: .3s;
+  left: 0;
+}
+.input-box label{
+  color: var(--font-color);
+  width: 55px;
+}
+
+.gogoleft{
+  left: -945px;
+}

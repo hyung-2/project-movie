@@ -81,6 +81,15 @@ function Homepage(){
       console.log(pickMovie)
       return setOpen(true)
     }
+
+    //줄거리 열고닫기
+    const openP = () => {
+      const p = document.querySelector('.content-box div p')
+      // console.log(p)
+      p.classList.toggle('normalP')
+    }
+
+
     if(loading){
       const textContainer = {
         start: { strokeDashoffset: 50, fill: "rgba(255, 255, 255, 0)" },
@@ -161,7 +170,7 @@ function Homepage(){
                     <h2>{pickMovie.title} ({pickMovie && pickMovie.year})</h2>
                     <h4>장르: {pickMovie.genres.length !== 0 && pickMovie.genres.join(', ')}</h4>
                     <h4>평점: {pickMovie.rating}</h4>
-                    <p>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
+                    <p className="modalP normalP" onClick={openP}>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
                   </div>
                   <YouTube className='youtube' 
                     videoId={pickMovie.yt_trailer_code} 
