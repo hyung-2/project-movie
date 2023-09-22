@@ -18,7 +18,7 @@ function Loginpage(){
     setTimeout(() => introText2.classList.add('introText2-left'),2000)
     setTimeout(() => {
       introText3.classList.add('introText3-up')
-      downBtn.classList.add('introText3-up')
+      downBtn.classList.add('downbtn-up')
     },2500)
   })
   

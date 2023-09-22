@@ -29,7 +29,7 @@
   border: 1px solid var(--line-color);
   width: 670px;
   border-radius: 15px;
-  margin: 13rem 0;
+  margin: 15rem 0;
 
   display: flex;
   justify-content: flex-start;
@@ -84,6 +84,23 @@
   opacity: 1;
 }
 
+.downbtn{
+  margin: 0rem 0;
+  margin-bottom: 5rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: .2s;
+  top: -2rem;
+  animation: bounce 1s infinite linear alternate;
+  opacity: 0;
+}
+.downbtn-up{
+  margin: 1rem 0;
+  opacity: 1;
+}
+
 .introText3{
   margin: 2rem 0;
   top: -2rem;
@@ -94,17 +111,6 @@
   opacity: 1;
 }
 
-.downbtn{
-  margin: 1rem 0;
-  margin-bottom: 5rem;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  transition: .2s;
-  top: -2rem;
-  animation: bounce 1s infinite linear alternate;
-}
 
 @keyframes bounce {
   0% {top: 7px;}
