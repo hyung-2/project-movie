@@ -1,61 +1,57 @@
 import React,{ useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../styles/Loginpage.css'
-import Nav from '../components/Nav'
 import Button from "../components/Button";
+import '../styles/Loginpage.css'
 import logo from '../assets/logo.png'
-import Login from "../components/Login";
-import Register from "../components/Register";
+import Form from "../components/Form";
 
 function Loginpage(){
+  //동적 효과
+  useEffect(()=> {
+    const img = document.querySelector('img')
+    const introtext1 = document.querySelector('.introText1')
+    const introText2 = document.querySelector('.introText2')
+    const introText3 = document.querySelector('.introText3')
+    const downBtn = document.querySelector('.downbtn')
+    setTimeout(()=>img.classList.add('imgdown'), 1000)
+    setTimeout(() => introtext1.classList.add('introText1-right'),1500)
+    setTimeout(() => introText2.classList.add('introText2-left'),2000)
+    setTimeout(() => {
+      introText3.classList.add('introText3-up')
+      downBtn.classList.add('introText3-up')
+    },2500)
+  })
   
-    //회원가입창 슬라이드
-    const goRegister = () => {
-      const LoginBox = document.querySelector('.Login')
-      const RegisterBox = document.querySelector('.Register')
-
-      LoginBox.classList.add('goleft')
-      RegisterBox.classList.add('toleft')
-    }
-    //장르 체크 슬라이드
-    const goCheckbox = () => {
-      const RegisterBox = document.querySelector('.Register')
-      const checkBox = document.querySelector('.check-box')
-
-      RegisterBox.classList.add('totheleft')
-      checkBox.classList.add('gogoleft')
-    }
-
-    //로그인으로 슬라이드
-    const goLogin = () => {
-      const LoginBox = document.querySelector('.Login')
-      const RegisterBox = document.querySelector('.Register')
-      const checkBox = document.querySelector('.check-box')
-
-      checkBox.classList.remove('gogoleft')
-      RegisterBox.classList.remove('totheleft')
-      RegisterBox.classList.remove('toleft')
-      LoginBox.classList.remove('goleft')
-    }
+  //form화면으로 슬라이드
+  const gofrom = () => {
+    const form = document.querySelector('.form')
+    console.log(form.scrollHeight)
+    console.log(form.offsetHeigth)
+    
+    window.scrollTo({top:850, behavior:"smooth"})
+  }
+ 
 
   return(
     <div className="Loginpage">
-      <img src={logo}></img>
-      <div className="loginbox">
-        <Login handleClick={goRegister}></Login>
-        <Register handleClick={goCheckbox}></Register>
-        <div className="check-box">
-          <div className="input-box">
-            <input type='checkbox' id="horror" />
-            <label for='horror'>공포</label>
-            <input type='checkbox' id='drama' />
-            <label for='drama'>드라마</label>
-            <input type='checkbox' id='action' />
-            <label for='action'>액션</label>
-          </div>
-          <Button>가입완료하기</Button>
-          <Button handleClick={goLogin}>로그인하기</Button>
-        </div>
+      <img src={logo} className='logo'></img>
+      <div className="intro introText1">
+        이상형 영화를 토대로 <br/> 영화를 추천해드려요.<br/>
+        여러 영화의 정보를 <br/> 한눈에 볼 수 있어요.
+      </div>
+      <div className="intro introText2">
+        추천영화에서 <br/> 영화를 스크랩해보세요!<br/>
+        언제든지 꺼내볼 수 있어요.
+      </div>
+      <div className="intro introText3">
+        지금 로그인하고 무드의 혜택을 누려보세요!
+      </div>
+      <Button btnClass='downbtn' handleClick={gofrom}>↓</Button>
+      <div className="form">
+        <Form type='login'></Form>
+        <Form type='signup'></Form>
+        <Form type='checkBox'></Form>
+        <Form type='done'></Form>
       </div>
     </div>
   )

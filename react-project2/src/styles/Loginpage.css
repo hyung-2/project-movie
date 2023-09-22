@@ -1,43 +1,112 @@
 .Loginpage{
+  /* width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url('https://i.ibb.co/vXqDmnh/background.jpg') center no-repeat;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: darken; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-img{
-  margin-top: 8rem;
+.logo{
+  margin-top: -10rem;
   scale: .7;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  transition: .2s;
+}
+.imgdown{
+  margin-top: 4rem;
+  opacity: 1;
 }
 
-.loginbox{
+.form{
   border: 1px solid var(--line-color);
   width: 670px;
-  height: 50%;
-  margin-top: 2rem;
-  overflow: hidden;
+  border-radius: 15px;
+  margin: 13rem 0;
 
   display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+
+  overflow: hidden;
 }
-.check-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 670px;
-  margin: 0 173px;
+.form > div {
+  margin: 0 11.2rem;
   position: relative;
   transition: .3s;
+}
+.base{
   left: 0;
 }
-.input-box{
-  width: 670px;
+.goleft{
+  left: -673px;
 }
-.input-box label{
-  color: var(--font-color);
-  width: 55px;
+.goleft2{
+  left: -1357px;
+}
+.goleft3{
+  left: -2029px;
+}
+.goleft4{
+  left: -2520px;
+}
+.goright{
+  left: 673px;
+}
+.intro{
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 500px;
+  opacity: 0;
+  transition: .2s ease-in-out; 
+}
+.introText1{
+  left: -43rem;    
+}
+.introText1-right{
+  left: -25rem;
+  opacity: 1;
+}
+.introText2{
+  top: -48px;
+  right: -48rem;
+}
+.introText2-left{
+  right: -20rem;
+  opacity: 1;
 }
 
-.gogoleft{
-  left: -1167px;
+.introText3{
+  margin: 2rem 0;
+  top: -2rem;
+  width: 100%;
+}
+.introText3-up{
+  top: 0rem;
+  opacity: 1;
+}
+
+.downbtn{
+  margin: 1rem 0;
+  margin-bottom: 5rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: .2s;
+  top: -2rem;
+  animation: bounce 1s infinite linear alternate;
+}
+
+@keyframes bounce {
+  0% {top: 7px;}
+  100% {top: 0px;}
 }

@@ -118,7 +118,7 @@ function Homepage(){
                     initial="start"
                     animate="end"
                     strokeWidth=".7"
-                    transition={{ default: { duration: 0.1 }}}
+                    transition={{ default: { duration: 0.3 }}}
                     
                 >
                     <motion.text x="0" y="160" variants={textContents}>L</motion.text>
