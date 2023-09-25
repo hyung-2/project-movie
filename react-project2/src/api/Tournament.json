@@ -2854,518 +2854,7 @@
   }
     ],
     "99": [
-        
- {
-    "_id": {
-      "$oid": "650bebbc8d32e9b9f1b9af72"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1167520,
-    "original_language": "es",
-    "original_title": "Las cintas de Rosa Peral",
-    "overview": "전 남자친구의 도움을 받아 애인을 살해한 혐의로 유죄 판결을 받은 로사 페랄. 복역 중인 그녀가 처음으로 인터뷰에 응했다. 그 내용을 담은 범죄 실화 다큐멘터리.",
-    "poster_path": "/8jAnsIm4qzy28IBJeJsTQCdnORE.jpg",
-    "release_date": "2023-09-08",
-    "title": "로사의 테이프",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bebbc8d32e9b9f1b9af74"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 899082,
-    "original_language": "en",
-    "original_title": "Harry Potter 20th Anniversary: Return to Hogwarts",
-    "overview": "‘해리포터와 마법사의 돌' 20주년 기념 스페셜. 다니엘 래드클리프, 루퍼트 그린트, 엠마 왓슨을 포함한 캐스트, 감독들이 재결합해 해리포터 프랜차이즈의 첫 영화를 회고하고, 축하하는 시간을 가진다.  '해리포터 20주년 기념: 리턴 투 호그와트'는 심층 인터뷰와 출연진 토크를 통해 역대 가장 사랑 받았던, 마법 같은 프랜차이즈의 세계로 팬들을 초대한다.  헬레나 본햄 카터, 로비 콜트레인, 랄프 파인즈, 제이슨 아이삭스, 게리 올드만, 톰 펠튼, 제임스 펠프스, 올리버 펠프스, 마크 윌리엄스, 보니 라이트, 알프레드 에녹, 매튜 루이스, 이반나 린치를 포함한 다양한 캐스트들이 함께 한다.",
-    "poster_path": "/mJYDpb6fRIzwgG0csBJp3zjNSSV.jpg",
-    "release_date": "2022-01-01",
-    "title": "해리 포터 20주년: 리턴 투 호그와트",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bebc08d32e9b9f1b9affc"
-    },
-    "adult": false,
-    "genre_ids": [
-      99,
-      36
-    ],
-    "id": 1149947,
-    "original_language": "en",
-    "original_title": "To End All War: Oppenheimer & the Atomic Bomb",
-    "overview": "영화 <오펜하이머>의 실화 이야기를 담은 다큐멘터리. 천재성과 오만 그리고 집요한 노력으로 전쟁의 본질을 바꿔 버린 한 남자가 있다. 그는 수십만 명을 죽음으로 몰게 되고 집단 히스테리까지 일으켰다. 결국 자신의 발명품이 가져온 파장을 막으려다 외면당하고 초라해진 그의 말년까지 조명한다.",
-    "poster_path": "/xwkYWcs8aypUtk3xDRUh0ndo4GA.jpg",
-    "release_date": "2023-07-09",
-    "title": "전쟁의 종식자: 오펜하이머와 원자 폭탄",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bebc88d32e9b9f1b9b150"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1025169,
-    "original_language": "th",
-    "original_title": "13 หมูป่า: เรื่องเล่าจากในถ้ำ",
-    "overview": "2018년 탐루앙 동굴에 고립된 태국의 유소년 축구팀 선수들. 이들의 기적적인 생환 스토리를 담은 강렬한 다큐멘터리. 구조된 소년들의 입을 통해 당시의 경험과 뒷이야기들을 들어본다.",
-    "poster_path": "/seeEc3xNttsx308AB0iFtqKVyjG.jpg",
-    "release_date": "2022-10-05",
-    "title": "더 트랩트 13: 태국 동굴 조난 사건",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bebff8d32e9b9f1b9b9dc"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1087040,
-    "original_language": "en",
-    "original_title": "Money Shot: The Pornhub Story",
-    "overview": "폰허브의 성공과 추문에 대해 깊숙이 파헤친다. 배우, 운동가 그리고 전직 직원들의 인터뷰로 이루어진 다큐멘터리.",
-    "poster_path": "/kpTqWqLYcf1uErnx5VXLah4EWJZ.jpg",
-    "release_date": "2023-03-15",
-    "title": "머니 샷: 폰허브를 말하다",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bec248d32e9b9f1b9bfb2"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1058647,
-    "original_language": "en",
-    "original_title": "The Deepest Breath",
-    "overview": "프리다이빙을 향한 열정으로 유대를 쌓은 두 사람. 신기록을 보유한 챔피언과 영웅적인 세이프티 다이버가 새로운 역사를 쓰고자 놀라운 도전을 감행한다. 모든 위험을 감수해야 할지라도.",
-    "poster_path": "/4gKAn4npGEBi0HZAbwFZ77reLBR.jpg",
-    "release_date": "2023-01-21",
-    "title": "가장 깊은 호흡",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bec298d32e9b9f1b9c082"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 965143,
-    "original_language": "ko",
-    "original_title": "사이버 지옥: n번방을 무너뜨려라",
-    "overview": "성착취물을 제작하며 끔찍한 범죄를 일삼은 익명의 온라인 채팅방. 그 운영자들을 끌어내리기 위한 추적에는 용기와 끈기가 필요했다.",
-    "poster_path": "/iWI05wWFZvPKCgEqXihjUQLar7r.jpg",
-    "release_date": "2022-05-17",
-    "title": "사이버 지옥: n번방을 무너뜨려라",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bec358d32e9b9f1b9c25e"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1002307,
-    "original_language": "en",
-    "original_title": "Untold: Operation Flagrant Foul",
-    "overview": "본인이 입회한 경기에서 불법 도박을 한 혐의로 복역한 NBA 심판, 팀 도너기. 수년이 지난 지금, 리그를 뒤흔들었던 그때의 충격적인 스캔들을 되짚어 본다.",
-    "poster_path": "/pArr12pr825SWb06ihiWesJsuR0.jpg",
-    "release_date": "2022-08-30",
-    "title": "말하지 못한 이야기: 플레그런트 파울 작전",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bec9c8d32e9b9f1b9d28e"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 682110,
-    "original_language": "en",
-    "original_title": "My Octopus Teacher",
-    "overview": "남아프리카의 바다, 해초 숲을 헤엄치던 영화감독이 특별한 문어를 만난다. 경계에서 교감, 우정으로 발전하는 두 생명의 관계. 세계의 숨은 신비가 모습을 드러낸다.",
-    "poster_path": "/hvTVZb7hBC8tZAGoEhH5eiMJu2B.jpg",
-    "release_date": "2020-09-04",
-    "title": "나의 문어 선생님",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650becc08d32e9b9f1b9d83c"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 953300,
-    "original_language": "en",
-    "original_title": "The Mystery of Marilyn Monroe: The Unheard Tapes",
-    "overview": "의문의 죽음으로 세상을 떠난 영화계의 아이콘, 마릴린 먼로. 공개되지 않았던 측근 인터뷰를 통해 그 죽음을 둘러싼 미스터리를 파헤쳐 본다.",
-    "poster_path": "/9Ab3MEngH2sWK8uydGBFfgZDB4z.jpg",
-    "release_date": "2022-04-27",
-    "title": "마릴린 먼로 미스터리: 비공개 테이프",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650becd08d32e9b9f1b9dab2"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1032760,
-    "original_language": "es",
-    "original_title": "La memoria infinita",
-    "overview": "칠레의 저명한 저널리스트이자 피노체트 정권의 범죄를 기록한 작가 아우구스토와 배우이자 활동가이며 문화부 장관을 역임한 파울리나는 25년간 사랑을 이어온 백발의 연인이다. 8년 전 아우구스토가 알츠하이머 판정을 받은 이후, 악화되고 있는 병세 앞에 무기력함을 느낀다. 그러나 파울리나는 아우구스토가 끝까지 스스로를 잃어버리지 않도록, 타협하지 않는 헌신으로 함께 치열하게 싸우고자 한다. 서로의 얼굴을 어루만지는 손길을 따라 주름 하나하나에 애정과 슬픔의 기억들을 채우고, 인생이라는 극에서 천천히 퇴장하고 있는 그들의 깊고 진한 사랑은 절찬리 진행 중이다.",
-    "poster_path": "/zTXgtFELvBdxznGCsnz47yJY4PL.jpg",
-    "release_date": "2023-08-11",
-    "title": "이터널 메모리",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650becf58d32e9b9f1b9e06a"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1114901,
-    "original_language": "en",
-    "original_title": "Take Care of Maya",
-    "overview": "2016년 아홉 살의 마야 코월스키가가 존스홉킨스 아동 병원에 입원했을 당시, 마야와 마야의 가족은 앞으로 겪게 될 일을 상상조차 하지 못했다. 마야가 앓고 있는 희소병을 좀 더 자세히 알아보기 위해 애쓰던 의료진은 코월스키 가족을 하나로 묶는 근원적인 진실에 의문을 제기하기 시작한다. 그리하여 마야는 갑자기 주정부의 보호 대상이 되고, 딸을 집으로 데려가려는 부모의 필사적인 노력은 수포로 돌아간다.",
-    "poster_path": "/xo18uFw2FQRy9WUBg4noYiBs4dF.jpg",
-    "release_date": "2023-06-10",
-    "title": "마야를 부탁합니다",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650becf88d32e9b9f1b9e0de"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 860278,
-    "original_language": "en",
-    "original_title": "Stephen Curry: Underrated",
-    "overview": "농구 역사상 가장 영향력 크고, 역동적이며, 예측 불허인 선수 중 하나인 스테판 커리. 작디작은 대학 선수에서 NBA 4회 우승에 성공한 선수가 되기까지의 놀라운 성장 이야기.",
-    "poster_path": "/haSyUZRQxmUXYJRn2mh6wspHTH5.jpg",
-    "release_date": "2023-07-21",
-    "title": "스테판 커리: 전설이 된 언더독",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650becf98d32e9b9f1b9e10a"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 785976,
-    "original_language": "pt",
-    "original_title": "Pelé",
-    "overview": "정치적으로 암울했던 시기의 브라질에서 온 국민에게 희망의 등불이 되어준 전설적 축구선수 펠레. 가난한 소년에서 혜성처럼 등장한 신예 스타, 나아가 모두가 추앙하는 국민적 영웅이 되기까지 그가 지나온 여정을 함께 걸어본다.",
-    "poster_path": "/cVKAep8V6rrFh0IhABC0bkzjwK5.jpg",
-    "release_date": "2021-02-23",
-    "title": "펠레",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed248d32e9b9f1b9e7d4"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1128720,
-    "original_language": "en",
-    "original_title": "Unknown: Cave of Bones",
-    "overview": "25만 년도 더 된 땅속 유골을 조사하는 과학자들. 이 단서는 인류의 초기 종에 관해 중요한 질문들을 던진다. 또한 인간이란 과연 무엇인가에 관해서도.",
-    "poster_path": "/irDu0rnlzTpl8RkOEl7XG2B88tJ.jpg",
-    "release_date": "2023-07-17",
-    "title": "언노운: 뼈 동굴",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed278d32e9b9f1b9e82e"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 730028,
-    "original_language": "sv",
-    "original_title": "Världens vackraste pojke",
-    "overview": "루키노 비스콘티는 토마스 만의 ‘베니스에서의 죽음’을 영화화하면서 타치오에 대한 묘사만큼은 최대한 원작에 충실하고자 했다. 서구 문명이 묘사하는 가장 아름다운 소년을 찾기 위해 유럽 각지를 헤매다 마침내 스톡홀름에서 15살 스웨덴의 평범한 시골소년이던 비요른 안데르센을 만났고, 그는 한순간에 스타덤에 올랐다. 어린 나이에 글로벌 아이콘이 되어버린 그에게 미모는 굴레였을지도 모른다. 이제 초로의 문턱에 선 그는 자신의 삶을 어떻게 바라보고 있을까.",
-    "poster_path": "/t8lxvJLfh99zYT27d2gL3fhAhyq.jpg",
-    "release_date": "2021-07-30",
-    "title": "세상에서 가장 아름다운 소년",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed2a8d32e9b9f1b9e8b4"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 566222,
-    "original_language": "en",
-    "original_title": "The Great Hack",
-    "overview": "2016년 대선 이후, 거대한 스캔들이 미국을 강타한다. 시민의 일거수일투족을 수집한 데이터 분석 회사. 그들은 누구를 위해, 누구와 함께 일했을까. 그 전말을 확인하라.",
-    "poster_path": "/uIrGgUzasEUA7v8uChRhUUFzLwE.jpg",
-    "release_date": "2019-01-26",
-    "title": "거대한 해킹",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed308d32e9b9f1b9e99a"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 39266,
-    "original_language": "de",
-    "original_title": "Triumph des Willens",
-    "overview": "새카맣게 모인 군중들 위로 아돌프 히틀러가 탄 비행기의 그림자가 드리우는 장면을 시작으로 4일동안의 일정이 시작된다. 비행기에서 내린 히틀러가 호텔로 가는 도중 군중들은 열광적으로 환호한다.  2일째가 되면 본격적으로 전당대회가 시작된다. 루돌프 헤스의 개막사로 문을 연 전당대회에는 파울 요제프 괴벨스, 알프레드 로젠베르크, 한스 프랑크 등 나치 간부의 모습이 보인다. 히틀러는 격정적인 연설을 펼친다. 세번째 날은 히틀러 소년단의 집회 장면으로 시작된다. 히틀러는 소년들을 향해 연설을 하고 소년들은 진심어린 환호를 보낸다. 이날 밤 히틀러는 횃불을 밝혀놓은 가운데 나치당 하위 간부들에게 연설을 한다. 4일째에는 전당대회의 메인 행사가 열린다. 히틀러는 친위대들에 둘러싸인 채 수십만명의 군중 앞에 등장한다. 곧이어 새로운 당의 깃발이 선보이고 히틀러는 마지막 연설을 시작한다. 그는 “충성스러운 독일인은 모두 국가사회주의자가 될 것”이라는 선언을 한다. 수십만이 히틀러에게 경례를 붙이는 가운데 거대한 나치 깃발이 보여진다.",
-    "poster_path": "/xxyZWY8mE07qJaN7Yd224wQWCpv.jpg",
-    "release_date": "1935-03-28",
-    "title": "의지의 승리",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed378d32e9b9f1b9eac0"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 26594,
-    "original_language": "en",
-    "original_title": "The Secret",
-    "overview": "론다 번이 2006년 제작한 영화이며, 책이다. 여기서 비밀이란 끌어당김의 법칙을 말한다. 즉, 비밀은 성공학에 관한 책이자 영화인 것이다. 비밀은 전 세계적으로 큰 인기를 얻고 있으며, 세계 최대 도서사이트들의 베스트셀러 기록을 깨기도 했다. 영화 비밀은 2006년 개봉되었고, 개봉되자 마자 큰 흥행을 불러 일으켰다. 영화 비밀에서는 제작자 론다 번이 직접 찾아낸 끌어당김의 법칙을 알고 있었던 사람들이 번갈아가며 나와서 끌어당김의 법칙에 대해 이야기하는 식으로 진행이 된다. 비밀에 출연한 사람들 중에는 밥 프록터,잭 캔필드,모리스 굿멘과 같은 유명인들이 많이 있다. 그들의 대화와, 사이사이 영상들을 첨가해서, 약 90분의 영화가 완성되었다. 영화 비밀은 DVD로 제작된 후로도 많은 소득을 올렸고, 지금까지도 큰 인기를 얻고 있다.",
-    "poster_path": "/zLcm3V8tjybWZVbE0MIwJfvmv0g.jpg",
-    "release_date": "2006-03-26",
-    "title": "시크릿",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed3a8d32e9b9f1b9eb3c"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 44639,
-    "original_language": "en",
-    "original_title": "Inside Job",
-    "overview": "미국 리먼 브라더스의 파산 신청과 최대 보험사 AIG의 몰락은 미국 경제를 뒤흔들었다. 월 스트리트 쇼크로 글로벌 주식 시장은 그 즉시 휘청거렸다. 전 세계는 수십 조 달러의 빚더미에 올라앉았고 경제 침체는 계속되었다. 집 값과 자산은 대폭락했고, 3천만 명이 해고됐으며, 5천만 서민들은 극빈자가 되었다. 세계 경제를 파탄으로 내몰았지만… 여전히 돈과 권력을 손에 쥐고 있을 주범들은 과연 어디 있는가.",
-    "poster_path": "/6sm3DAkzyTU6Ty4PozSqSbeRQqF.jpg",
-    "release_date": "2010-10-08",
-    "title": "인사이드 잡",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed408d32e9b9f1b9ec24"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 89708,
-    "original_language": "en",
-    "original_title": "Samsara",
-    "overview": "삼사라는 산스크리트어로 생과 사의 순환, 즉 인생의 수레바퀴이자 윤회 그 자체를 의미한다. 인간은 자연의 경의로움에 신성을 느끼게 되고, 태양과 달, 나무와 돌 등을 종교적 대상으로 삼게 된다. 그러나 일부는 이에 만족하지 않고 스스로 인공적인 구조물들을 만들게 된다. 스스로를 모방하여 신을 만들고, 인간보다 더 인간같은 인간을 만들고 싶어한다. 인간은 과연 무엇을 위해 실존하고 무엇을 위해 행동하는 것일까. 선과 악이 뒤섞여 있는 인간. 그 끝은 정성들여 만다라를 만들지만, 그 만다라를 아주 쉽게 없애버리는 것처럼 허망하거나 의미없는 행위일 것이다.",
-    "poster_path": "/qodkea4k0pNUmNTl5TJO2PdTqgW.jpg",
-    "release_date": "2011-09-16",
-    "title": "삼사라",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed468d32e9b9f1b9ed18"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1005031,
-    "original_language": "en",
-    "original_title": "A Trip to Infinity",
-    "overview": "저명한 수학자, 입자 물리학자, 우주학자들이 무한을 설명하며, 무한이 우주에 관해 시사하는 바를 논한다.",
-    "poster_path": "/24EXccaDuDEMYp7eVvsCicj5K41.jpg",
-    "release_date": "2022-09-26",
-    "title": "인피니티: 무한의 세계로",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed4b8d32e9b9f1b9ede4"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 407806,
-    "original_language": "en",
-    "original_title": "13th",
-    "overview": "자유의 나라, 미국. 하지만 지금도 수많은 흑인이 감옥에 있는 이유는 무엇일까. 여러 분야의 전문가들과 함께, 미국 감옥의 현실과 인종차별을 곱씹는 시사 다큐멘터리.",
-    "poster_path": "/tcKNWD6IFPPsvkpvyZ548naz0is.jpg",
-    "release_date": "2016-10-07",
-    "title": "미국 수정헌법 제13조",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed508d32e9b9f1b9eeb8"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 612654,
-    "original_language": "en",
-    "original_title": "Fantastic Fungi",
-    "overview": "버섯에 관련된 다양한 이야기를 담은 다큐멘터리",
-    "poster_path": "/giIGfFqirPk3I2azp8Ow98oOnzG.jpg",
-    "release_date": "2019-08-30",
-    "title": "환상의 버섯",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed668d32e9b9f1b9f206"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 684700,
-    "original_language": "en",
-    "original_title": "Athlete A",
-    "overview": "선수들을 성적으로 학대한 전미 체조 대표 팀 의사 래리 내서. 그 생존자들이 증언을 시작하고, 기자들이 진실을 파헤친다. 용기 있는 이들의 싸움을 기록한 다큐멘터리.",
-    "poster_path": "/jUVbqKcDgcLSS5s4UV82XUkMKlU.jpg",
-    "release_date": "2020-06-24",
-    "title": "우리는 영원히 어리지 않다",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed6b8d32e9b9f1b9f2ce"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 1061671,
-    "original_language": "en",
-    "original_title": "Pamela, A Love Story",
-    "overview": "파멜라 앤더슨이 자신의 유명세, 험난한 애정사 그리고 악명 높은 섹스 테이프 스캔들에 대해 직접 입을 연다. 개인적인 영상과 일기를 통해 공개되는 그녀의 진짜 이야기.",
-    "poster_path": "/zkVnRwZWbrd55P3Tx7BZZQ1gU89.jpg",
-    "release_date": "2023-01-30",
-    "title": "파멜라, 러브 스토리",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed708d32e9b9f1b9f3bc"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 618363,
-    "original_language": "ro",
-    "original_title": "Colectiv",
-    "overview": "2015년 부쿠레슈티 콜렉티브 클럽 화재사건과 그 이후 언론과 정부의 부정부패 척결 과정을 다룬 다큐멘터리",
-    "poster_path": "/1RPMcyZKNxiKtHwEyCORRNTjjV3.jpg",
-    "release_date": "2019-02-13",
-    "title": "콜렉티브",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed768d32e9b9f1b9f4a0"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 26317,
-    "original_language": "ru",
-    "original_title": "Человек с киноаппаратом",
-    "overview": "카메라맨이 카메라를 어깨에 메고 돌아다니며 눈부신 창의력으로 도시 생활을 기록합니다.",
-    "poster_path": "/3iXQrMNuIWfBpd02ri842AHTKsF.jpg",
-    "release_date": "1929-05-12",
-    "title": "카메라를 든 사나이",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed768d32e9b9f1b9f4a6"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 463088,
-    "original_language": "en",
-    "original_title": "The Game Changers",
-    "overview": "육식과 채식 중 힘을 기르는 데 효과적인 식단은 무엇일까. UFC 선수가 직접 답을 구하러 나섰다. 그런데 분석 결과가 모두의 상식을 뒤집는다면? 바로, 채식이 그 답이라면? 육식과 채식에 관한 오해와 진실이 밝혀진다.",
-    "poster_path": "/eufF3xEif5EZ1gTjdubw3KWh9xU.jpg",
-    "release_date": "2019-09-16",
-    "title": "더 게임 체인저스",
-    "__v": 0
-  },
-  {
-    "_id": {
-      "$oid": "650bed928d32e9b9f1b9f8fe"
-    },
-    "adult": false,
-    "genre_ids": [
-      99
-    ],
-    "id": 857729,
-    "original_language": "en",
-    "original_title": "Untold: Deal with the Devil",
-    "overview": "한계와 편견을 뛰어넘은 복싱 챔피언 크리스티 마틴. 온 세상이 그녀에게 환호를 보냈다. 하지만 그녀가 숨겨야만 했던 내면의 어둠, 학대와 위협의 나날. 그렇게 크리스티의 추락은 시작됐다.",
-    "poster_path": "/gjjM0z1tRY5S4KjxXVNp7BRTOxG.jpg",
-    "release_date": "2021-08-17",
-    "title": "말하지 못한 이야기: 악마와의 거래",
-    "__v": 0
-  }
+  
     ],
     "18": [
         
@@ -4518,10 +4007,1436 @@
 
     ],
     "36": [],
-    "27": [],
+    "27": [
+      
+  {
+  "_id": {
+    "$oid": "650beba88d32e9b9f1b9ac7c"
+  },
+  "adult": false,
+  "genre_ids": [
+    27,
+    53
+  ],
+  "id": 138843,
+  "original_language": "en",
+  "original_title": "The Conjuring",
+  "overview": "1971년 로드 아일랜드, 해리스빌. 페론 가족은 꿈에 그리던 새 집으로 이사를 간다. 물론 1863년에 그 집에서 일어난 끔찍한 살인 사건을 전혀 몰랐다. 또한 그 이후에 일어난 많은 무서운 사건에 대해서도 알지 못했다. 이 가족은 그 집에서 겪은 일이 너무 무서워서 한 마디라도 외부에 언급하는 것을 거절했었다. 지금까지는…",
+  "poster_path": "/pWpTToZ32bG09PaZ1rvYG5mpOyV.jpg",
+  "release_date": "2013-07-18",
+  "title": "컨저링",
+  "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebaa8d32e9b9f1b9acb4"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648,
+      53
+    ],
+    "id": 646385,
+    "original_language": "en",
+    "original_title": "Scream",
+    "overview": "잔혹한 살인 사건으로 우즈보로 마을이 충격에 휩싸인 지 25년이 지난 후,  고스트 페이스를 한 새로운 살인마가 다시 십대들을 노리면서 마을의 어두운 비밀이 다시 수면 위로 떠오르는데…",
+    "poster_path": "/tk5i99DjBAYTxbdBGAPIBkP6wID.jpg",
+    "release_date": "2022-01-12",
+    "title": "스크림",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebac8d32e9b9f1b9ad14"
+    },
+    "adult": false,
+    "genre_ids": [
+      27
+    ],
+    "id": 9552,
+    "original_language": "en",
+    "original_title": "The Exorcist",
+    "overview": "노신부 메린(막스 본 시도우 분)은 이라크 북부에서 고분을 발굴하다 이상한 조각을 발견한다. 악마를 상징하는 그 조각에 노신부는 불안해 한다. 한편, 미국 조지타운에 사는 인기 여배우 크리스 멕네일(엘런 번스타인 )는 어느 날 밤 딸 레건(린다 블레어)의 방에서 이상한 소리를 듣고 쥐가 있는 것 같다며 운전 기사 칼(루돌프 쉰들러)에게 쥐덫을 놓도록 한다. 이어 딸 레건에게서 이상한 증세가 나타나기 시작하자 크리스는 레건을 데리고 병원을 전전하지만 병명조차 알아내지 못한 채 증세는 점점 악화된다. 그 와중에 크리스의 애인이 레건을 간호하던 중 변사체로 발견되는가 하면 조그맣고 귀엽던 레건의 얼굴이 무섭고 흉측한 악령의 모습으로 변하며 \"그리스도가 나를 범하고 있다\"라고 외치며 자해를 하는 사건이 연이어 벌어진다. 크리스는 지푸라기라도 잡는 심정으로 젊은 카라스 신부(제이슨 밀러)를 찾아가 악마를 내쫓는 엑소시즘 의식을 부탁한다. 결국 카라스 신부는 엑소시즘의 경험이 있는 노신부 메린에게 도움을 청하고 둘은 레건에게서 악령을 몰아내는 의식을 집행하기에 이른다. 그러나 악령은 쉽게 물러나지 않고, 악마와 메린 신부의 처절한 사투가 시작되는데…",
+    "poster_path": "/1Y0h6vedMbWPJNzqBnRkik16MO4.jpg",
+    "release_date": "1973-12-26",
+    "title": "엑소시스트",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebb08d32e9b9f1b9adb0"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648,
+      80
+    ],
+    "id": 176,
+    "original_language": "en",
+    "original_title": "Saw",
+    "overview": "어느 지하실. 자신들의 발목에 쇠줄이 묶인 채 마주하게 된 ‘아담’(리 와넬)과 닥터 ‘고든’(캐리 엘위스). 중앙에는 자신의 머리를 총으로 쏘고 자살한 듯한 사내가 피투성이가 되어 누워 있을 뿐, 이 둘은 자신들이 왜 잡혀왔는지, 서로가 누군지조차 모르고 있다. 주머니 속에 들어있는 테이프. 테이프에 들어있는 누군가의 메시지. 어떻게든 빠져나가려고 갖은 애를 써보지만 소용이 없다. 이제 둘은 자신들의 하루 전 기억을 더듬어 보는데. ‘고든’은 이 일이 최근 계속되고 있는 연쇄살인과 관계가 있음을 깨닫게 된다. 끔찍한 연쇄살인의 현장에 자신의 펜이 떨어져 있었고, 그 증거물을 근거로 ‘탭’형사(대니 글로버)가 자신을 찾아왔던 것. 한편, 연쇄살인을 추적하던 ‘탭’형사는 닥터 ‘고든’을 범인으로 지목하고 그 뒤를 쫓는데…",
+    "poster_path": "/vRVtn1HLMGMHbUsAJkFLC6oT6pQ.jpg",
+    "release_date": "2004-10-01",
+    "title": "쏘우",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebbc8d32e9b9f1b9af50"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648,
+      53
+    ],
+    "id": 396422,
+    "original_language": "en",
+    "original_title": "Annabelle: Creation",
+    "overview": "인형장인과 그의 아내는 비극적인 사고로 어린 딸을 잃는다. 그리고 12년 후, 그 집에 고아원 소녀들과 수녀가 함께 살게 되는데…",
+    "poster_path": "/myc2B4lHDHuw6G5yQlW8Z0noVxk.jpg",
+    "release_date": "2017-08-03",
+    "title": "애나벨: 인형의 주인",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebbc8d32e9b9f1b9af68"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53,
+      28,
+      12
+    ],
+    "id": 396535,
+    "original_language": "ko",
+    "original_title": "부산행",
+    "overview": "별거 중인 펀드 매니저 석우는 소원해진 딸 수안의 생일 소원을 들어주기 위해 아내가 있는 부산행 KTX에 오른다. 이내 열차는 좀비의 침투와 감염으로 아수라장으로 변하고, 전국적 재난 뉴스를 차내에서 접한 승객들의 생존가능성은 유일하게 초기 대응에 성공한 도시 부산까지 살아남은 채 도착할 수 있느냐에 달리게 된다. 열차에 몸을 실은 석우와 딸 수안, 상화와 성경 커플, 고등학생 영국, 진희, 그리고 노숙자와 중년의 비즈니스맨 용석은 감염된 사람들의 공격을 피해 열차 안에서 사투를 벌인다.",
+    "poster_path": "/nCrh5EQYiYXEIFNrfb4ISm7TOOo.jpg",
+    "release_date": "2016-07-20",
+    "title": "부산행",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebc18d32e9b9f1b9b038"
+    },
+    "adult": false,
+    "genre_ids": [
+      80,
+      27,
+      9648
+    ],
+    "id": 4232,
+    "original_language": "en",
+    "original_title": "Scream",
+    "overview": "작은 소도시 우즈버러에 사는 케이시에게 이상한 남자로부터 전화가 걸려온다. 비디오를 보려는 케이시에게 그 남자는 케이시의 남자 친구인 스티브의 목숨을 걸고 게임을 하자고 한다. 케이시가 문제를 맞추면 살고, 틀리면 남자친구가 죽는다. 문제는 '13일의 금요일'에 나오는 살인마의 이름을 맞추는 것. 케이시는 문제를 풀지 못하고, 스티브는 처참하게 죽임을 당한다. 이튿날, 혼자 집에 있는 시드니에게도 이상한 전화가 걸려온다. 시드니는 케이시와는 달리 힘들게 괴전화의 마수에서 빠져 나온다. 그러나 시드니의 남자 친구 빌리가 살인 용의자로 체포되는데, 조사 후 무혐의로 풀려난다.",
+    "poster_path": "/fvprcRjlvrgok1rvOJN4NY8Uqba.jpg",
+    "release_date": "1996-12-20",
+    "title": "스크림",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebc68d32e9b9f1b9b0e6"
+    },
+    "adult": false,
+    "genre_ids": [
+      27
+    ],
+    "id": 10585,
+    "original_language": "en",
+    "original_title": "Child's Play",
+    "overview": "흉악 살인범 찰스 리 레이(브래드 듀리프 분)는 형사 마이크 노리스(크리스 서랜든 분)의 추격을 받으며 시카고의 와버쉬 거리 사이로 도주하고 있다. 공범인 에디 카푸토에게 버림받고 부상입은 레이는 닫혀진 장난감 가게로 뛰어든다. 뒤쫓아온 마이크가 쏜 총에 맞고 쓰러진 그는 배신한 친구 에디와 형사 마이크의 복수를 외치면서 '착한 애(Good Guys)' 인형에 매달려 주문을 외우자, 밖에서는 불길한 천둥과 폭풍이 몰아쳐면서 가게는 폭발한다.  백화점 점원으로 혼자서 어린 아들 앤디(알렉스 빈센트 분)을 키우고 있는 캐런(캐서린 힉스 분)은 아들의 생일 선물로 인형을 사다준다. 아들 앤디가 그렇게도 원하던 말하는 인형 척키(Chucky: 에드 게일 분)는, 어른들 앞에선 천진스런 인형이다가, 앤디하고만 있게 되면 살아나서 말도 하고 행동도 하며, 더 나아가서는 소름끼치는 살인의 향연을 벌이기 시작한다. 아무도 인형이 살인을 하리라곤 믿지않기 때문에, 의심의 화살은 앤디에게 쏟아지고, 앤디의 힙겹고 외로운 투쟁은 시작된다. 앤디가 척키에 대한 사실을 밝히려 애쓸수록, 그는 이상한 아이로 취급받아 결국 격리당해 정신과 의사의 관찰까지 받게된다.  그러나 캐런이 인형상자에 건전지가 그대로 있는 것을 발견하고, 척키가 건전지 없이 말하고 움직인 것을 알게되자, 척키는 본색을 드러내는데...",
+    "poster_path": "/7jrOhGtRh6YK7sMfvH1E1f36aVx.jpg",
+    "release_date": "1988-11-09",
+    "title": "사탄의 인형",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebcd8d32e9b9f1b9b21c"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 9902,
+    "original_language": "en",
+    "original_title": "Wrong Turn",
+    "overview": "웨스트 버지니아, 그린브리어 백카운티(Greenbrier Backcountry). 중요한 면접에 참석하기 위하여 정체되는 고속도로를 피해 산 속 지름길로 들어선 의대생 크리스. 낯선 길을 달리던 중, 도로에 세워진 캠핑카와 충돌하고 만다. 바닥에 놓여진 철조망에 타이어가 터진 이 차는 숲 속으로 캠핑 온 여섯 명의 대학생들의 것.  인적이 드문 산에 고립된 그들. 크리스와 몇 명의 사람들은 외부와 연락할 전화를 찾아보려 숲 속을 헤매던 중, 시체 냄새와 기괴한 사냥 도구로 가득한 오두막을 발견한다. 한편, 차에 남아있던 두 친구는 정체를 알 수 없는 살인마에게 잔혹하게 살해 당하고 만다. 남은 사람들은 잔인한 살인마, 마운틴 맨이 자신들의 목숨을 노리고 있음을 깨닫게 되는데.",
+    "poster_path": "/4ENDpqHddaIodooOe3jUBmtc9KV.jpg",
+    "release_date": "2003-05-30",
+    "title": "데드 캠프",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebd08d32e9b9f1b9b28a"
+    },
+    "adult": false,
+    "genre_ids": [
+      27
+    ],
+    "id": 4488,
+    "original_language": "en",
+    "original_title": "Friday the 13th",
+    "overview": "1958년, 크리스탈 호수 야영장은 제이슨이란 어린 소년이 익사한 후, 두 명의 캠프 지도 학생이 누군가에게 살해된 사건 이후 폐쇄되었다. 이곳에 제이슨의 저주가 내렸다고 믿는 마을 사람들의 수많은 경고에도 불구하고 야심만만한 스티브 크리스티(Steve Christy: 피터 브라우너 분)는 이곳을 다시 열기로 하고 젊은이들을 고용해 야영장을 단장한다.  때는 마침 익사한 제이슨의 생일인 13일의 금요일이고, 스티브의 야심은 연쇄 살인을 촉발시키는 결과를 초래한다. 야영장의 젊은이들이 하나 둘 차례차례 살해되고, 유일한 생존자가 된 앨리스(Alice: 에드리언 킹 분) 앞에 드디어 범인의 정체가 드러난다. 살인자는 제이슨의 어머니인 브리스 부인(Mrs. Voorhees: 벳시 팔머 분). 아들의 죽음은 당시 야영장 직원들의 무심함 때문이라고 원망하며 복수에 불타있는 브리스 부인은 야영장이 다시 개장되는 것을 용서할 수 없다. 그러나 앨리스의 반격으로 최후를 맞이하고, 폭풍이 지나간 듯 어둠이 걷히고 아침이 찾아온다.  호수에서 배를 탄 채 탈진해 있는 앨리스, 모든 것이 끝났다고 마음을 놓았던 그 순간, 물속에서 솟구쳐 올라온 제이슨에게 끌려 호수에 빠진다. 다행히 구조되어 병원에서 눈을 뜬 앨리스, 그러나 제이슨을 보지못했다고 전하는 경찰의 말에 다시 아득해진다.",
+    "poster_path": "/HzrPn1gEHWixfMOvOehOTlHROo.jpg",
+    "release_date": "1980-05-09",
+    "title": "13일의 금요일",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebdf8d32e9b9f1b9b4e2"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 19912,
+    "original_language": "en",
+    "original_title": "The Final Destination",
+    "overview": "자동차 레이싱 대회 관중석에 앉아있던 닉(바비 캄포)은 갑자기 불길한 전조를 본다. 레이싱 카들이 연쇄 충돌을 일으켜 날아온 파편에 친구들이 죽고 무너진 건물이 자기를 덮치는 끔찍한 환상! 악몽에서 깨어난 닉이 친구들을 끌고 경기장을 막 빠져 나온 찰나, 닉의 환상은 현실로 이어진다. 닉과 친구들은 아슬아슬하게 죽음을 피하지만 이는 시작에 불과했다. 불길한 죽음의 환상은 계속해서 닉을 찾아오고, 사고에서 살아남은 사람들은 갈수록 끔찍한 방법으로 차례차례 죽음을 맞는다. 닉은 친구들의 죽음을 막으려 하지만 자신도 마지막 운명에 이르기 전에 다시 한번 죽음에서 벗어날 방법을 찾아야만 한다!",
+    "poster_path": "/pRckgFI7EhfrkyXgczs93erGWEo.jpg",
+    "release_date": "2009-08-26",
+    "title": "파이널 데스티네이션 4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebe08d32e9b9f1b9b50e"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 10781,
+    "original_language": "en",
+    "original_title": "The Texas Chainsaw Massacre: The Beginning",
+    "overview": "공포의 그날… 모든 것은 그곳에서 시작되었다.  에릭은 자신의 약혼녀 크리시, 동생 딘 커플과 함께 베트남 참전을 떠나기 전 마지막 여행길에 오른다. 하지만 여행 중 잠시 들린 트래비스 마을 휴게소에서 사람들의 수상함을 느낀 에릭 일행. 그들은 황급히 그곳을 벗어나려 하지만, 총을 겨누고 그들을 추격해 오는 폭주족에 당황하다 급기야 차가 전복되는 사고를 내고 만다.  전세계를 미치게 한 연쇄살인의 서막이 열린다!  이때 현장을 지나던 지역 보안관이 폭주족을 사살, 구사일생으로 위기를 모면하지만 차에 함께 탔던 크리시의 모습은 보이지 않는다. 반강제적으로 폭주족의 시체와 함께 보안관의 차에 태워진 채 어디론가 향하게 되는 세 사람. 그때까지 그들 중 아무도 알지 못했다. 이날이 미국 역사상 가장 잔혹한 연쇄 살인극의 서막 이라는 것을…",
+    "poster_path": "/4j8khT5mlmpCVie1WgQjsCwHQuS.jpg",
+    "release_date": "2006-10-05",
+    "title": "텍사스 전기톱 연쇄살인사건: 제로",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebe98d32e9b9f1b9b66a"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 23827,
+    "original_language": "en",
+    "original_title": "Paranormal Activity",
+    "overview": "8살 때부터 자신의 주위를 맴돌던 정체불명의 존재를 느껴왔던 케이티. 최근 들어 점점 더 강도가 심각해지는 이상한 사건들로 인해 그녀의 남자친구 미카는 그들의 24시간을 카메라에 담기 시작한다. 촬영이 시작된 이후 문이 스스로 움직이고 벽의 액자가 저절로 깨지는 등 이상한 현상들이 녹화되기 시작하고, 정체 불명의 존재를 찾기 위해 노력한다.  미카는 정체 불명의 대상을 불러내기 위해 케이티의 반대에도 불구하고, 다양한 방법을 시도하며 촬영을 멈추지 않는다. 그들이 잠든 사이에 의문의 발자국이 침실에 남겨지고, 자고 있는 케이티가 사라지는 등 이상한 일들이 연이어 벌어지는 가운데, 계속되는 고통으로 잠을 이루지 못하는 케이티는 퇴마사를 부르기에 이른다. 하지만, 섬뜩한 기운을 느낀 퇴마사는 집안에 발을 들이는 것조차 두려워하며 돌아가고 만다. 시간이 지날수록 설명하기 조차 힘든 미스터리한 사건들은 두 사람을 위협하기 시작하는데…",
+    "poster_path": "/uNOEIKO1YW2XP9mjSdZ8oaHaRFm.jpg",
+    "release_date": "2007-09-14",
+    "title": "파라노말 액티비티",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebfb8d32e9b9f1b9b93e"
+    },
+    "adult": false,
+    "genre_ids": [
+      27
+    ],
+    "id": 37169,
+    "original_language": "en",
+    "original_title": "The Human Centipede (First Sequence)",
+    "overview": "아리따운 두 미국 소녀들이 유럽으로 여행을 떠난다. 한밤중에 독일의 어느 숲 속에서 차가 고장 나고, 그들은 외딴 집을 찾아 들어간다. 다음 날 자신을 샴쌍둥이 분리 전문의라고 소개하는 남자가 나타난다. 그러나 그의 목적은 분리가 아니라 합체! 과연 소녀들은 결합되어 인간 지네가 될 것인가?",
+    "poster_path": "/gMtjxIkEi0hnTV5lPHbgeZ4ZpUZ.jpg",
+    "release_date": "2009-10-31",
+    "title": "인간 지네",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec048d32e9b9f1b9baa8"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      28
+    ],
+    "id": 924,
+    "original_language": "en",
+    "original_title": "Dawn of the Dead",
+    "overview": "어느날 새벽, 간호사 안나는 느닷없이 나타난 옆집 소녀에게 남편이 물어 뜯겨 죽는 참혹한 광경을 목격한다. 슬퍼하거나 놀랄 틈도 없이 죽었던 남편은 다시 되살아나 안나를 공격하고 안나는 급히 집 밖으로 도망쳐 나온다. 그러나 집밖에도 이미 같은 일들이 벌어지고 있었으며, 세상은 순식간에 생지옥으로 변하고 마는데...",
+    "poster_path": "/qqTYdTvdhsWr6vZ72WROS7u7V9r.jpg",
+    "release_date": "2004-03-19",
+    "title": "새벽의 저주",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec0b8d32e9b9f1b9bbbc"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53,
+      9648
+    ],
+    "id": 458723,
+    "original_language": "en",
+    "original_title": "Us",
+    "overview": "애들레이드와 게이브 윌슨은 아이들을 데리고 캘리포니아 북부에 있는 아들레이드의 오래된 해변가로 여름 휴가를 떠난다. 다음날 합류한 타일러 가족과 함께 해변에서 하루를 보내지만, 애들레이드는 과거에 겪은 트라우마 증상이 심해지며 나쁜 일이 일어날 것이라는 공포에 시달린다. 밤이 되고 윌슨은 차도에 조용히 서있는 네명의 손을 맞잡은 뭔가를 보게 되는데...",
+    "poster_path": "/vfNBftZoXsUnNWccz8ew9h8Jicx.jpg",
+    "release_date": "2019-03-14",
+    "title": "어스",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec268d32e9b9f1b9bffc"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53,
+      878
+    ],
+    "id": 1562,
+    "original_language": "en",
+    "original_title": "28 Weeks Later",
+    "overview": "인간을 좀비로 만드는 '분노 바이러스'가 영국을 휩쓸고 지나간 후 6개월이 지난 시점. 미국 군대가 바이러스와의 전쟁을 선언한 뒤 마치 그들이 승리를 거둔 듯해 보인다. 그리고 점차 도시는 질서를 되찾는다. 런던을 떠났던 시민들은 점차 도시로 돌아오고, 헤어졌던 가족은 재회의 기쁨을 나눈다. 하지만, 사실 바이러스는 죽지 않았고, 사람들이 모르는 사이 다시금 도시를 초토화 시키려고 하는데..",
+    "poster_path": "/2SEp3V5RJLVNOpCgCna1qXfQnbM.jpg",
+    "release_date": "2007-04-26",
+    "title": "28주 후",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec2e8d32e9b9f1b9c15a"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 508642,
+    "original_language": "ko",
+    "original_title": "곤지암",
+    "overview": "1979년 환자 42명의 집단 자살과 병원장의 실종 이후, 섬뜩한 괴담으로 둘러싸인 곤지암 정신병원으로 공포체험을 떠난 7명의 멤버들. 원장실, 집단 치료실, 실험실, 열리지 않는 402호. 괴담의 실체를 담아내기 위해 병원 내부를 촬영하기 시작하던 멤버들에게 상상도 못한 기이하고 공포스러운 일들이 실제로 벌어지기 시작 하는데…",
+    "poster_path": "/sCLqWiJxp2rq2wuvuv8N2KvaNhB.jpg",
+    "release_date": "2018-03-28",
+    "title": "곤지암",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec368d32e9b9f1b9c28e"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 565,
+    "original_language": "en",
+    "original_title": "The Ring",
+    "overview": "각기 다른 장소에서, 하지만 모두 같은 날 밤 10시에 끔찍한 얼굴로 발견된 4명의 시체. 그들의 공통점은 단 하나. 정확히 7일 전 밤 10시, 쉘터 산장 12호에서 그들이 함께 보았다는 의문의 비디오테이프. 사건을 파헤치던 기자 레이첼은 마침내 문제의 비디오테이프를 입수한다. 비디오를 틀자 화면에 펼쳐지는 악몽 같은 이미지들이 나오는데...",
+    "poster_path": "/7uoGydSiNkeA46LQuh82ToBlCvK.jpg",
+    "release_date": "2002-10-18",
+    "title": "링",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec368d32e9b9f1b9c2ac"
+    },
+    "adult": false,
+    "genre_ids": [
+      27
+    ],
+    "id": 11838,
+    "original_language": "ja",
+    "original_title": "呪怨",
+    "overview": "자원봉사자 리카는 병든 노파 사치에를 간호하러 집으로 찾아갔다가 그 집에 감도는 불길한 기운을 감지한다. 어수선하고 폐허같은 집, 노파는 아프다기보다는 뭔가에 홀린 듯 보이고 2층 다락에선 의문의 남자아이가 나타났다 사라진다. 곧 이어 노파는 무언가에 홀린 듯 중얼거리다 갑자기 검은 그림자에 휩싸여 죽고 리카는 정신을 잃고 만다.  원한으로 죽어 저주로 살아난 집, 이제 그 집에 한 번이라도 방문한 사람은 모두 끔찍한 죽음을 맞을 수 밖에 없게 되는데...",
+    "poster_path": "/zVvM7zrCIL4y19Xm9jPkkzB7Hav.jpg",
+    "release_date": "2002-10-18",
+    "title": "주온",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec7e8d32e9b9f1b9cdea"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      28,
+      878
+    ],
+    "id": 1576,
+    "original_language": "en",
+    "original_title": "Resident Evil",
+    "overview": "21세기 초 엄브렐러 제약회사(the Umbrellr Corporrtion)는 미국의 가장 큰 대기업으로 발전한다. 엄브렐러는 모든 가정 뿐만 아니라 정치 경제에도 막대한 영향력을 행사한다. 또한 컴퓨터 의약 보건 분야에서 세계를 이끌어가는 공기업으로 거듭나고 고용인들에게 알려지지 않은 막대한 자금은 무기기술(Military Technology), 유전실험(Genetic Experimentation), 생체병기(Viral Weaponry) 등으로 개발되어진다.",
+    "poster_path": "/dHQs1ISD72kt7TN2hsTczJ8piuU.jpg",
+    "release_date": "2002-03-15",
+    "title": "레지던트 이블",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650beca88d32e9b9f1b9d45a"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 293670,
+    "original_language": "ko",
+    "original_title": "곡성",
+    "overview": "낯선 외지인이 나타난 후 벌어지는 의문의 연쇄 사건들로 마을이 발칵 뒤집힌다. 경찰은 집단 야생 버섯 중독으로 잠정적 결론을 내리지만  모든 사건의 원인이 그 외지인 때문이라는 소문과 의심이 걷잡을 수 없이 퍼져 나간다. 경찰 종구는 현장을 목격했다는 여인 무명을 만나면서  외지인에 대한 소문을 확신하기 시작한다. 딸 효진이 피해자들과 비슷한 증상으로 아파오기 시작하자 다급해진 종구. 외지인을 찾아 난동을 부리고, 무속인 일광을 불러들이는데...",
+    "poster_path": "/k9AKtgRErXjz14lFHL2IJVCgwOT.jpg",
+    "release_date": "2016-05-12",
+    "title": "곡성",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650beca98d32e9b9f1b9d482"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53,
+      9648
+    ],
+    "id": 77949,
+    "original_language": "en",
+    "original_title": "The Awakening",
+    "overview": "1920년 잉글랜드, 수많은 목숨을 앗아간 2차 세계대전 이후 사람들은 초자연적 현상에 기대어 위안을 받지만 주인공 ‘플로렌스’는 진실이 아닌 유령의 존재를 믿지 않는다.\r 고스트 헌터로서 실력을 인정받은 그녀에게 어느 날, 컴브리아주 룩포드의 남자 사립 기숙학교에서 일어난 유령에 의한 살인사건에 대해 의뢰가 들어온다. 과거의 괴소문을 바탕으로 학교 도처에서 유령을 본 학생들이 속출하면서, 심지어 한 아이가 공포에 질린 채 시체로 발견된 것이다. 결국 그녀는 면밀한 조사와 과학적 장치로 유령이 아닌 사람의 짓임을 밝혀내고자 하지만 사건이 해결되고 나서도 주변에서 설명할 수 없는 괴이한 현상이 벌어지고 마침내 끔찍한 사건의 비밀과 마주하게 되는데…",
+    "poster_path": "/6Yn86qD08cQIUspGbo24tLJNlBn.jpg",
+    "release_date": "2011-08-17",
+    "title": "어웨이크닝",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed168d32e9b9f1b9e58a"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 437108,
+    "original_language": "ko",
+    "original_title": "장산범",
+    "overview": "도시를 떠나 장산으로 이사 온 희연(염정아)은  무언가에 겁을 먹고 혼자 숲 속에 숨어있는 여자애(신린아)를 만난다.  희연은 소녀를 집으로 데려오지만,  남편(박혁권)은 딸 준희의 목소리를 흉내 내는 이 소녀를 수상하게 여긴다.  소녀가 찾아온 뒤 하나 둘씩 실종되는 사람들  사라진 시어머니(허진)와 남편…  그리고 들려오는 ‘그것’의 목소리  누군가 우리 가족의 목소리를 흉내 내고 있다!",
+    "poster_path": "/uikIlnqa3LncwISe3136b7lJ28J.jpg",
+    "release_date": "2017-08-17",
+    "title": "장산범",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed2e8d32e9b9f1b9e954"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 581531,
+    "original_language": "ko",
+    "original_title": "변신",
+    "overview": "사람의 모습으로 변신하는 악마가 우리 가족 안에 숨어들면서 기이하고 섬뜩한 사건들이 벌어진다. 서로 의심하고 증오하고 분노하는 가운데 구마 사제인 삼촌 '중수'가 예고없이 찾아오는데…",
+    "poster_path": "/3EphHAIU36cIeFxHAwjdET3ibDp.jpg",
+    "release_date": "2019-08-21",
+    "title": "변신",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed328d32e9b9f1b9e9fe"
+    },
+    "adult": false,
+    "genre_ids": [
+      53,
+      27,
+      18,
+      9648
+    ],
+    "id": 8968,
+    "original_language": "en",
+    "original_title": "Boogeyman",
+    "overview": "어린 팀은 아빠가 들려준 벽장 속 귀신 이야기 때문에 밤마다 잠을 설친다. 어느날 밤, 무서움에 떨고 있는 팀에게 아버지는 지어낸 이야기일 뿐이라며 안심하라고 한다. 하지만 그 순간, 부기맨이 눈 앞에 나타나 벽장 속으로 아버지를 잔인하게 끌고 간 뒤 사라진다.  그리고 15년 뒤. 팀은 집을 떠나 잡지사 편집장이 되어 멋진 여자친구까지 생겼지만, 여전히 두려움을 간직한 채 살아가고 있다. 가출한 아버지를 인정하고 싶지않은 상상일 뿐이라는 사람들의 이야기에 이제는 누구에게도 부기맨 이야기를 하지 않았지만, 그의 집에는 옷장, 벽장, 부엌찬장, 심지어 화장실까지 문이라고는 찾아볼 수 없다.  그러던 어느날, 팀은 어머니가 돌아가셨다는 연락을 받고, 다시는 돌아가고 싶지 않았던 유년의 집으로 향한다. 이제 과거의 섬뜩한 기억과 다시 마주하게 되는데. 눈을 감으면 공포는 과연 사라질 수 있을까?",
+    "poster_path": "/uJrQXCBAgZ8r1t93gGvuG1vuijV.jpg",
+    "release_date": "2005-02-04",
+    "title": "부기맨",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed498d32e9b9f1b9ed92"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      27,
+      53
+    ],
+    "id": 1977,
+    "original_language": "en",
+    "original_title": "The Grudge 3",
+    "overview": "일가족의 몰살로 폐쇄된 일본의 한 저택에서 시작된 저주.  전편에서 결코 잠들지 않는 원한은 이제 일본을 벗어나 미국 시카고의 아파트까지 자리를 옮겨가고,  악령의 저주를 풀 중요한 키를 쥐고 있는 미스터리한 일본소녀와 ‘Dr. 설리반’(쇼니 스미스)  그리고 전편에서 희생당한 카렌과 오브리의 막내 여동생 ‘리사’(조해너 E. 브래디)가 가야코의 분노와 절규를 끝내기 위해 모인다.  그들은 시카고 아파트를 수색 탐사하면서 엄청난 저주의 진실을 대면하고 또 다른 희생자를 낳기 전에 가야코의 악령을 영원히 봉인할 최후의 수단을 찾는데…",
+    "poster_path": "/x2lwJUmmYsyvml8fEkJXxPy9x60.jpg",
+    "release_date": "2009-05-12",
+    "title": "그루지 3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed718d32e9b9f1b9f3cc"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      53
+    ],
+    "id": 449664,
+    "original_language": "en",
+    "original_title": "Escape Room",
+    "overview": "서른 번째 생일을 맞은 ‘타일러’를 축하하기 위해 여섯 청춘남녀가 모이고, 그의 여자 친구 ‘크리스틴’은 방탈출 게임을 제안한다. 그리고 이내 밀폐된 방안에서 목숨을 담보로 한 잔인한 게임과 마주하게 된다. 과연 그들은 무사히 이 방을 빠져나갈 수 있을까?",
+    "poster_path": "/1Irq5Lzz8pmSHxpqdPKKiK3HynE.jpg",
+    "release_date": "2017-09-14",
+    "title": "룸 이스케이프",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec4a8d32e9b9f1b9c5aa"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 8329,
+    "original_language": "es",
+    "original_title": "[REC]",
+    "overview": "‘당신이 잠든 사이에’라는 리얼TV다큐 프로그램의 리포터 안젤라와 카메라맨 파블로는 촬영을 위해 소방서에 방문한다. 소방관들의 일상을 취재하던 중 한 통의 구조요청 전화가 울리고, 대원들을 따라 사고현장으로 출동한 안젤라와 파블로는 사건현장을 하나도 빠짐 없이 찍기 위해 밀착취재를 시도한다.  그러나 현장에 도착하자마자 미친 듯이 발광하는 노파에게 공격을 당하고, 건물 안에 심상치 않은 일이 일어났음을 느낀 일행들은 급히 탈출을 시도한다. 하지만 모든 출입문은 당국의 폐쇄조치로 봉쇄된 상태. 원인도 모른 채 꼼짝 없이 건물 안에 갇히게 된다.  그 와중에 무언가에 전염된 듯 사람들이 하나 둘 기이하게 변하고, 아직 온전한 사람들은 살기 위해 필사적으로 건물 안을 벗어나려 한다. 이 모습을 놓치지 않기 위해 카메라는 계속해서 돌아가는데…. 당신의 눈도 믿지 못할 공포의 현장이 실시간으로 공개된다!",
+    "poster_path": "/p3u7QyFxDk0H0Y3XRlYS4lflhv2.jpg",
+    "release_date": "2007-11-23",
+    "title": "알.이.씨",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec4b8d32e9b9f1b9c5d0"
+    },
+    "adult": false,
+    "genre_ids": [
+      27
+    ],
+    "id": 11281,
+    "original_language": "en",
+    "original_title": "Halloween II",
+    "overview": "누나를 죽인 죄로 15년간 감옥에 있던 마이클 메이어는 국립 정신 병원을 탈출하여 집으로 향한다. 그의 뒤를 쫓는 샘 루미스 박사는 악몽이 현실로 나타나는 끔찍한 사건을 막기위해 '하드필드'로 찾아가지만 이미 때늦은 시간, 소리없는 악령은 이미 10대 3명을 죽이고 4번째 살인을 준비하고 있다. 죽은 시체와 핏자국을 추적하던 루미스 박사는 살인용 메스가 발견된 시립병원으로 악령을 뒤쫓아 끝내 마이클 메이어 뒤에 숨겨진 엄청난 충격의 비밀을 발견하게 된다.",
+    "poster_path": "/xyBX7rFmNB4nM2RBW3042RQPFG2.jpg",
+    "release_date": "1981-10-30",
+    "title": "할로윈 2: 저주받은 병실",
+    "__v": 0
+  }
+    ],
     "10402": [],
-    "9648": [],
-    "10749": [],
+    "9648": [
+      
+  {
+  "_id": {
+    "$oid": "650bebcc8d32e9b9f1b9b1f0"
+  },
+  "adult": false,
+  "genre_ids": [
+    27,
+    53
+  ],
+  "id": 49018,
+  "original_language": "en",
+  "original_title": "Insidious",
+  "overview": "매일 밤, 문 밖을 서성이는 검은 그림자…  절대 ‘그것’을 안에 들이지 마라!  그 순간, 당신의 영혼은 잠식될 것이다!  단란하고 행복해 보이기만 하던 조쉬 부부와 세 자녀.  하지만 그들 주변에 언젠가부터 기이한 현상이 끊이지 않더니  급기야 6살 된 아들 달튼이 다락방 사다리에서 떨어지는 의문의 사고를 당하게 된다.  겉으로는 아무런 외상도 발견되지 않아 대수롭지 않게 지나치고 만다.  하지만 다음 날 아침, 아무리 불러도 잠자리에서 일어나지 않는 아이는,  결국 의사도 해명할 수 없는 원인불명의 혼수상태에 빠져버린다.  6개월 동안을 의식불명인 상태로 꼼짝도 하지 않는 달튼.  그 사이 집안을 감싸던 불길한 공기는 서서히 공포로 번져가고,  정체를 알 수 없는 그 ‘무언가’의 위협적인 존재에 가족은 패닉 상태에 빠져버린다.  3개월 뒤, 이들에게 다가온 구원의 손길.  아이의 영혼이 이대로 텅 빈 채 사라지기 전에 누군가 목숨을 건  어둠 속으로의 ‘영혼의 여행’을 감행해야 한다고 경고하는데…..",
+  "poster_path": "/9uymSsEKDVKOuqgY4EpVJSuG640.jpg",
+  "release_date": "2011-03-31",
+  "title": "인시디어스",
+  "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebb98d32e9b9f1b9aeea"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      53,
+      9648
+    ],
+    "id": 11324,
+    "original_language": "en",
+    "original_title": "Shutter Island",
+    "overview": "보스턴 셔터아일랜드의 정신병원은 중범죄를 저지른 정신병자를 격리하는 병동으로 탈출 자체가 불가능하다. 하지만 자식 셋을 죽인 혐의를 받고 있는 여인이 이상한 쪽지만을 남긴 채 감쪽같이 사라지는 사건이 발생한다. 연방보안관 테디 다니엘스(레오나르도 디카프리오)는 수사를 위해 동료 척(마크 러팔로)과 함께 셔터아일랜드로 향한다. 테디는 수사를 위해 의사, 간호사, 병원관계자 등을 심문하지만 수사는 전혀 진척되지 않는다. 설상가상 폭풍이 불어 닥쳐 테디와 척은 섬에 고립되게 되고, 그들에게 점점 괴이한 일들이 일어나기 시작하는데...",
+    "poster_path": "/aywZdSOXtwcqqLTl271EUJemi2.jpg",
+    "release_date": "2010-02-14",
+    "title": "셔터 아일랜드",
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "650bebee8d32e9b9f1b9b738"
+    },
+    "adult": false,
+    "genre_ids": [
+      28,
+      9648,
+      878,
+      53
+    ],
+    "id": 13811,
+    "original_language": "en",
+    "original_title": "Knowing",
+    "overview": "1959년, 미국의 한 초등학교. 아이들이 그린 미래의 모습이 타임캡슐에 담긴다. 그로부터 50년 후인 2009년. 타임캡슐 속에서 알 수 없는 숫자들이 가득 쓰여진 종이를 발견한 캘럽은 그 종이를 MIT 교수인 아버지 테드(니콜라스 케이지 분)에게 전해준다. 종이에 적힌 숫자들이 지난 50년간 일어났던 재앙을 예고하는 숫자였음을 알게 된 테드는 아직 일어나지 않은 사고를 막기 위해 필사적인 사투를 벌이기 시작하는데…",
+    "poster_path": "/fG1gi4OVKEfq1aRkv29fALWugMs.jpg",
+    "release_date": "2009-03-19",
+    "title": "노잉",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebff8d32e9b9f1b9b9ea"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      53,
+      18
+    ],
+    "id": 745,
+    "original_language": "en",
+    "original_title": "The Sixth Sense",
+    "overview": "아동 심리학자인 크로우 박사(브루스 윌리스)는 필라델피아 주지사에게 아동을 위해 기여했다는 공로로 상을 받는다. 그날 밤, 부인과 함께 2층에 올라간 말콤 박사는 낯선 침입자를 발견하게 된다. 그 침입자는 몇 년 전 말콤 박사가 치료를 맡았던 '빈센트 그레이'라는 환자인데, 박사는 그에게 총상을 입고 그는 자살한다. 이듬 해 가을, 총상에서 회복한 크로우 박사는 '콜 시어'라는 자폐증에 걸린 8살 된 소년의 정신 치료를 맡게 된다. 콜은 처음엔 쉽게 마음을 열지 않다가 박사의 계속된 노력으로 누구에게도 말하지 않은 비밀을 말한다. 즉 콜은 항상 귀신들이 보이며, 귀신들은 자신이 죽었는지조차 모르고, 보고 싶은 것만 본다고 이야기한다. 박사는 쉽게 믿으려 하지를 않고 마침 부인의 외도를 목격한 후 콜의 치료를 포기하려고 한다. 그러다가 박사는 옛 환자였던 빈센트와의 상담 녹음 테잎에서 귀신의 소리인 듯한 소리를 듣게 되고 콜을 찾아가 콜이 귀신에 대한 공포를 이겨내는 걸 돕게 된다.",
+    "poster_path": "/74iA0M8TI2N0E1kQpcB6ZWocPO5.jpg",
+    "release_date": "1999-08-06",
+    "title": "식스 센스",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec088d32e9b9f1b9bb46"
+    },
+    "adult": false,
+    "genre_ids": [
+      53,
+      9648
+    ],
+    "id": 13448,
+    "original_language": "en",
+    "original_title": "Angels & Demons",
+    "overview": "세계 최대의 과학연구소 ‘CERN’(유럽 원자핵 공동 연구소)에서 우주 탄생을 재현하는 빅뱅 실험이 진행되고 실험을 통해 강력한 에너지원인 반물질 개발에 성공하지만 과학자가 살해되고 반물질이 사라지는 사건이 발생한다.  한편, 하버드대 종교기호학 교수 로버트 랭던(톰 행크스)은 교황청으로부터 의문의 사건과 관련된 암호 해독을 의뢰받는다. 새로운 교황을 선출하는 고대의식인 ‘콘클라베’가 집행되기 전, 가장 유력한 4명의 교황 후보가 납치되고 교황청에 비밀결사 일루미나티의 상징인 앰비그램이 나타난 것. 500년만에 부활한 일루미나티는 4명의 교황 후보를 한 시간에 한 명씩 살해하고 마지막에는 CERN에서 탈취한 반물질로 바티칸을 폭파시킬 것이라며 카톨릭 교회를 위협한다.  사건을 해결하기 위해 로마 바티칸에 도착한 로버트 랭던과 비토리아는 곳곳에 숨겨져 있는 일루미나티의 단서를 파헤치며 그들의 근거지로 향하는 ‘계몽의 길’ 추적에 나서는데…",
+    "poster_path": "/vsFzsh4ozewRyTzPY0LlI4r31EI.jpg",
+    "release_date": "2009-05-13",
+    "title": "천사와 악마",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec268d32e9b9f1b9c01c"
+    },
+    "adult": false,
+    "genre_ids": [
+      53,
+      9648
+    ],
+    "id": 591,
+    "original_language": "en",
+    "original_title": "The Da Vinci Code",
+    "overview": "특별강연을 위해 파리에 체류중이던 하버드대 기호학자 로버트 랭던(톰 행크스)은 깊은 밤 급박한 호출을 받는다. 루브르 박물관의 수석 큐레이터 자크 소니에르가 박물관 내에서 살해당한 시체로 발견된 것이다. 시체 주변에 가득한 이해할 수 없는 암호들… 그중 ‘P.S. 로버트 랭던을 찾아라’는 암호 때문에 살인누명까지 뒤집어쓴 랭던은 자크의 손녀이자 기호학자인 소피 느뷔(오드리 토투)와 함께 자크가 남긴 불가사의한 수수께끼를 풀어나가기 시작한다.  인류역사를 뒤바꿀 거대한 비밀이 벗겨지는 순간,  최초의 목격자는 당신이다!  랭던과 소피는 시시각각 좁혀오는 경찰 조직과 파슈 국장(장 르노)의 숨가쁜 포위망을 피하면서, ‘모나리자’, ‘암굴의 성모’ 등 천재화가 레오나르도 다 빈치의 작품들 속에 숨겨진 충격적인 비밀을 추적한다. 하지만 코드 속에 감춰진 실마리를 쫓아 진실에 접근할수록 비밀단체 시온 수도회가 지켜온 비밀을 지워버리려는 ‘오푸스 데이’의 추격은 더욱 격렬해지고, 마침내 두 사람은 인류 역사를 송두리째 뒤바꿀 거대한 비밀과 마주하게 되는데...",
+    "poster_path": "/52cjQg88xZNx8JKU7GpbIf19mL1.jpg",
+    "release_date": "2006-05-17",
+    "title": "다빈치 코드",
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "650bec328d32e9b9f1b9c1ee"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648
+    ],
+    "id": 588,
+    "original_language": "en",
+    "original_title": "Silent Hill",
+    "overview": "30년 전, 화재로 모든 것이 사라진 전설의 마을 ‘사일런트 힐’. 그곳에서 사라진 딸을 찾기 위해 로즈는 미스터리한 마을로 들어서게 된다. 저 멀리 사라져가는 딸의 뒷모습을 따라 안개 속에서 헤매던 로즈. 그때 마을을 뒤덮은 안개와 잿빛 속에서 갑자기 사이렌이 울리자 거대한 어둠이 밀려오고 ‘사일런트 힐’은 전혀 다른 공간으로 바뀌어 버린다! 그리고 어둠 속에서 서서히 다가오는 무시무시한 크리쳐들! 이제 그녀는 거대한 비밀을 숨기고 있는 그곳으로부터 딸을 되찾아야만 한다. 사일런트 힐을 움직이는 거대한 저주와 미스터리는 딸과 어떤 관계가 있는 것인가?",
+    "poster_path": "/jhI1W7nuTmBdV7SW4M5O6oUPcf4.jpg",
+    "release_date": "2006-04-21",
+    "title": "사일런트 힐",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec388d32e9b9f1b9c2da"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      878,
+      28,
+      12
+    ],
+    "id": 530254,
+    "original_language": "ko",
+    "original_title": "마녀",
+    "overview": "10년 전 의문의 사고가 일어난 시설에서 홀로 탈출한 후 모든 기억을 잃은 자윤. 나이도, 이름도 모르는 자신을 거두고 키워준 노부부의 보살핌으로  씩씩하고 밝은 여고생으로 자라났다. 어려운 집안사정을 돕기 위해 상금이 걸린 오디션 프로그램에 출연한 자윤, 방송이 나간 직후부터 의문의 인물들이 그녀 앞에 나타난다. 자윤의 주변을 맴돌며 날카롭게 지켜보는 남자 귀공자, 그리고 과거 사고가 일어난 시점부터 사라진 아이를 찾던 닥터 백과 미스터 최까지 자신은 전혀 기억하지 못하는 그들의 등장으로, 자윤은 혼란에 휩싸이게 되는데...",
+    "poster_path": "/979reU4oeyHuqQn8D8zHrmUUq6P.jpg",
+    "release_date": "2018-06-27",
+    "title": "마녀",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec408d32e9b9f1b9c420"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      53,
+      18,
+      28
+    ],
+    "id": 207932,
+    "original_language": "en",
+    "original_title": "Inferno",
+    "overview": "전세계 인구를 절반으로 줄일 것을 주장한 천재 생물학자 ‘조브리스트’의 갑작스러운 자살 이후 하버드대 기호학자 ‘로버트 랭던’은 기억을 잃은 채 피렌체의 한 병원에서 눈을 뜬다. 담당 의사 ‘시에나 브룩스’의 도움으로 병원을 탈출한 랭던은 사고 전 자신의 옷에서 의문의 실린더를 발견하고, 단테의 신곡 [지옥편]을 묘사한 보티첼리의 ‘지옥의 지도’가 숨겨져 있음을 알게 된다. 하지만, 원본과 달리 지옥의 지도에는 조작된 암호들이 새겨져 있고, 랭던은 이 모든 것이 전 인류를 위협할 거대한 계획과 얽혀져 있다는 것을 직감하게 되는데…",
+    "poster_path": "/tAdpfrbdll9WjDAS92vq1dx3pYn.jpg",
+    "release_date": "2016-10-13",
+    "title": "인페르노",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec598d32e9b9f1b9c818"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      53
+    ],
+    "id": 118612,
+    "original_language": "en",
+    "original_title": "After",
+    "overview": "버스 충돌 사고 후, 두 명의 생존자는 작은 마을에 고립된다. 이들은 이 기괴한 상황 뒤에 숨겨진 진실을 찾기 시작한다. 그러나 어두운 구름이 내려앉자, 걸신들린 듯한 괴생명체가 그들을 뒤쫓고, 그들은 눈앞에 펼쳐진 광경에 놀라움을 금치 못한다. 그들은 지옥에 와 있는 것일까, 아니면 충돌 사고로 죽은 것일까? 모든 수수께끼의 해답은 과거의 충돌 사건 속에 숨겨져 있다.",
+    "poster_path": "/5AKcsJYztbcX2KsyCXtKucyUUMA.jpg",
+    "release_date": "2012-08-27",
+    "title": "애프터",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec768d32e9b9f1b9cca6"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      9648,
+      53
+    ],
+    "id": 10665,
+    "original_language": "en",
+    "original_title": "The Strangers",
+    "overview": "새벽 4시, 행복한 시간을 보내고 있던 커스틴(리브 타일러)과 제임스(스캇 스피드맨) 커플은 의문의 노크소리를 듣는다. 문 앞에 서있는 건 마스크를 쓴 성인 남자와 여자 그리고 어린 아이! 커플을 조금씩 옥죄어오며 생존을 위협하는 이들은 ‘타마라 있어요?'만을 되뇌일 뿐, 무엇을 원하는지 알 수가 없다.  집이라는, 아늑하지만 한편으로 단절된 공간 안에서 낯선 이들의 시선, 기괴한 소리 등 ‘외부의 알 수 없는 존재’로 인해 점차 극한의 공포로 빠져드는 긴박한 상황을 그려내고 있다.",
+    "poster_path": "/rAqHnGHtuuttKF972chopJzfhYT.jpg",
+    "release_date": "2008-05-29",
+    "title": "노크: 낯선 자들의 방문",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec798d32e9b9f1b9cd06"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      53
+    ],
+    "id": 435809,
+    "original_language": "ko",
+    "original_title": "해빙",
+    "overview": "경기도의 한 신도시. 병원 도산 후 이혼, 선배 병원에 취직한 내과의사 승훈은 치매아버지 정노인을 모시고 정육식당을 운영하는 성근의 건물 원룸에 세를 든다. 어느 날, 정노인이 수면내시경 중 가수면 상태에서 흘린 살인 고백 같은 말을 들은 승훈은 부자에 대한 의심을 품게 된다. 조용했던 도시에 다시 살인사건이 시작되고 승훈은 공포에 휩싸인다. 그러던 중, 승훈을 만나러 왔던 전처가 실종되었다며 경찰이 찾아오는데…",
+    "poster_path": "/u72EZEByHiouHqLWVmFr5VqjOZ3.jpg",
+    "release_date": "2017-03-01",
+    "title": "해빙",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec7d8d32e9b9f1b9cdc0"
+    },
+    "adult": false,
+    "genre_ids": [
+      80,
+      9648,
+      53
+    ],
+    "id": 320,
+    "original_language": "en",
+    "original_title": "Insomnia",
+    "overview": "밤이 없이 낮만 계속되는 백야에 접어든 알래스카의 외딴 마을의 쓰레기 하치장에서 17세 소녀의 시체가 전라의 몸으로 발견된다. 용의자도 단서도, 목격자도 없는 이 의문의 사건을 수사하기 위해 LA 경찰청 소속의 베테랑 경찰관 윌 도너(알 파치노)와 그의 동료 햅(마틴 도노반)이 도착한다. 그들은 이내 살인사건의 일급 용의자로 은둔 소설가인 월터 핀치(로빈 윌리암스)를 지목하지만 월터는 잠복근무중인 윌과 햅을 따돌리고 사라진다. 추적중에 도너는 안개속에서 총을 발사하고, 이내 쓰러진 햅이 발견된다. 동료의 죽음에 대한 자책감으로 상심에 빠진 도너는 지역 경찰(힐러리 스왕크)의 도움을 받아 월터와의 대결에 나선다.",
+    "poster_path": "/iUVqFNAsczEZDKMZ0WUwmijFXXi.jpg",
+    "release_date": "2002-05-24",
+    "title": "인썸니아",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec878d32e9b9f1b9cf3a"
+    },
+    "adult": false,
+    "genre_ids": [
+      53,
+      9648,
+      18
+    ],
+    "id": 489999,
+    "original_language": "en",
+    "original_title": "Searching",
+    "overview": "목요일 저녁, 딸 마고에게 걸려온 부재중 전화 3통. 아빠 데이빗은 그 후 연락이 닿지 않는 딸이 실종됐음을 알게된다. 경찰의 조사는 본격적으로 시작되지만 결정적인 단서들이 나오지 않는 가운데, 실종된 날 밤 마고가 향하던 곳이 밝혀지며 새로운 사실들이 발견된다. 사건의 실마리를 찾은 곳은 다름 아닌 딸 마고의 노트북! 구글, 유튜브, 페이스북 등 SNS에서 상상조차하지 못한 딸의 진실이 펼쳐지는데…",
+    "poster_path": "/3BJu5DQzK9w8PIeIXSAOCfcWKMu.jpg",
+    "release_date": "2018-08-24",
+    "title": "서치",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650beced8d32e9b9f1b9df1e"
+    },
+    "adult": false,
+    "genre_ids": [
+      53,
+      9648,
+      18,
+      27
+    ],
+    "id": 470229,
+    "original_language": "en",
+    "original_title": "Summer of 84",
+    "overview": "1984년 어느 여름날, 15살 소년들은 동네 경찰관이 지역 뉴스에 연일 보도되는 살인범일지도 모른다는 가벼운 의심을 시작한다. 하지만 의심을 진실로 바꾸기 시작할 때 소년들의 추억은 그들이 감당할 수 없는 위험한 상황들로 채워지기 시작했다.\r (2018년 제22회 부천국제판타스틱영화제)",
+    "poster_path": "/qPitgXPCIFh23yCEjqnCZnfhBig.jpg",
+    "release_date": "2018-08-10",
+    "title": "1984년, 여름",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed258d32e9b9f1b9e7ec"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      18,
+      53
+    ],
+    "id": 473,
+    "original_language": "en",
+    "original_title": "Pi",
+    "overview": "천재적인 두뇌를 가졌지만 불안한 성격의 맥스는 자신의 인생에 있어서 가장 중대한 발견을 눈 앞에 두고 있다. 지난 10년간 그는 '질서가 있는 혼란'이라 할 수 있는 주식 시장의 메커니즘을 구성하고 있는 숫자들 사이의 질서를 파악하기 위해 연구해 온 터. 작업이 완결 상태에 이르렀을 즈음, 그에게 혼란이 생긴다. 금융 시장을 지배하려는 월 스트리트의 한 금융 회사 뿐 아니라 코란에 숨겨진 숫자의 비밀을 알아내려고 안간힘을 쓰는 유대교 신비주의 카발라 신도들에게 쫓기게 된 것이다. 맥스는 자신에게 다가오는 정신병에 맞서기 위해 암호 해독에 골몰한다. 마침내 그는 모든 사람의 목숨을 바쳐서까지 알고 싶어하는 비밀을 서서히 벗겨낸다.",
+    "poster_path": "/mXb34XbED1OEqSODAXGjoYHV1Hx.jpg",
+    "release_date": "1998-07-10",
+    "title": "파이",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed258d32e9b9f1b9e7f0"
+    },
+    "adult": false,
+    "genre_ids": [
+      9648,
+      53
+    ],
+    "id": 556509,
+    "original_language": "ko",
+    "original_title": "사바하",
+    "overview": "신흥 종교 비리를 찾아내는 종교문제연구소 박목사. 최근 사슴동산이라는 새로운 종교 단체를 조사 중이다. 영월 터널에서 여중생이 사체로 발견되는 사건이 발생하고 이를 쫓던 경찰과 우연히 사슴동산에서 마주친 박목사는 이번 건이 심상치 않음을 직감한다. 터널 사건 유력 용의자의 자살, 그리고 실체를 알 수 없는 정비공 나한과 16년 전 태어난 쌍둥이 동생 금화의 존재까지, 사슴동산에 대해 파고들수록 박목사는 점점 더 많은 미스터리와 마주하게 되는데…",
+    "poster_path": "/9NvqPjMwjQ2hGwSEXcZ1VZ4mqVS.jpg",
+    "release_date": "2019-02-20",
+    "title": "사바하",
+    "__v": 0
+  }
+    ],
+    "10749": [
+      
+  {
+  "_id": {
+    "$oid": "650bebad8d32e9b9f1b9ad40"
+  },
+  "adult": false,
+  "genre_ids": [
+    18,
+    10749
+  ],
+  "id": 597,
+  "original_language": "en",
+  "original_title": "Titanic",
+  "overview": "17세기 엄격한 사회 질서에 숨막혀 하는 미국 상류층 로즈는 사교계의 굴레에서 벗어나지 못하는 어머니와 권위적인 재벌 귀족 약혼자와 함께 미국으로 향하는 타이타닉호 1등실에 승선한다. 부두의 선술집에서 도박으로 운 좋게 타이타닉호의 3등실 티켓을 얻은 가난한 화가 잭 역시 아슬아슬하게 배에 승선한다. 첫 눈에 로즈에게 반한 잭은 갑판에서 바다로 몸을 던지려 하는 로즈를 발견하고 재치 있는 언변과 행동으로 그녀의 생명을 구한다. 이 사건을 계기로 1등실의 저녁식사에 초대받게 되고 서로에게 끌리는 자신들을 발견한다.",
+  "poster_path": "/132KjhVrWUqKFVfMAKKNkherytA.jpg",
+  "release_date": "1997-11-18",
+  "title": "타이타닉",
+  "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebc48d32e9b9f1b9b096"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      18,
+      10749
+    ],
+    "id": 350,
+    "original_language": "en",
+    "original_title": "The Devil Wears Prada",
+    "overview": "명문대학을 졸업한 소도시 출신의 앤드리아 삭스는 저널리스트 꿈을 안고 뉴욕에 상경한다. 나름 대학에서 편집장도 하고 상도 받았던 그녀는 자신감에 차 뉴욕의 여러 언론사에 이력서를 넣지만 결과는 처참했다. 결국 그의 이력서에 답한 곳은 오직 한 곳 런웨이 뿐이다. 런웨이는 세계 최고의 패션지로 누구나 입사하기를 열망하는 곳이지만 앤드리아에게는 탐탁치 않는 자리. 그도 그럴 것이 저널리스트를 꿈꾸는 그녀가 면접을 볼 자리는 편집장의 비서직이었던 것이다. 앤드리아는 패션의 ‘패’자도 모르고 런웨이가 어떤 잡지인지, 그곳의 편집장이 얼마나 패션계에서 유명한 사람인지 전혀 모르지만 뉴욕에서 꼭 성공하겠다는 열정 하나로 당당하게 면접을 보러 간다. 그런데…!!!  면접 날부터 앤드리아는 온갖 무시를 당한다. 그녀의 옷차림새는 런웨이의 패셔너블한 패셔니스타들 사이에서 독보적으로 눈에 띌 만큼 촌스러웠다. 그리고 그녀가 모셔야(!) 할 편집장 미란다 프리슬리는 그야말로 지옥에서 온 악마 같은 상사! 자신과 너무나 틀린 이곳에 입사하는 것을 포기한 앤드리아. 그런데 그때 그녀는 합격했다는 말을 듣는다. 앤드리아는 온통 첫 직장생활의 꿈에 부풀어 남자친구 네이트와 친구들에게 일장 자랑을 늘어놓는다. 하지만 지옥 같은 현실이 곧 그녀 앞에 놓여있었으니…",
+    "poster_path": "/ySp5RmSAMzw8KCeH94cCaPPfhLu.jpg",
+    "release_date": "2006-06-29",
+    "title": "악마는 프라다를 입는다",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebc48d32e9b9f1b9b0b4"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      18
+    ],
+    "id": 11036,
+    "original_language": "en",
+    "original_title": "The Notebook",
+    "overview": "17살, 노아는 밝고 순수한 앨리를 보고 첫눈에 반한다. 빠른 속도로 서로에게 빠져드는 둘. 그러나 이들 앞에 놓인 장벽에 막혀 이별하게 된다. 24살, 앨리는 우연히 신문에서 노아의 소식을 접하고 잊을 수 없는 첫사랑 앞에서 다시 한 번 선택의 기로에 서게 되는데…",
+    "poster_path": "/ntdgcdsmMuHd9s4oEKTvWDiUyU7.jpg",
+    "release_date": "2004-06-25",
+    "title": "노트북",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebe38d32e9b9f1b9b572"
+    },
+    "adult": false,
+    "genre_ids": [
+      14,
+      18,
+      53,
+      9648,
+      10749
+    ],
+    "id": 251,
+    "original_language": "en",
+    "original_title": "Ghost",
+    "overview": "금융전문가로 일하는 샘(페트릭 스웨이지)과 도예가인 몰리(데미 무어)는 동거생활을 하며 행복한 나날을 보낸다. 그러던 어느날 샘이 괴한의 총에 맞아 죽게 되는데, 육체에서 분리된 영혼은 지상에 남게 된다. 홀로 남겨진 몰리를 보호하고자 하는 샘은 지하철에서 만난 영혼으로부터 물건을 움직일 수 있는 방법을 배운다.  그러나 자신의 존재를 몰리에게 알릴 길이 없어 고심하던 샘은 점성술사 오다매(우피 골드버그)를 찾아가는데...",
+    "poster_path": "/rSeZX5l4T9XcIXCG1sq1YglqTjB.jpg",
+    "release_date": "1990-07-13",
+    "title": "사랑과 영혼",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebf48d32e9b9f1b9b816"
+    },
+    "adult": false,
+    "genre_ids": [
+      53,
+      28,
+      18,
+      10402,
+      10749
+    ],
+    "id": 619,
+    "original_language": "en",
+    "original_title": "The Bodyguard",
+    "overview": "프랭크 파머는 이성적인 사고를 가진, 일에 철저한 직업 경호원이다. 카터와 레이건 대통령의 경호원이기도 했던 그는 유명한 뮤직 스타 레이첼 매론의 경호를 담당하게 된다. 처음에는 자기가 누군가의 표적이 되고 있다 는 사실을 그다지 실감하지 못한 레이첼은 프랭크를 무시하는 듯한 태도를 보이지만 차츰 그의 중요성을 인식하면서 그에게 사랑을 느끼기 시작한다.",
+    "poster_path": "/8gBzy5lvmu9QZWoJtrbZ39cXsIb.jpg",
+    "release_date": "1992-11-25",
+    "title": "보디가드",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebf88d32e9b9f1b9b8d2"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      18,
+      10749
+    ],
+    "id": 19913,
+    "original_language": "en",
+    "original_title": "(500) Days of Summer",
+    "overview": "자신의 인생을 바꿔줄 운명적인 사랑이 나타날 것이라 믿는 순수청년 톰. 어느 날 사장의 새로운 비서로 나타난 썸머를 처음 보는 순간 강렬한 스파크를 일으키며 자신의 반쪽임을 직감한다. 이후 대책없이 썸머에게 빠져드는 톰. 그녀에게 접근하기 위한 부단한 노력에도 불구하고 사랑도 남자친구도 눈꼽만큼도 믿지 않고 구속받기 싫어하는 썸머로 인해 그냥 친구 사이로 지내기로 하지만, 둘의 사이는 점점 그 이상의 관계로 발전하게 된다. 그녀를 천생연분이라 확신하는 톰. 이제 둘 관계의 변화를 위한 선택이 필요한 순간이 다가오는데...",
+    "poster_path": "/jXFTwKzM1YVek4999NuTUjIHiIu.jpg",
+    "release_date": "2009-07-17",
+    "title": "500일의 썸머",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec188d32e9b9f1b9bdba"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      18,
+      35
+    ],
+    "id": 758336,
+    "original_language": "en",
+    "original_title": "Love Again",
+    "overview": "한 젊은 여성이 약혼자의 옛 휴대폰 번호로 로맨틱한 문자를 보내며 약혼자의 죽음에 대한 아픔을 달래려다가 번호가 변경된 남성과 관계를 맺습니다.",
+    "poster_path": "/uFZp6cZjASgJhoRZ6nLP9CrWwAC.jpg",
+    "release_date": "2023-05-04",
+    "title": "러브 어게인",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec238d32e9b9f1b9bf88"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749
+    ],
+    "id": 10591,
+    "original_language": "en",
+    "original_title": "The Girl Next Door",
+    "overview": "고등학교 졸업반인 매튜는 이웃집에 이사온 19세의 다니엘에게 첫 눈에 반한다. 아름다운 그녀에게 홀딱 빠진 매튜는 결국 다니엘과 사귀게 된다. 그러나 다니엘이 전직 포르노 스타라는 것을 알게 되고 갈등을 겪기 시작하는데...",
+    "poster_path": "/xwZJo5B48TdkbHS1V0GLWGbtEX6.jpg",
+    "release_date": "2004-04-09",
+    "title": "내겐 너무 아찔한 그녀",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec278d32e9b9f1b9c040"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 509,
+    "original_language": "en",
+    "original_title": "Notting Hill",
+    "overview": "윌리엄 태커(휴 그랜트분)는 웨스트 런던의 ‘노팅 힐’에 사는 소심한 남자. 역시 독신의 괴상한 친구 스파이크(리스 아이판스 분)와 함께 살고있는 그는, 노팅힐 시장 한쪽 구석에 위치한 조그마한 여행서적 전문점을 운영하며 살고 있다. 그에게는 미래에 대한 포부나 설계는 사치에 불과하다. 여느 때와 마찬가지로 무미건조한 하루를 보내고 있던 그는 세계적으로 유명한 인기 영화배우 안나 스콧(줄리아 로버츠 분)이 그의 책방 문을 열고 들어와 책을 사고 나가자 잠깐 동안에 일어난 이 엄청난 사건에 어쩔 줄을 모른다.",
+    "poster_path": "/1AbAtQSgN4KKVODiiX2452dlDJD.jpg",
+    "release_date": "1999-05-21",
+    "title": "노팅 힐",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec378d32e9b9f1b9c2d4"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749
+    ],
+    "id": 1581,
+    "original_language": "en",
+    "original_title": "The Holiday",
+    "overview": "새로운 인생을 위한 크리스마스 여행낯선 곳에서 운명적인 사랑이 시작된다!L.A에서 잘 나가는 영화예고편 제작회사 사장인 아만다(카메론 디아즈)는 아름다운 외모에 넘쳐나는 돈, 화려한 인맥 등 누가 봐도 성공한 여자다.부족할 것 없는 그녀에게도 골칫거리가 있었는데 그건 바로 맘처럼 되지 않는 연애문제.같은 회사에 근무하던 남자친구는 회사의 어린 직원과 바람이 나고, 그녀는 이 모든 상황이 끔찍하기만 하다.영국 전원의 예쁜 오두막집에 ..",
+    "poster_path": "/eN7rAl9kJ390iu9Rfz8shYgToZ1.jpg",
+    "release_date": "2006-12-08",
+    "title": "로맨틱 홀리데이",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec398d32e9b9f1b9c312"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10749
+    ],
+    "id": 454,
+    "original_language": "en",
+    "original_title": "Romeo + Juliet",
+    "overview": "정열의 도시 베로나, 태양의 열기가 가득한 이 도시에서 두 가문 몬태규가와 캐플릿가는 끝없이 혈투를 벌인다. 어느 날 캐플릿가의 파티에 몰래 참석한 몬태규가의 로미오는 아름다운 줄리엣을 만나 첫눈에 사랑에 빠진다. 로미오와 줄리엣은 부모 몰래 결혼식을 올리고, 이 결혼이 두 가문의 화해를 가져다 줄 거라 믿은 신부는 그들을 축복한다. 그러나 싸움에 휘말려 줄리엣의 사촌 티볼트를 죽이게 된 로미오가 베로나에서 추방당하게 되고, 줄리엣은 그녀를 좋은 가문에 강제로 결혼시키려는 부모를 피해 수면제를 먹고 죽은 것처럼 가장하는데...",
+    "poster_path": "/1WBMK4Jryzt4djNr7YIAlJAaEVc.jpg",
+    "release_date": "1996-11-01",
+    "title": "로미오와 줄리엣",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec3b8d32e9b9f1b9c36c"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749
+    ],
+    "id": 1824,
+    "original_language": "en",
+    "original_title": "50 First Dates",
+    "overview": "‘헨리’(아담 샌들러)는 낮에는 하와이 수족관에서 동물들을 돌보고,  밤에는 여행객들과의 화끈한 하룻밤을 즐기는 노련한 작업남.  우연히 ‘루시’를 만나게 된 그는 사랑스러운 그녀에게 첫 눈에 반해 다가간다.  그러나 ‘헨리’의 화려한 입담에 넘어온 줄로만 알았던 ‘루시’는  다음 날 그를 파렴치한 취급하며 기억조차 하지 못한다.  ‘헨리’는 그녀가 단기 기억상실증에 걸렸으며,  매일 아침이면 모든 기억이 10월 13일 일요일 교통사고 당일로 돌아가버린다는 사실을 알게 된다.  매일이 자신과의 첫 만남인 ‘루시’의 마음을 사로잡기 위해 ‘헨리’는 매번 기상천외한 작업을 시도하고,  하루 하루 달콤한 첫 데이트를 만들어가던 어느 날,  ‘루시’는 자신이 단기 기억상실증에 걸렸다는 사실을 깨닫고 충격을 받게 되는데...  과연, 두 사람의 사랑은 이뤄질 수 있을까?",
+    "poster_path": "/js2Fzu31T3EqTgFbte7YrOXwvV.jpg",
+    "release_date": "2004-02-13",
+    "title": "첫 키스만 50번째",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec3f8d32e9b9f1b9c3fa"
+    },
+    "adult": false,
+    "genre_ids": [
+      14,
+      35,
+      10749
+    ],
+    "id": 59436,
+    "original_language": "en",
+    "original_title": "Midnight in Paris",
+    "overview": "약혼녀 이네즈와 파리로 여행 온 소설가 길. 파리의 화려함을 즐기고 싶어하는 이네즈와 달리 그곳의 낭만을 좋아하는 길은  홀로 파리의 밤거리를 산책하게 된다. 12시를 알리는 종이 울리는 순간 홀연히 나타난 클래식 푸조에 올라탄 길이 도착한 곳은 놀랍게도 1920년대 파리. 그 곳에서 그는 평소에 동경하던 헤밍웨이, 피카소, 달리 등 전설적 예술가들과 친구가 되어 매일 밤 꿈 같은 시간을 보낸다. 어느 날 헤밍웨이와 피카소의 연인 애드리아나를 만나게 된 길은 예술과 낭만을 사랑하는 매혹적인 그녀에게 빠져들게 되는데...",
+    "poster_path": "/bryJmAXuzVpo555qmQxLRkQ4S4w.jpg",
+    "release_date": "2011-05-11",
+    "title": "미드나잇 인 파리",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec448d32e9b9f1b9c4b6"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749,
+      18
+    ],
+    "id": 10184,
+    "original_language": "en",
+    "original_title": "He's Just Not That Into You",
+    "overview": "- 동거 7년차… 사랑한다면서 프로포즈는 왜 안해?_제니퍼 애니스톤♡벤 애플렉; 평생 나만을 사랑한다고 말하면서 결혼은 싫다는 그. 그러면 동거는 왜 하는거지? 7년 동안!!  - 유부남인 그 사람, 하지만 확실히 나에게 맘이 있는데?!_ 스칼렛 요한슨♡브래들리 쿠퍼; 우연히 슈퍼에서 마주친 남자는 잘생긴 외모에 능력까지 겸비한 유부남이지만 나를 배려해 주는 마음이 심상치 않다! 그런데… 내 눈 앞에서 부인과 뭐하는 짓인지?  -  나의 그대에게 또 다른 사랑이 찾아왔다…_제니퍼 코넬리♡브래들리 쿠퍼; 나와 못 헤어지겠다며 결혼한 그 사람이 당당히 다른 여자와 잤다고 말한다! 나와 끝내겠다는 건가??  -  얘네는 맨날 헛발질이야 ᅲᅲ..._드류 베리모어♡???; 옛날부터 지금까지 연애는 다 그런거야! 옛날에 이런 일이 있었어…  -  그에게서 전화가 오지 않는다!_지니퍼 굿윈♡케빈 코넬리; 소개팅으로 만난 그사람. 매너도 좋고 가벼운 포옹까지 나누며 기분 좋~게 헤어졌는데… 이사람, 전화를 하지 않는다!!  완벽한 사랑을 꿈꾸는 여자들과 좀처럼 속내를 알 수 없는 남자들의 흥미진진한 사랑 이야기가 공개된다!",
+    "poster_path": "/8m780elvmt8QFCPIUysHhmPUjdE.jpg",
+    "release_date": "2009-02-06",
+    "title": "그는 당신에게 반하지 않았다",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec478d32e9b9f1b9c534"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749
+    ],
+    "id": 8835,
+    "original_language": "en",
+    "original_title": "Legally Blonde",
+    "overview": "엘르 우즈(리즈 위더스푼 분)는 모두가 부러워하는 아름다운 금발의 소유자이다. 학교에서 남자는 물론 같은 여학생들 사이에서도 인기 만점인 그녀는 장학생이며, 캠퍼스 캘린더의 모델이기도 하다. 거기에 하버드 법대에 다니는 남자 친구 워너(매튜 데이비스 분)가 있어 그야말로 남부러울게 없는 짜릿하고 즐러운 나날을 보내고 있다. 남자 친구 워너(매튜 데이비스 분)가 특별한 저녁을 함께 하자고 요청한 자리에서 워너는 그녀에게 자신은 미래 지향적인 여자를 원한다며 \"지나치게 금발(too blonde)\"이라는 이유로 이별을 통보한다. 엘르는 비탄에 잠긴다. 하지만 오기가 생긴 엘르, 그녀는 자신은 그가 원하는 사람이 될 수 있음을 증명하려고 결심한다. 그리곤 워너가 다니는 하버드 법대에 들어갈 것을 결심하게 되는데.",
+    "poster_path": "/fN3beo2iwZqXGJXYBVJ6t1E5mD2.jpg",
+    "release_date": "2001-07-13",
+    "title": "금발이 너무해",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec498d32e9b9f1b9c584"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749,
+      18
+    ],
+    "id": 164,
+    "original_language": "en",
+    "original_title": "Breakfast at Tiffany's",
+    "overview": "1940년대 초 뉴욕, 검은 선글라스에 화려한 장신구로 치장한 한 여성이 택시에서 내려 보석상 티파니 앞을 활보한다. 그녀는 뉴욕의 한 아파트에서 홀로 살아가며 부유한 남자들과의 만남을 통해 화려한 신분 상승을 꿈꾸는 홀리. 어느 날 같은 아파트에 폴이라는 별 볼 일 없는 작가가 이사를 오면서 이들의 만남이 시작된다. 폴은 이웃에 사는 우아하고 귀여운 홀리를 보고 매료당하고, 센트럴 파크에서 둘이서 승마를 타기도 하는 등 점점 친해진다. 하지만 그녀는 가난한 현실을 벗어나 꿈같은 상류 사회, 부와 풍요를 동경한다. 신분 상승을 꿈꾸는 그녀에게 폴은 말이 통하는 좋은 친구일 뿐...",
+    "poster_path": "/ylu8Gdl7HF8qrQr9cdjOo7AvuaA.jpg",
+    "release_date": "1961-10-06",
+    "title": "티파니에서 아침을",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec4f8d32e9b9f1b9c688"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 2064,
+    "original_language": "en",
+    "original_title": "While You Were Sleeping",
+    "overview": "루시는 비록 초라한 아파트와 고양이 한 마리 그리고 토큰 판매부스에서 일하는 친구가 몇 명 있을 뿐 정작 가장 소중한 사람들인 부모나 가족이 없다. 그런 루시는 지금 넋이 나갈 정도로 잘 생긴 남자와 사랑에 빠져 있다. 그러나 루시는 그를 단 한번이라도 만난 적도 없고, 얘기를 나눠보지도 못했다. 루시가 짝사랑하는 그 남자는 어느날 아침 불량배들에게 떠밀려 플랫폼의 철도 위로 떨어지고 결국 혼수상태로 빠진다.",
+    "poster_path": "/k4eh6lVyAzwMMuLYzJ0vJpgqfoQ.jpg",
+    "release_date": "1995-04-21",
+    "title": "당신이 잠든 사이에",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec518d32e9b9f1b9c6c2"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749
+    ],
+    "id": 11631,
+    "original_language": "en",
+    "original_title": "Mamma Mia!",
+    "overview": "그리스의 작은 섬에서 모텔을 운영하는 도나(메릴 스트립)의 딸 소피(아만다 사이프리드)는 연인 스카이와 행복한 결혼을 앞두고 있다. 그러나 완벽한 결혼을 꿈꾸는 그녀의 계획에 한가지 걸리는 것이 있으니, 바로 결혼식장에 자신의 손을 잡고 입장해 줄 아빠가 없다는 것. 결혼식을 앞두고 우연히 낡은 트렁크에서 엄마의 일기장을 발견한 소피는 아빠로 추정되는 세 남자의 이름을 발견하고 도나의 이름으로 이들을 결혼식에 초대한다. 마침내 결혼식이 다가오고 소피가 초대한 세 남자 샘(피어스 브로스넌), 해리(콜린 퍼스), 빌(스텔란 스카스가드)이 그리스 섬에 도착하면서 도나는 당황하게 되는데...",
+    "poster_path": "/9fnWov6Mb7LJKA2dJLV9h1mcSnF.jpg",
+    "release_date": "2008-07-03",
+    "title": "맘마 미아",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec6d8d32e9b9f1b9cb30"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10749
+    ],
+    "id": 80,
+    "original_language": "en",
+    "original_title": "Before Sunset",
+    "overview": "비엔나에서의 꿈 같은 하루 이후 9년이 지나, 파리에서 다시 마주한 제시와 셀린느. 비엔나의 특별한 추억을 소재로 쓴 베스트셀러의 유럽 홍보 투어 중인 작가 제시는 파리의 서점 구석에 서 있는 셀린느를 발견한다. 그가 뉴욕행 비행기에 오르기까지 남은 시간은 한 시간 남짓. 서로 같지만 다른 기억을 간직해 온 두 사람 사이에는 묘한 기류가 감돈다. 그들은 파리의 골목과 카페와 센강의 유람선, 셀린느의 아파트를 돌아다니며 빈곤과 환경오염, 종교, 세계의 절망과 희망, 섹스와 결혼을 이야기한다. 그렇게 그 간의 진심을 서로에게 털어놓는 사이, 해는 저물고 또 다시 헤어짐의 순간이 다가오는데...",
+    "poster_path": "/2k4KFbEeknXmHbNP0qt7lp2p3Y3.jpg",
+    "release_date": "2004-06-16",
+    "title": "비포 선셋",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec868d32e9b9f1b9cf0a"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749,
+      18
+    ],
+    "id": 508,
+    "original_language": "en",
+    "original_title": "Love Actually",
+    "overview": "크리스마스를 앞둔 런던, 다우닝가에 둥지를 튼 총리는 식음료 담당자 나탈리에게 호감을 가지며, 작가 제이미는 파출부 오렐리아에게 매력을 느낀다. 대니얼은 아내를 잃은 슬픔에 빠져 있고, 양아들 샘은 미국에서 온 조안나에게 잘 보이려고 고민 중이며, 총리의 여동생 캐런은 남편의 부정을 눈치챈다. 새라는 동료 칼을 짝사랑하며, 친구 피터와 줄리엣의 결혼을 접하는 마크의 표정은 우울하다. 여기에 마약중독에서 빠져나온 록 가수 빌리 맥, 미국 여자들과 즐기기 위해 미국행을 결심하는 콜린 등이 뒤얽히며 사랑의 갖가지 모습이 펼쳐진다.",
+    "poster_path": "/9Po0Fu566Ow58IGTVVpGZvQ8smg.jpg",
+    "release_date": "2003-09-07",
+    "title": "러브 액츄얼리",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec928d32e9b9f1b9d102"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10749
+    ],
+    "id": 6023,
+    "original_language": "en",
+    "original_title": "P.S. I Love You",
+    "overview": "섹시한 매력이 넘쳐나고 노래를 끝내주게 잘 부르는 아일랜드 남자 제리(제라드 버틀러). 세상에 전부는 제리 밖에 없는 애교투덜이 뉴욕 여자 홀리(힐러리 스웽크). 다른 커플처럼 때론 싸우고, 때론 심하게 다투지만 제리는 화가 난 그녀를 웃게 하기 위해서라면 스트립쇼는 기본, 그 멋진 목소리로 달콤한 노래를 부르고, 홀리 역시 그와 함께라면 그 어떤 것도 두려울 것이 없었다. 적어도 제리가 병에 걸리기 전까지는.  “절대 너를 떠나지 않을거야”라고 영원한 사랑을 맹세했던 제리가 뇌종양으로 죽게 된 뒤 홀리는 모든 의욕을 잃게 된다. 그의 핸드폰에 전화를 걸어 그의 목소리를 듣고, 그와 함께한 집에서 그의 체취를 찾으며 그를 미치도록 그리워하는 홀리. 그러던 어느 날 그녀 앞에 기적과 같은 일이 벌어진다. 30번째 생일을 맞이한 홀리에게 죽은 제리로부터 생일선물이 도착한 것. 그리고 그날 이후 그녀에게는 놀라운 일들이 일어나는데…",
+    "poster_path": "/n1KrzhQQ0uSCWJrKAtpffpxRriL.jpg",
+    "release_date": "2007-11-15",
+    "title": "P.S. 아이 러브 유",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650beca98d32e9b9f1b9d490"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 576393,
+    "original_language": "zh",
+    "original_title": "一吻定情",
+    "overview": "A반 남신 ‘장즈수’와 처음 본 순간 KISS한 F반 ‘위안샹친’! 수학처럼 안 풀려도 절대 포기할 수 없는 확률 0% 멀고도 용감한 짝사랑 일대기.  장난 아니게 설레는 로코의 새로운 흥행 공식. 2019년 봄, 너 x 나 = 공식 ♡ 로코",
+    "poster_path": "/oNMoXajnvE1qP47MnzxWnydVEYD.jpg",
+    "release_date": "2019-02-14",
+    "title": "장난스런 키스",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650beccf8d32e9b9f1b9da74"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 760517,
+    "original_language": "ko",
+    "original_title": "모럴센스",
+    "overview": "할말은 하고 사는 홍보팀 사원 정지우. 부서 이동 후 모든 여직원의 관심을 받고 있는 잘생긴 대리 정지후. 이름만 비슷할 뿐 달라도 너무 다른 두 사람. 잘못 배송된 택배로, 지후의 절대 들키고 싶지 않은 성적 취향을 알게 된 지우는 점점 그에게 관심이 생기는데…",
+    "poster_path": "/pDQOXcUs4hJvLlpkYn5VK0szzZF.jpg",
+    "release_date": "2022-02-11",
+    "title": "모럴센스",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650becd38d32e9b9f1b9db20"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749
+    ],
+    "id": 532444,
+    "original_language": "ko",
+    "original_title": "너의 결혼식",
+    "overview": "고3 여름, 전학생 승희를 보고 첫눈에 반한 우연. 승희를 졸졸 쫓아다닌 끝에 마침내 공식커플로 거듭나려던 그때! 잘 지내라는 전화 한 통만 남긴 채 승희는 사라져버리고, 우연의 첫사랑은 그렇게 막을 내리는 듯했다. 1년 뒤, 승희의 흔적을 쫓아 끈질긴 노력으로 같은 대학에 합격한 우연. 그런데 그의 앞을 가로막은 건… 다름 아닌 그녀의 남.자.친.구!",
+    "poster_path": "/oOzH5nyyHMMDlwOAupnn4itIgCL.jpg",
+    "release_date": "2018-08-22",
+    "title": "너의 결혼식",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650becf58d32e9b9f1b9e082"
+    },
+    "adult": false,
+    "genre_ids": [
+      14,
+      35,
+      10749
+    ],
+    "id": 10210,
+    "original_language": "en",
+    "original_title": "A Midsummer Night's Dream",
+    "overview": "19세기 말의 투스카니. 히폴리타(Hippolyta: 소피 마르소분)의 결혼식으로 분주한 어느 날, 허미아(Hermia: 아나 플릴 분)와 라이샌더(Lysander: 도미닉 웨스트 분)가 둘의 결혼을 반대하는 허미아 아버지를 피해 숲으로 도망가면서 시작된다. 그러나 난데없이 허미아를 사랑하는 드미트리어스(Demetrius: 크리스천 베일 분)가 그녀를 쫓아가고 이어 드미트리어스를 짝사랑하는 헬레나(Helena: 칼리스타 플록하트 분)도 그를 따라 숲으로 간다. 숲으로 들어간 사각관계의 그들, 매일 다툼을 시작하고 이 때 이 네 연인들의 다툼을 들은 요정왕 오베론(Oberon: 루퍼트 에버렛 분)이 사랑의 묘약으로 이를 해결해 주려 한다. 잠든 사이 눈에 바르면 깨어나 처음 본 사람을 사랑하게 되는 마술약. 그러나 시종 퍼크(Puck: 스탠리 투치 분)의 실수로 드미트리어스 뿐 아니라 라이샌더마저 헬레나를 사랑하게 되고 소동은 더욱 커진다. 한편 한 극단의 배우들 역시 이 숲에 들어왔다가 일원인 바텀(Nick Bottom: 케빈 클라인 분)이 오베론과 여왕 티타니아(Titania: 미셸 파이퍼 분)의 싸움으로 말미암아 머리가 당나귀로 변해버리자 놀라 달아나는 사건이 일어난다. 짓궂은 오베론과 퍼크가 티타니아에게도 사랑의 묘약을 바르게 되고, 티타니아가 눈을 떠 처음 보게 되는 것은 다름 아닌 당나귀 머리를 한 바텀이다.",
+    "poster_path": "/vYzN08b5a4UBfUPGxFJRPCx5BtO.jpg",
+    "release_date": "1999-05-14",
+    "title": "한여름 밤의 꿈",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed0b8d32e9b9f1b9e3e0"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      18,
+      14
+    ],
+    "id": 499028,
+    "original_language": "ko",
+    "original_title": "지금 만나러 갑니다",
+    "overview": "비가 오는 날 다시 돌아오겠다는 믿기 힘든 약속을 남기고 세상을 떠난 수아. 그로부터 1년 뒤 장마가 시작되는 어느 여름 날,  세상을 떠나기 전과 다름없는 모습의 수아가 나타난다. 하지만 수아는 우진이 누구인지조차도 기억하지 못한다. 자신을 기억하지 못해도 그녀가 곁에 있다는 사실만으로 행복에 젖은 우진과 자신이 기억하지 못하는 그와의 이야기가 궁금한 수아. 우진이 들려주는 첫 만남, 첫 사랑, 첫 데이트, 첫 행복의 순간을 함께 나누며 수아는 우진과 다시 사랑에 빠지는데…",
+    "poster_path": "/c7zp4eeoWKLhUadgEv3SWa0lbFl.jpg",
+    "release_date": "2018-03-14",
+    "title": "지금 만나러 갑니다",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed1e8d32e9b9f1b9e6cc"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 354072,
+    "original_language": "zh",
+    "original_title": "我的少女時代",
+    "overview": "돌아가고 싶은 리즈시절(?) 숨기고 싶은 흑역사(!) 1994년 대책 없이 용감했던 고딩시절, 유덕화 마누라가 꿈인 평범한 소녀 ‘린전신’과 학교를 주름잡는 비범한 소년 ‘쉬타이위’의 첫사랑 밀어주기 작전",
+    "poster_path": "/zhKnBHB3CvwfUQMXdyd2eiaSKex.jpg",
+    "release_date": "2015-08-13",
+    "title": "나의 소녀시대",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed248d32e9b9f1b9e7c4"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 84111,
+    "original_language": "zh",
+    "original_title": "那些年，我們一起追的女孩",
+    "overview": "이제 막 17살이 된 나, 커징텅(가진동)은 시도 때도 없이 서 있는 ‘발기’ 쉬보춘과 어떤 이야기건 꼭 등장하는 ‘뚱보’ 아허, 세상에서 자신이 가장 잘 생겼다고 생각하는 ‘머저리’ 라오차오, 재미 없는 유머로 여자들을 꼬시려는 ‘사타구니’ 랴오잉홍이라는 친구들이 있다. 고등학교에서도 같은 반이 된 친구들과의 유일한 공통점은 최고의 모범생 션자이(진연희)를 좋아한다는 것! 어느 날, 커징텅은 여느 때처럼 교실에서 사고를 친 덕분에 션자이에게 특별 감시를 받게 되고 이를 계기로 모범생과 문제아 사이 백 만년만큼의 거리가 점점 좁혀지는 듯 했다. 하지만 마음과 달리 잘해보려는 일도 자꾸만 어긋나고, 커징텅과는 달리 친구들은 션자이의 사랑을 얻기 위해 아낌없이 표현하고 경쟁한다. 게다가 애써 한 고백에 션자이는 대답하지 않는다. 그리고 15년 후 다시 만난 션자이는…  32살의 내가 17살 나에게 보내는 고백, 그 시절 너는 반짝반짝 빛이 났었다!",
+    "poster_path": "/4SuI3abKg3FkY2jc7dhs3jPjHj7.jpg",
+    "release_date": "2011-08-19",
+    "title": "그 시절, 우리가 좋아했던 소녀",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed538d32e9b9f1b9ef18"
+    },
+    "adult": false,
+    "genre_ids": [
+      10749,
+      35
+    ],
+    "id": 9058,
+    "original_language": "en",
+    "original_title": "Only You",
+    "overview": "미래 운명에 대한 호기심이 많은 11살의 헤이스 코르배치는 장래 남편감을 점쳐보는데, 그 이름은 '데이먼 브래들리'. 세월은 흘러 헤이스는 드웨인이라는 의사와 데이트 중이며 데이먼 브래들리라는 운명적인 이름에 관해서는 희미한 기억이 남아있어 운명과 로맨틱한 사랑에 대한 관심은 버리지 못하고 있다.  그러던 중, 드웨인은 헤이스에게 청혼을 하고, 헤이스는 모두의 축복 속에 결혼을 준비한다. 어느날 웨딩드레스를 입어보던 헤이스는 드웨인의 친구로부터 결혼 축하 전화를 받게 되는데, 그의 이름이 놀랍게도 데이먼 브래들리. 놀란 헤이스는 드레스를 입은 채 운명의 데이먼을 찾아 떠난다.  그녀의 정신적인 지주인 케이트와 함께 베니스로. 그러나 불행히도 데이먼은 도착하자 마자 로마로 향해 떠나 버렸고, 로마에서 헤이스는 가게 주인 지오바니의 도움으로 데이먼의 소재를 알게 된다. 한편 케이트에게 반한 호색한 지오바니는 호텔까지 소개해주며 로마 관광을 약속한다. 운명의 순간 데이먼을 만나러 간 헤이스는 식당에서의 소란 때문에 데이먼의 뒷모습만을 보게 되고...",
+    "poster_path": "/7mLLANXgUg3bibTiUitDlB0NZcU.jpg",
+    "release_date": "1994-03-04",
+    "title": "온리 유",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed618d32e9b9f1b9f158"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749,
+      18
+    ],
+    "id": 10103,
+    "original_language": "ko",
+    "original_title": "내 여자친구를 소개합니다",
+    "overview": "여순경 경진은 도망가던 소매치기를 현장에서 체포, 의기양양하게 파출소로 끌고 온다. 그러나, 수갑대신 이태리 타월에 묶여 끌려온 건, 소매치기범을 잡으려던 여학교 선생님, 고명우. 열받은 명우는 경진에게 정중한 사과를 요구하는데...  청소년 지도 단속을 위해 파출소로 찾아간 명우는 그곳에서 여순경 경진과 부딪히게 되고, 냅다(!) 도망가려던 그는 또다시 수갑이 채워진 채 하루 종일 그녀의 파트너가 되고 만다. 수갑열쇠 분실 덕분에 하룻밤을 같이 지내게 된 경진과 명우는 그로 인해 더욱 가까워진다. 이제, 그녀가 출동하면 그도 출동을 하게 된다. 그녀를 지켜주기 위해서...다!  너무나 용감하여 가끔 무모한 행동을 하는 그녀가 걱정되기 때문. 그러나 명우는 매번 범죄현장에 휘말려 경진에게 구출 당하는 신세가 되어버리고 마는데...! 그러던 어느 날, 경진은 탈옥수와의 위험한 추격전을 벌이게 되고, 평소와 다른 불안감으로 명우 또한 경진을 찾아 그 현장으로 출동을 하게 된다. 용감무쌍 여순경을 지키기 위한 사랑스런 남자의 고군분투가 시작됩니다!",
+    "poster_path": "/vpO3NTGEDb1fmdDp7uH8appJyAn.jpg",
+    "release_date": "2004-06-03",
+    "title": "내 여자친구를 소개합니다",
+    "__v": 0
+  }
+    ],
     "878": [
         
  {
@@ -4911,26 +5826,6 @@
   },
   {
     "_id": {
-      "$oid": "650bebee8d32e9b9f1b9b738"
-    },
-    "adult": false,
-    "genre_ids": [
-      28,
-      9648,
-      878,
-      53
-    ],
-    "id": 13811,
-    "original_language": "en",
-    "original_title": "Knowing",
-    "overview": "1959년, 미국의 한 초등학교. 아이들이 그린 미래의 모습이 타임캡슐에 담긴다. 그로부터 50년 후인 2009년. 타임캡슐 속에서 알 수 없는 숫자들이 가득 쓰여진 종이를 발견한 캘럽은 그 종이를 MIT 교수인 아버지 테드(니콜라스 케이지 분)에게 전해준다. 종이에 적힌 숫자들이 지난 50년간 일어났던 재앙을 예고하는 숫자였음을 알게 된 테드는 아직 일어나지 않은 사고를 막기 위해 필사적인 사투를 벌이기 시작하는데…",
-    "poster_path": "/fG1gi4OVKEfq1aRkv29fALWugMs.jpg",
-    "release_date": "2009-03-19",
-    "title": "노잉",
-    "__v": 0
-  },
-  {
-    "_id": {
       "$oid": "650bebf18d32e9b9f1b9b798"
     },
     "adult": false,
@@ -5083,8 +5978,600 @@
     "title": "할로우 맨",
     "__v": 0
   },
+  {
+    "_id": {
+      "$oid": "650bebf38d32e9b9f1b9b80c"
+    },
+    "adult": false,
+    "genre_ids": [
+      878,
+      12,
+      10751,
+      14
     ],
-    "10770": [],
+    "id": 601,
+    "original_language": "en",
+    "original_title": "E.T. the Extra-Terrestrial",
+    "overview": "지구조사를 위해 우주선을 타고 지구에 온 외계인 이티는 식물 채집에 열중하다가 우주선에서 낙오되어 혼자 지구에 남게된다. 지구인들에게 쫓기던 이티는 엘리엇을 만나 그의 집에 숨는다. 엘리엇은 형 마이클, 여동생 거티와 함께 이티를 보살펴주지만 이티는 알 수 없는 병에 걸려 점점 약해져간다. 한편 이티를 추적하던 당국은 이티가 있는 곳을 알아내어 이티를 치료하며 실험용으로 관찰한다. 그러나 병이 회복되지 않아 모두 포기해버린 때에 외계인의 우주선이 보낸 전파로 인해 이티가 다시 소생하고, 엘리엇은 이티를 데리러 오는 우주선의 착륙장소에 이티를 데리고 가는데...",
+    "poster_path": "/9Kl6z0J1Hu3cFOFXNBrqqVWoNmI.jpg",
+    "release_date": "1982-06-11",
+    "title": "이티",
+    "__v": 0
+  }
+    ],
+    "10770": [
+      
+  {
+  "_id": {
+    "$oid": "650bebd58d32e9b9f1b9b346"
+  },
+  "adult": false,
+  "genre_ids": [
+    10402,
+    18,
+    36
+  ],
+  "id": 424694,
+  "original_language": "en",
+  "original_title": "Bohemian Rhapsody",
+  "overview": "공항 수하물 노동자로 일하며 음악의 꿈을 키우던 이민자 출신의 아웃사이더 파록 버사라. 보컬을 구하던 로컬 밴드에 들어가게 되면서 프레디 머큐리라는 이름으로 밴드 퀸을 이끌게 된다. 시대를 앞서가는 독창적인 음악과 화려한 퍼포먼스로 관중들을 사로잡으며 성장하던 퀸은 방송에서 외면을 받을 것이라는 음반사의 반대에도 불구하고 무려 6분 동안 이어지는 실험적인 곡 보헤미안 랩소디로 대성공을 거두며 월드스타 반열에 오른다. 그러나 독보적인 존재감을 뿜어내던 프레디는 솔로 데뷔라는 유혹에 흔들리게 되고, 오랜 시간 함께 해왔던 멤버들과 결별을 선언하게 되는데...",
+  "poster_path": "/xrlVhwi6OKMyQuDebpgaqU2LGju.jpg",
+  "release_date": "2018-10-24",
+  "title": "보헤미안 랩소디",
+  "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bebea8d32e9b9f1b9b68c"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      10402
+    ],
+    "id": 313369,
+    "original_language": "en",
+    "original_title": "La La Land",
+    "overview": "차들로 빽빽이 들어찬 LA의 고속도로. 거북이 걸음이던 도로가 뚫리기 시작하지만 미아 지금 손에 든 연기 오디션 대본을 놓지 못한다. 세바스찬은 경적을 누르며 미아를 노려보고는 사라진다. 악연의 시작. 이후 미아는 감미로운 피아노 선율에 이끌려 재즈바로 향하는데, 연주자가 바로 세바스찬이다. 미아가 세바스찬에게 인사를 건네려고 다가가던 순간은 하필 그가 재즈바의 레퍼토리를 무시하고 연주한 탓에 해고된 직후. 세바스찬은 인사를 건네려 다가온 미아를 쌩하니 스쳐 지나가버린다. 세 번째로 두 사람은 파티에 온 손님과 출장 밴드의 키보드 연주자로 다시 만나는데...",
+    "poster_path": "/6v4g6yW01uTmbxqwg75iEkMkrNP.jpg",
+    "release_date": "2016-11-29",
+    "title": "라라랜드",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec008d32e9b9f1b9b9f4"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      18,
+      10749,
+      80
+    ],
+    "id": 9762,
+    "original_language": "en",
+    "original_title": "Step Up",
+    "overview": "삶의 목표 따윈 없지만 춤 하나 끝내주게 추는 힙합 반항아 ‘타일러’. 여느 날과 다를 것 없이친구들과 몰려 다니며 놀던 어느 날 사고를 치게 되고 법원으로부터 ‘메릴랜드 예술학교’ 봉사 명령을 받게 된다. 최고의 엘리트들이 다니는 이곳에서 ‘타일러’는 쇼케이스 준비가 한창인 발레리나 ‘노라’를 만나게 된다. 공연 2주 전, 파트너의 부상으로 자신의 출전마저 불투명해진 ‘노라’는 파트너가 다시 돌아오기 전까지 함께 할 연습 상대를 찾는다.  춤이라면 자신 있는 ‘타일러’는 기회를 놓치지 않고 그녀의 파트너가 되길 자처하는데… 정석대로 춤을 춰온 ‘노라’는 그의 춤에서 그 동안 보지 못했던 자유와 열정을 느끼게 되고 ‘타일러’ 역시 자신의 꿈을 위해 노력하는 ‘메릴랜드’ 학생들의 분위기에 동화 되어 난생 처음 인생의 목표를 갖게 된다. 연습이 거듭될수록 서로의 꿈을 향해, 로맨스를 향해 스텝 업 하기 시작하는 두 사람. 그러나 자유로운 ‘타일러’와 클래식한 ‘노라’의 서로 다른 춤 스타일 만큼이나 다른 환경과 가치관이 충돌하면서 갈등의 벽이 높아져만 가는데…",
+    "poster_path": "/1kseXgsn3GsNHOw3XtAljjKNUzi.jpg",
+    "release_date": "2006-08-11",
+    "title": "스텝 업",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec028d32e9b9f1b9ba62"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10751,
+      16,
+      14,
+      10402
+    ],
+    "id": 23398,
+    "original_language": "en",
+    "original_title": "Alvin and the Chipmunks: The Squeakquel",
+    "overview": "미국, 유럽, 북극 에스키모에게 까지 절대적인 사랑을 받으며 세계적 아이돌 스타로 급부상한 앨빈, 사이먼, 테오도르!! 월드 투어로 바빴던 스케줄을 뒤로하고 평범한 학생으로의 생활을 시작한다. 하지만 슈퍼 스타가 가는 곳마다 쏟아지는 스포트 라이트는 피할 수 없는 법. 여학생들의 환호, 학교 교장마저 열혈 팬을 자처하며 식을 줄 모르는 인기가 계속된다.  학교의 명예를 걸고 음악대회에 대표 출전을 제의받은 ‘앨빈과 슈퍼밴드’. 음악 클럽을 위기에서 구해내야만 하는 막중한 임무를 맡았지만, 학교 풋볼 선수로 대활약하면 더욱 유명세를 타기 시작한 앨빈이 팀활동을 무시한 채 개인 행동을 하며 점점 불화를 일으킨다. 한편 대회 준비가 한창인 그들 앞에 나타난 귀엽고 깜찍한 여성 걸 그룹 ‘원더멍스’. 뛰어난 가창력, 섹시한 댄스를 선보이는 무서운 신인들이 학교 대표자리를 두고 ‘앨빈과 슈퍼밴드’에게 과감히 도전장을 내민다. ‘앨빈과 슈퍼밴드’는 슈퍼스타의 자리를 지켜 낼 수 있을지, ‘원더멍스’가 일으킬 파워는 어느 정도일지. 훨씬 더 깜찍하고 한층 더 화려해진 최강 아이돌들의 무대가 열린다.",
+    "poster_path": "/1C8XXvOoAJyp5CGghjS3CsvS2Sg.jpg",
+    "release_date": "2009-12-21",
+    "title": "앨빈과 슈퍼밴드 2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec118d32e9b9f1b9bcb8"
+    },
+    "adult": false,
+    "genre_ids": [
+      36,
+      10402,
+      18
+    ],
+    "id": 279,
+    "original_language": "en",
+    "original_title": "Amadeus",
+    "overview": "1823년 눈보라치는 밤, 한 노인이 자살을 시도하다 실패하고 신부에게 자신의 죄를 고백한다. 비엔나 왕실의 궁정음악가 살리에리는 새롭게 떠오르는 천재 작곡가 모차르트의 소문을 듣고 그의 천재성을 확인하려 한다. 모차르트가 그의 약혼녀를 범하고 오만하고 방탕한 생활을 거듭하자 그러한 모차르트에게 천재성을 부여한 신을 저주하고 그를 증오하기 시작한다. 한편 빈곤과 병마로 시달리던 모차르트는 자신이 존경하던 아버지의 죽음에 커다란 충격을 받고 자책감에 시달린다. 살리에리는 이를 이용해 모차르트가 아버지의 환상에 시달리도록 하면서 진혼곡의 작곡을 부탁하는데...",
+    "poster_path": "/r7iKeLpYfQNYpyJhCEZDYfjO69D.jpg",
+    "release_date": "1984-09-19",
+    "title": "아마데우스",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec208d32e9b9f1b9bef2"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      35
+    ],
+    "id": 6279,
+    "original_language": "en",
+    "original_title": "Sister Act 2: Back in the Habit",
+    "overview": "라스베가스 최고의 인기 가수가 된 들로리스에게 어느 날 수녀님들이 찾아와 도움을 청한다. 자신들이 선생으로 있는 학교의 아이들에게 음악을 가르쳐 달라는 것. 옛 정 때문에 할 수 없이 다시 수녀복을 입게 된 들로리스는 초반부터 못 말리는 문제아들에게 골탕을 먹고 두 손을 들고 만다. 그러나 우연히 학교의 이사가 학교를 폐쇄하려고 한다는 사실을 알게 된 들로리스는 다른 수녀님들과 힘을 합해 학교를 살리기로 마음먹고 특유의 끼를 발동한다. 아이들이 모두 음악에 소질이 있다는 걸 발견한 들로리스는 합창단을 만드는데, 처음에는 적대적이었던 학생들도 자신들의 숨은 재능을 발견해내고 희망을 갖게해 준 들로리스에게 마음을 열기 시작한다.  들로리스와 수녀님들은 합창대회에 참가해서 좋은 성적을 거두면 아이들에게도 자신감이 생기고 학교를 살리는데도 도움이 될 거라는 생각에 대회 참가를 추진하는데, 막상 대회가 열리는 날 들로리스가 클럽 가수라는 걸 알게 된 이사장과 교장은 합창단의 참가를 저지하러 출동한다. 한편 학생들은 다른 팀의 공연을 본 후 지레 겁을 먹고 포기하려하고, 들로리스는 아이들에게 용기를 불어넣어준다. 결국 아이들은 멋진 공연을 펼쳐 우승하고 학교의 폐교결정도 취소된다. 피날레를 장식하는 화려한 공연, \"오 해피데이\"와 찬송가 \"기뻐하며 경배하세\"를 비롯해 여러 귀에 익은 곡들이 어깨를 들썩이게 한다.",
+    "poster_path": "/dlkBp5S6Ei5f54031rAhyb4IwML.jpg",
+    "release_date": "1993-12-09",
+    "title": "시스터 액트 2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec2b8d32e9b9f1b9c0ce"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10749,
+      18,
+      10751,
+      10402
+    ],
+    "id": 11887,
+    "original_language": "en",
+    "original_title": "High School Musical 3: Senior Year",
+    "overview": "신나는 음악과 화려한 댄스가 어우러진 멋진 뮤지컬을 선보이며 모두의 선망이 대상이 된 교내 아이돌 집합소! 이스트 고교 드라마 클럽에도 드디어 올 것이 오고야 말았다. 교내 최고의 완소남 트로이, 사랑스러운 천재 소녀 가브리엘라, 핑크공주 샤페이. 모두의 우상이었던 그들의 졸업이 오고야 만 것!  그러나 그들에겐 졸업도 신나고 즐거운 스쿨라이프의 한 부분일 뿐. 트로이, 가브리엘라, 샤페이 등은 친구들과 함께 졸업에 맞춰 지난 3년 간의 학교 생활을 멋진 뮤지컬로 선보이기로 결심하는 데. 특히 이번 뮤지컬은 직접 작곡한 음악과 직접 만든 안무로 꾸며진 그야말로 그들만의 뮤지컬!  모두가 함께 ‘졸업’ 뮤지컬을 준비하는 가운데 트로이와 가브리엘라는 커플 라이프에 최고의 위기를 맞이하고야 말았다. 바로 ‘올 A학점 걸’ 천재소녀 가브리엘라가 사랑하는 트로이를 뒤로 한 채 덜컥 과학 영재로 아이비리그에 수시합격 해버린 것이 아닌가?! 그러나 트로이는 농구와 뮤지컬의 갈림길에서 아직 진로를 결정하지 못한 상황. 이렇게 트로이를 뒤로한 채 가브리엘라는 아이비리그로 진학할 것인가? 농구소년 트로이의 미래와 커플의 운명은? 그리고 모두가 합심하여 준비한 ‘졸업’ 뮤지컬은 과연 성공할 수 있을까?",
+    "poster_path": "/qVep9d016aNYT2OvyKGULFSwihZ.jpg",
+    "release_date": "2008-10-11",
+    "title": "하이 스쿨 뮤지컬: 졸업반",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec368d32e9b9f1b9c2a0"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10751,
+      10402,
+      10749
+    ],
+    "id": 15121,
+    "original_language": "en",
+    "original_title": "The Sound of Music",
+    "overview": "알프스의 아름다운 자연에 둘러싸인 오스트리아의 잘츠부르크 수도원. 음악을 사랑하는 말괄량이 견습 수녀 마리아는 원장 수녀의 권유로 해군 명문 집안 폰 트랩가의 가정교사가 된다. 마리아는 좀처럼 마음의 문을 열지 않는 폰 트랩가의 일곱 아이들에게 노래를 가르치며 점차 교감하게 되고, 엄격한 폰 트랩 대령 역시 마음의 문을 열게 된다. 그러던 어느 날, 마리아는 자신이 폰 트랩 대령을 사랑하고 있다는 사실을 깨닫게 되고, 자신만의 비밀을 간직한 채 아이들의 곁을 떠나 다시 수녀원에 들어가기로 결심하는데...",
+    "poster_path": "/3l1ATCYNuHep6evzX8GSUigWOLs.jpg",
+    "release_date": "1965-03-29",
+    "title": "사운드 오브 뮤직",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec378d32e9b9f1b9c2ca"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10402,
+      10749
+    ],
+    "id": 1119173,
+    "original_language": "da",
+    "original_title": "A Beautiful Life",
+    "overview": "남다른 재능을 숨기고 살던 청년 어부가 어느 날 한 음악 프로듀서의 눈길을 끈다. 그의 앞에서 손짓하는 스타덤과 사랑. 그는 이 새로운 길에 뛰어들 준비가 되었을까?",
+    "poster_path": "/5Atl4F2inzhrq8LCu7xl7OajLQ3.jpg",
+    "release_date": "2023-06-01",
+    "title": "뷰티풀 라이프",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec7f8d32e9b9f1b9ce04"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10402
+    ],
+    "id": 1125,
+    "original_language": "en",
+    "original_title": "Dreamgirls",
+    "overview": "디트로이트 출신의 여성 트리오 디나(비욘세 놀즈), 에피(제니퍼 허드슨), 로렐(애니카 노니 로즈). 꿈과 재능, 열정까지 가진 그녀들이지만 스타의 길은 멀기만 하다. 야심찬 매니저 커티스는 그녀들이 가지지 못한 성공의 카드를 쥐고 그녀들을 사로잡는다. 인기가수인 제임스 썬더 얼리의 백보컬로 투입, 기회와 경험을 쌓아 가며 화려한 스포트라이트의 중심으로 다가서는 그녀들. 한편 커티스는 팀을 변모시키기 위한 계획을 행동으로 옮기기 시작한다. 리더인 에피 대신 뛰어난 외모를 가진 디나를 리드싱어로 교체하려는 것. 이에 에피는 반발하고 팀은 위기에 봉착하지만, 디나는 그렇게 찾아온 기회가 싫지는 않은데...",
+    "poster_path": "/7I1iBGvViBeoImaPLGtLOtITksU.jpg",
+    "release_date": "2006-12-25",
+    "title": "드림걸즈",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec838d32e9b9f1b9ce96"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      36,
+      18
+    ],
+    "id": 696157,
+    "original_language": "en",
+    "original_title": "Whitney Houston: I Wanna Dance with Somebody",
+    "overview": "휘트니 휴스턴 전기 영화.  영화 \"보디가드\"로 스타덤에 오른 순간부터 2012년 사망하기까지의 이야기",
+    "poster_path": "/oodPJ3Op1pWBhnEFyw5fampRCWf.jpg",
+    "release_date": "2022-12-20",
+    "title": "휘트니 휴스턴: 댄스 위드 섬바디",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec8c8d32e9b9f1b9d004"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10402
+    ],
+    "id": 1584,
+    "original_language": "en",
+    "original_title": "School of Rock",
+    "overview": "락 밴드 단원인 듀이 핀 (잭 블랙 분)은 로커 답지 않게 뚱뚱하고 촌스러운 외모 때문에 밴드에서 쫒겨 난다. 월세까지 밀리자, 그는 급한 김에 친구 네드의 이름을 사칭하고, 호레이스 그린 초등학교의 대리교사로 취직한다. 수업 첫날부터, 공부를 가르칠 생각은 않고 시간 때울 궁리만 하던 듀이는 기발하고 엉뚱한 생각을 하게 되는데 앞으로 열릴 락 밴드 경연대회에 자기가 가르치는 학생들과 함께 참석하려는 것!  클래식기타와 피아노, 첼로, 심벌즈 등의 악기를 다뤄본 애들을 뽑아, 리드 기타, 베이스 기타, 키보드, 드럼을 가르치고, 다른 아이들에겐 백 보컬, 매니저, 코디, 장비 담당 등의 일을 맡긴다. 3주동안, 듀이와 아이들은 여자 교장 멀린스 (조안 쿠삭 분)의 눈을 피해 교실에서 락 음악을 연습하고, 드디어 오디션 접수까지 끝낸다. 마침내, 경연대회가 있던 날, 듀이가 가짜 선생임을 알게 된 학부모들은 멀린스 교장을 앞세우고 대회장으로 쳐들어 오는데.",
+    "poster_path": "/j9xIQfUKUbXqSD3WwqKzSvRL9Fb.jpg",
+    "release_date": "2003-10-03",
+    "title": "스쿨 오브 락",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec918d32e9b9f1b9d0c4"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      18,
+      10751,
+      10402,
+      10749,
+      10770
+    ],
+    "id": 10947,
+    "original_language": "en",
+    "original_title": "High School Musical",
+    "overview": "농구부 주장이며 인기 만점의 꽃미남 트로이와 똑똑하지만 부끄러움이 많은 여학생 가브리엘라가 송년 파티에서 우연히 노래를 부르게 된다. 처음엔 친구들의 장난으로 시작했던 노래가 두 사람의 목소리가 절묘한 하모니를 이루자 둘을 한마음으로 노래를 부르게 된다. 그리고 둘은 서로의 전화번호만 교환하고 아쉬움을 간직한 채 헤어지게 된다.  그러던 중 가브리엘라가 트로이가 다니던 고등학교로 전학을 오면서 둘을 다시 학교에서 만나게 된다. 그리고 때마침 겨울 뮤지컬을 준비하던 다버스 선생님이 개최한 뮤지컬 오디션에서 둘은 다시 한번 노래를 부르게 되고, 2차 오디션을 준비하기에 이른다. 그러나 학교에 이들이 뮤지컬 주연 자리를 놓고 2차 오디션을 본다는 소문이 돌면서 트로이가 속한 농구부와 가브리엘라가 속한 과학클럽은 둘을 갈라 놓기 위해서 계획을 꾸미는데...",
+    "poster_path": "/1DGmWZjUJPeKGFRHGCA6VPFUBML.jpg",
+    "release_date": "2006-01-20",
+    "title": "하이 스쿨 뮤지컬",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bec988d32e9b9f1b9d1e6"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10402,
+      10749
+    ],
+    "id": 114150,
+    "original_language": "en",
+    "original_title": "Pitch Perfect",
+    "overview": "인형 같은 외모와 환상적인 하모니.  얼핏 보기엔 모든 것을 다 갖춘 듯 하지만 식상한 레파토리 구성으로 매번 탈락의  쓴맛을 봐야 했던 여성 아카펠라 그룹 벨라스  새로운 캠퍼스 생활이 시작되고, 이번 만은 절대 우승 트로피를 놓칠 수 없다고 다짐한 벨라스는  우승을 향한 야심 찬 계획을 세운다. 그것은 바로 새로운 멤버 영입!  절대권력 리더 오브리와 청아한 고음의 클로이를 필두로 록시크 베카, 폭풍 성대 팻 에이미,  카리스마 랩퍼 신시아, 섹시 담당 스테이시, 미친 존재감 릴리 까지 치열한(?!) 오디션을 통해  드디어 새로운 멤버를 영입한다.  우여곡절 끝에 새로운 음악과 파워풀한 안무로 재 탄생된 벨라스.  탄탄대로일 것 같았던 그녀들 앞에 지난해 우승자이자, 매력만점 훈남들의 총집합  트러블 메이커가 나타나 앞길을 가로 막는데…  환상의 보이스도 아찔한 로맨스도 포기할 수 없는 벨라스!  과연 그녀들은 우승 트로피와 달콤한 사랑까지 모두 쟁취 할 수 있을까?!",
+    "poster_path": "/ntRIoh8Qf1BI1AYGx0STfq0wUmb.jpg",
+    "release_date": "2012-09-28",
+    "title": "피치 퍼펙트",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650beca88d32e9b9f1b9d478"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      18,
+      10749
+    ],
+    "id": 585244,
+    "original_language": "en",
+    "original_title": "I Still Believe",
+    "overview": "하나의 사랑이 당신의 삶을 바꾸고, 하나의 삶은 전 세계를 바꾼다! 가수를 꿈꾸는 대학생 ‘제레미’는 우연히 공연장에서 ‘멜리사’에게 첫눈에 반한다. 운명 같은 사랑도 잠시, ‘멜리사’의 암이 발병하면서 그들에겐 시간이 얼마 남지 않음을 알게 되고, ‘제레미’는 그녀를 위해 기적을 노래하기로 하는데…",
+    "poster_path": "/lZWgei1Yceiuojxc7lO07WkwJrM.jpg",
+    "release_date": "2020-03-12",
+    "title": "아이 스틸 빌리브",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650becb98d32e9b9f1b9d708"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10402,
+      10749
+    ],
+    "id": 11172,
+    "original_language": "en",
+    "original_title": "Music and Lyrics",
+    "overview": "왕년의 팝스타, 인생을 빛내줄 보석 같은 여자를 만나다  80년대 최고 인기를 누리던 왕년의 팝스타 알렉스(휴 그랜트). 이제는 퇴물 취급을 받는 그에게 어느 날 재기의 기회가 찾아온다. 일곱 살 때 알렉스의 노래를 듣고 감명을 받았고 지금은 브리트니보다 인기 많은 최고의 스타 가수 코라 콜만으로부터 듀엣 제안을 받은 것! 단 조건이 있으니 둘이 함께 부를 노래를 알렉스가 만들어야 한다는 것이다. 하지만 작곡에서 손 뗀지 이미 오래인데다 작사라곤 해본 적도 없는 알렉스는 굴러들어온 기회를 놓칠 지경이다.  생애 최고의 히트작을 만들고 싶다면 그녀만 믿으세요~  작사로 골머리를 앓던 알렉스 앞에 마침 자신의 집 화초를 가꿔주는 수다쟁이 아가씨 소피(드류 베리모어)가 구세주처럼 등장한다. 시끄럽기만 하던 말소리가 듣고 보니 하나 같이 주옥 같은 노랫말!  알렉스는 작사에 남다른 재능을 가진 소피에게 동업을 제안하고.  왠지 인생 최고의 히트송을 만들 수 있을 것 같은데…",
+    "poster_path": "/d9C2H1qoFt9AL4DwRlqEEZK4hVa.jpg",
+    "release_date": "2007-02-09",
+    "title": "그 여자 작사 그 남자 작곡",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650becca8d32e9b9f1b9d9a6"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10402,
+      10749,
+      18
+    ],
+    "id": 198277,
+    "original_language": "en",
+    "original_title": "Begin Again",
+    "overview": "싱어송라이터인 그레타는 남자친구 데이브가 메이저 음반회사와 계약을 하게 되면서 뉴욕으로 오게 된다. 그러나 행복도 잠시, 오랜 연인이자 음악적 파트너로서 함께 노래를 만들고 부르는 것이 좋았던 그레타와 달리 스타가 된 데이브의 마음은 어느새 변해버린다. 스타 음반프로듀서였지만 이제는 해고된 댄은 미치기 일보 직전 들른 뮤직바에서 그레타의 자작곡을 듣게 되고 아직 녹슬지 않은 촉을 살려 음반제작을 제안한다. 거리 밴드를 결성한 그들은 뉴욕의 거리를 스튜디오 삼아 진짜로 부르고 싶었던 노래를 만들어가는데...",
+    "poster_path": "/xVXC1mDkjJ1pK9tTFgO2DGPavJj.jpg",
+    "release_date": "2013-09-07",
+    "title": "비긴 어게인",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650becc98d32e9b9f1b9d99c"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      35,
+      18
+    ],
+    "id": 63710,
+    "original_language": "en",
+    "original_title": "Honey 2",
+    "overview": "춤은 배신하지 않아! 어려운 환경에서 춤이 인생의 전부가 된 마리아. 꿈을 펼치기 위해 유명 댄스 배틀 프로그램에 나가기로 한다. 그래, 나와 우리 팀, 해낼 수 있을 거야!",
+    "poster_path": "/qQnWrF7khfYvpWdEeKhSuoDCGA5.jpg",
+    "release_date": "2011-06-23",
+    "title": "허니 2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed7c8d32e9b9f1b9f586"
+    },
+    "adult": false,
+    "genre_ids": [
+      27,
+      10749,
+      18,
+      10402
+    ],
+    "id": 15855,
+    "original_language": "en",
+    "original_title": "Phantom of the Opera",
+    "overview": "파리의 오페라 하우스. 극단의 소프라노 단원인 아름다운 여인 크리스틴은 뛰어난 재능에도 불구하고 빛을 보지 못하는 조연이다. 또한 그녀를 지켜보며 안타까운 연정을 키워나가는 바이올린 주자이자 작곡가인 에릭은 자신의 음악을 인정받기 위해 출판사와 극장 등 여러 곳을 찾아가지만 차가운 냉대뿐인데.",
+    "poster_path": "/hy9FR0LZxTasQjkzlgRUZq9SAma.jpg",
+    "release_date": "1943-08-12",
+    "title": "오페라의 유령",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed0a8d32e9b9f1b9e3b6"
+    },
+    "adult": false,
+    "genre_ids": [
+      99,
+      10402
+    ],
+    "id": 625561,
+    "original_language": "en",
+    "original_title": "Travis Scott: Look Mom I Can Fly",
+    "overview": "그래미 후보에 오른 앨범 《애스트로월드》. 그 앨범을 만들면서 트래비스 스콧은 숱한 풍파와 희열을 겪었다. 정점에 이르기까지, 그의 내밀한 나날을 기록한 다큐멘터리.",
+    "poster_path": "/oNOXntnRY7dFrgu1x6bQQmWBVdu.jpg",
+    "release_date": "2019-08-28",
+    "title": "트래비스 스콧: 날 수 있어",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed268d32e9b9f1b9e80a"
+    },
+    "adult": false,
+    "genre_ids": [
+      99,
+      10402
+    ],
+    "id": 1022256,
+    "original_language": "en",
+    "original_title": "Selena Gomez: My Mind & Me",
+    "overview": "수년간 세상의 주목을 받으며 셀레나 고메즈는 상상을 초월한 인기를 얻는다. 하지만 인기가 절정에 도달했을 때, 예상하지 못했던 사건으로 셀레나는 어둠 속에 빠진다. 이 유례없이 생생하고 은밀한 다큐멘터리는 셀레나가 새로운 빛을 찾아 떠나는 6년간의 여정을 다룬다.",
+    "poster_path": "/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
+    "release_date": "2022-11-04",
+    "title": "셀레나 고메즈: 마이 마인드 앤드 미",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed308d32e9b9f1b9e9ae"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10402,
+      10749
+    ],
+    "id": 13701,
+    "original_language": "en",
+    "original_title": "Immortal Beloved",
+    "overview": "베토벤의 오랜 친구인 안톤 쉰들러는 어떤 의문점을 풀기 위한 조사를 시작한다. 베토벤이 모든 유산을 영원한 연인 앞으로 남겨놓고 죽었기 때문이다. 쉰들러는 친구의 마지막 소원을 들어주기 위해 그녀를 찾아나선다. 마침내 쉰들러는 카스퍼의 미망인이자 베토벤의 옛 연인이었던 조안나를 찾아 그녀에게 어떤 대답을 기대한다. 조안나는 처음에는 베토벤의 연인이었음을 부인하지만, 바덴에서 함께 지냈던 여름을 회상하고는 진실을 인정한다. 조안나는 카스퍼가 지기에게 접근하는 동안 베토벤과 사랑에 빠지고, 그들은 호텔에서 만나 함께 사랑의 도피를 약속했었다. 그러나 베토벤은 폭풍 속에서 마차가 고장나는 바람에 약속된 시간에 도착하지 못하고, 그녀는 베토벤이 서둘러 보낸 전보를 받지 못한 채 카스퍼에게 돌아간 것이다.결국 받지 못한 전보, 부숴진 마차, 그리고 자존심의 상처는 베토벤과 그의 연인 조안나의 비극적 결별의 원인이었다. 하지만 비록 헤어졌을 지언정 베토벤의 조안나를 향한 사랑이 끝난 것은 아니었는데..",
+    "poster_path": "/ow9soehzOZR0kzcBqfDF4Hvm4L9.jpg",
+    "release_date": "1994-12-16",
+    "title": "불멸의 연인",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed4b8d32e9b9f1b9edda"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10402
+    ],
+    "id": 3537,
+    "original_language": "en",
+    "original_title": "Fame",
+    "overview": "뉴욕의 예술 고등학교를 배경으로 스타가 되기를 꿈꾸는 학생들의 삶과 갈등을 그린 뮤지컬 영화이다.\r 코코(이렌느 카라)를 비롯한 예술 고등학교의 학생들은 뚜렷한 목표의식 없이 그저 화려한 스타의 모습을 동경한다. 코코도 스타가 되기 위해 노력하지만 생각처럼 쉽게 인기를 얻지 못한다. 하지만 꿈을 버리지 않고 재능을 발휘하는 노력을 계속한다. 그러면서 학생들은 목표를 찾는다. 화려한 무대 뒤에 감추어진 젊은이들의 숨은 노력과 땀으로 이룬 결실을 보여주는 영화이다.",
+    "poster_path": "/oDUTjQ2HUKh6iBYE99PUStyoRDv.jpg",
+    "release_date": "1980-05-16",
+    "title": "페임",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed5c8d32e9b9f1b9f07e"
+    },
+    "adult": false,
+    "genre_ids": [
+      99,
+      10402
+    ],
+    "id": 391698,
+    "original_language": "en",
+    "original_title": "The Beatles: Eight Days a Week - The Touring Years",
+    "overview": "1963년부터 1966년까지 그들을 무대에서 볼 수 있었던 유일한 4년, 일주일을 8일로 살았던 치열했던 공연의 기록과 아이돌에서 진정한 전설의 아티스트로 거듭나기까지…",
+    "poster_path": "/ps3f4zgZpHshwR8dVcJIPU2YOm0.jpg",
+    "release_date": "2016-09-15",
+    "title": "비틀스: 에잇 데이즈 어 위크-투어링 이어즈",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed5f8d32e9b9f1b9f108"
+    },
+    "adult": false,
+    "genre_ids": [
+      18,
+      10402
+    ],
+    "id": 192133,
+    "original_language": "en",
+    "original_title": "Jimi: All Is by My Side",
+    "overview": "<지미 헨드릭스: 올 이즈 바이 마이 사이드>에는 록 음악이 있다. 그리고 지미 헨드릭스가 있다. 이 작품은 지금까지도 여전히 전 세계에 걸쳐 폭넓은 음악적 영향력을 가진 전설 지미 헨드릭스의 에너지, 카리스마, 그리고 사람을 놀라게 하는 그의 재능을 담아내고 있다. 실제 인터뷰와 자료를 토대로 만든 이 작품은 전설 뒤에 숨겨진 지미 헨드릭스를 감동적으로 그려낸다. 그리고 그 중심에는 한 남자가 성장하며 사랑에 빠지고 ‘지미’가 되는 사랑 이야기가 있다. (2015년 제11회 제천국제음악영화제)",
+    "poster_path": "/j1bmOXGXQ1pcqvHkVjsk0sXaF5e.jpg",
+    "release_date": "2013-09-07",
+    "title": "록의 전설, 지미 헨드릭스",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed6b8d32e9b9f1b9f2d0"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      18
+    ],
+    "id": 8428,
+    "original_language": "en",
+    "original_title": "Pump Up the Volume",
+    "overview": "내성적인 고교생 마크(Mark Hunter: 크리스찬 슬레이터 분). 아버지는 고향 뉴욕의 친구들을 그리워하는 마크에게 그들과 교신하라며 아마추어 무선통신기를 사준다. 마크의 유일한 친구가 된 무신통신기, 낮에는 말 한마디 않던 그가 밤만 되면 교신기의 마이크를 잡고 발칸포처럼 말을 쏟아낸다. 누가 듣고 있으리라고는 꿈에도 생각치 못한 채. 그러던 어느날, 라디오 FM채녈을 통해 수신된 자신의 목소리를 학생들이 녹음해 즐긴다는 사실을 알게 된 마크, 그는 이제 밤 10시만 되면 젊은 청취자들을 사로잡는 정체불명의 DJ하드 해리가 되어 기상천외의 해적 방송을 시작한다.",
+    "poster_path": "/s1SyKrARJG2R7FyS4zkNdaekLAW.jpg",
+    "release_date": "1990-08-22",
+    "title": "볼륨을 높여라",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed6b8d32e9b9f1b9f2e8"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      14,
+      10402,
+      10749
+    ],
+    "id": 515195,
+    "original_language": "en",
+    "original_title": "Yesterday",
+    "overview": "하루하루 힘겹게 음악을 하던 무명 뮤지션 잭. 모든 것을 포기하려던 순간, 전세계가 동시에 정전이 된다. 다음 날 세상에선 비틀즈가 사라지고, 오직 잭만이 그들의 음악을 기억하게 된다. 특별한 기회를 만난 잭은 세계적인 스타가 될 운명에 섰는데…",
+    "poster_path": "/pmiFyESTXQXivV9cN6mFCPKv4A.jpg",
+    "release_date": "2019-06-26",
+    "title": "예스터데이",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed7c8d32e9b9f1b9f576"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402,
+      99
+    ],
+    "id": 774372,
+    "original_language": "en",
+    "original_title": "ariana grande: excuse me, i love you",
+    "overview": "작은 체구로 큰 무대와 넓은 세상을 뒤집어 놓는다. 스위트너 월드 투어의 런던 무대에 오르는 아리아나 그란데. 무대 위와 뒤, 그리고 여행길에서의 그녀 모습을 담았다.",
+    "poster_path": "/cvBVd5DwAwYOakF0U1qsYdysQ08.jpg",
+    "release_date": "2020-12-21",
+    "title": "아리아나 그란데: 익스큐즈 미, 아이 러브 유",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed918d32e9b9f1b9f8aa"
+    },
+    "adult": false,
+    "genre_ids": [
+      10402
+    ],
+    "id": 568300,
+    "original_language": "ko",
+    "original_title": "러브 유어셀프 인 서울",
+    "overview": "2018년 8월 서울공연을 시작으로, 미주, 유럽, 아시아 등 20개 도시 41회 공연 규모로 열리는 'LOVE YOURSELF’ 투어. 현재 진행 중인 가장 핫한 콘서트를 담은 ‘러브 유어셀프 인 서울’은 미국 빌보드 200 1위에 빛나는 글로벌 그룹 방탄소년단 월드투어의 포문을 여는 서울 콘서트를 담아냈으며, 전 세계가 기다린 최고의 무대를 더욱 생동감 있게 느낄 수 있다.",
+    "poster_path": "/1u0rtWPgYfAWmqveXOsQDvMRODD.jpg",
+    "release_date": "2019-01-26",
+    "title": "러브 유어셀프 인 서울",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "650bed2e8d32e9b9f1b9e94a"
+    },
+    "adult": false,
+    "genre_ids": [
+      35,
+      10402
+    ],
+    "id": 18228,
+    "original_language": "en",
+    "original_title": "Blue Hawaii",
+    "overview": "군복무를 마치고 고향 하와이에 도착한 채드 게이츠. 그는 부모님의 기대를 저버리고 자신의 독립적인 일을 갖기로 결심한다. 고심 끝에 채드는 여자 친구 마일리의 여행사에서 가이드로 일하기로 한다. 십대 여학생들과 이들의 선생님인 사라를 첫 고객으로 맡게 된 채드는 이들과 함께 하와이의 유명하고 아름다운 휴양지를 찾아 여행을 시작하는데...",
+    "poster_path": "/kujIwcrOsgcyRLbs5xfwU1ADwHk.jpg",
+    "release_date": "1961-11-22",
+    "title": "블루 하와이",
+    "__v": 0
+  }
+    ],
     "53": [],
     "10752": [],
     "37": [
