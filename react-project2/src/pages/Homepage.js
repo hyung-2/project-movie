@@ -23,9 +23,19 @@ function Homepage(){
     const [movies, setMovies] = useState([])
     //API가져오기
     useEffect(() => {
-      fetch('https://yts.mx/api/v2/list_movies.json?limit=50')
-      .then(res => res.json())
+      fetch('https://yts.mx/api/v2/list_movies.json?limit=50'
+      // ,{
+      //   method: 'GET',
+      //   headers: {'Content-Type':'application/json'},
+      // }
+      )
+      .then(res => {
+        console.log(res)
+        return res.json()
+      })
       .then(data => {
+        console.log('데이터가들어오는거야마는거야')
+        console.log(data)
         const {data: {movies}} = data
         console.log(movies)
         setLoading(false)

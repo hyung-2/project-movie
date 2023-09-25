@@ -2,8 +2,14 @@ const mongoose = require('mongoose')
 const express = require('express')
 const cors = require('cors')
 const config = require('./config')
+const app = express()
 
-mongoose.connect(config.MONGODB_URL)
+
+const moviesRouter = require('./src/routes/movies')
+
+
+
+mongoose.connect(`mongodb://127.0.0.1:27017/project-movie`)
 .then(() => console.log('mongodb connected ...'))
 .catch(e => console.log(`failed to connect mongodb: ${e}`))
 
@@ -15,8 +21,12 @@ const corsOptions = {
 
 
 
+app.use(cors(corsOptions))
+app.use(express.json())
 
+app.use(express.urlencoded({extended: true}))
 
+app.use('/api/movies', moviesRouter)
 
 
 app.listen(5201, () => {
