@@ -40,7 +40,6 @@ function Tournament(){
             playerList.sort(() => Math.random() - 0.5)
             setMovies([...playerList])
             setMatch([playerList[0], playerList[1]])
-            console.log(playerList)
         }
         
     }, [loading])
@@ -89,19 +88,32 @@ function Tournament(){
     const navigate = useNavigate()
     const moveToResult = () => navigate('/result', { state: {winner} })
 
+    useEffect(() => {
+        if(winner.length === 1){
+            setTimeout(moveToResult, 3000)
+        }
+
+    }, [winner])
+
     return (
         <div className="tournament-page">
-            <TimeBar counter={counter}/>
+            
             {match.length === 0 ? "" : 
-                winner.length === 1 ?            
-                ""
+                counter < 2 ?            
+                <div className="winner">
+                    <Player player={winner[0]} isVisible={true} isMatch={false}/>
+                </div>
                 :
+                <>
+                    <TimeBar counter={counter}/>
+                    <Match 
+                        match={match} 
+                        handleClick={selectMovie}
+                        isVisible={isVisible}
+                        isMatch={true} 
+                    />    
+                </>
                 
-                <Match 
-                    match={match} 
-                    handleClick={selectMovie}
-                    isVisible={isVisible}    
-                /> 
             }
             
         </div>

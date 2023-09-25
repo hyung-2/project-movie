@@ -6,40 +6,48 @@ function TimeBar({ counter }){
     const round = [ "16강", "8강", "4강", "결승"]
     const [ roundBar, setRoundBar ] = useState(0)
 
-    const [ sixteen, setSixteen ] = useState(true)
-    const [ quarter, setQuarter ] = useState(false)
-    const [ semi, setSemi ] = useState(false)
-    const [ final, setFinal ] = useState(false)
+    const [ sixteen, setSixteen ] = useState(0)
+    const [ quarter, setQuarter ] = useState(0)
+    const [ semi, setSemi ] = useState(0)
+    const [ final, setFinal ] = useState(0)
 
     useEffect(() => {
-        console.log(counter)
-        if(counter === 8){
-            setQuarter(true)
-        }else if(counter === 4){
-            setSemi(true)
-        }else if(counter === 2){
-            setFinal(true)
-        }
 
         if(counter > 8){
-            setRoundBar(roundBar + 23.141)
+            setSixteen(sixteen + 2)
         }else if(counter > 4){
-            setRoundBar(roundBar + (23.141 * 2))
+            setQuarter(quarter + 4)
         }else if(counter > 2){
-            setRoundBar(roundBar + (23.141 * 4))
+            setSemi(semi + 8)
+        }else{
+            setFinal(16)
         }
     }, [counter])
 
     return (
         <div className="timeBar-container">
-            <span>{round[0]}</span>
+            <span>{ counter > 8 ? round[0] :
+                    counter > 4 ? round[1] :
+                    counter > 2 ? round[2] :
+                    round[3]}</span>
             
             <div className="point-container">
                 <div className={`point start active`}></div>
                 <div className="bar background">
-                    <div className="bar round" style={{ width: `${roundBar}px`}}></div>
+                    <div 
+                        className="bar round" 
+                        style={{ 
+                            width: `${ counter > 8 ? sixteen :
+                                    counter > 4 ? quarter :
+                                    counter > 2 ? semi :
+                                    final }rem`}}
+                    ></div>
                 </div>
-                <div className={`point end ${quarter? "active" : ""}`}></div>
+                <div className={`point end 
+                                ${counter > 8 && sixteen === 16 ? "active" :
+                                    counter > 4 && quarter === 16 ? "active" :
+                                    counter > 2 && semi === 16 ? "active" :
+                                    final === 16 ? "active" : ""}`}></div>
             </div>
         </div>
     )
