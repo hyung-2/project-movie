@@ -1,11 +1,6 @@
+@import url('../global.css');
+
 .Loginpage{
-  /* width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: url('https://i.ibb.co/vXqDmnh/background.jpg') center no-repeat;
-  background-color: rgba(0, 0, 0, .7);
-  background-blend-mode: darken; */
 
   display: flex;
   flex-direction: column;
@@ -61,12 +56,13 @@
   left: 673px;
 }
 .intro{
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
   margin-bottom: 2rem;
   width: 500px;
   opacity: 0;
   transition: .2s ease-in-out; 
+  font-family: 'iceJaram-Rg';
 }
 .introText1{
   left: -43rem;    
@@ -85,7 +81,7 @@
 }
 
 .downbtn{
-  margin: 0rem 0;
+  margin: -2rem 0;
   margin-bottom: 5rem;
   border-radius: 50%;
   width: 30px;
@@ -97,7 +93,7 @@
   opacity: 0;
 }
 .downbtn-up{
-  margin: 1rem 0;
+  margin: -1rem 0;
   opacity: 1;
 }
 
@@ -109,6 +105,13 @@
 .introText3-up{
   top: 0rem;
   opacity: 1;
+}
+.intro span{
+  font-weight: bold;
+  text-shadow: 0 0 30px yellow;
+}
+.introText3 span{
+  color: var(--main-color);
 }
 
 

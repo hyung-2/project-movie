@@ -87,7 +87,7 @@ function Form({type, handleClick}){
   }else if(type == 'signup'){
     return(
       <div className="Register base">
-        <h3>회원가입</h3>
+        <h3>계정 만들기</h3>
         <label htmlFor='userId'>
           <p className="labelname">아이디를 입력하세요</p>
           <input onKeyUp={addClass} type='text' id='userId'></input>

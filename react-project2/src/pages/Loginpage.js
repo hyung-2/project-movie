@@ -36,15 +36,15 @@ function Loginpage(){
     <div className="Loginpage">
       <img src={logo} className='logo'></img>
       <div className="intro introText1">
-        이상형 영화를 토대로 <br/> 영화를 추천해드려요.<br/>
+        이상형 영화를 토대로 <br/> 영화를 <span>추천</span>해드려요.<br/>
         여러 영화의 정보를 <br/> 한눈에 볼 수 있어요.
       </div>
       <div className="intro introText2">
-        추천영화에서 <br/> 영화를 스크랩해보세요!<br/>
+        추천영화에서 <br/> 영화를 <span>스크랩</span>해보세요!<br/>
         언제든지 꺼내볼 수 있어요.
       </div>
       <div className="intro introText3">
-        지금 로그인하고 무드의 혜택을 누려보세요!
+        지금 로그인하고 <span>무드</span>의 혜택을 누려보세요!
       </div>
       <Button btnClass='downbtn' handleClick={gofrom}>↓</Button>
       <div className="form">

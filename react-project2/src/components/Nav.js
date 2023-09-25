@@ -16,11 +16,16 @@ function Nav(){
   const logout = () => {
     navigate('/login')
   }
+
+  //즐겨찾기 클릭
+  const toLike = () => {
+    navigate('/like')
+  }
   return(
     <div className={`Nav`}>
     <img src={logo} onClick={toHome}></img>
     <div className="btn-box">
-      <Button>즐겨찾기</Button>
+      <Button handleClick={toLike}>즐겨찾기</Button>
       <Button handleClick={logout}>로그아웃</Button>
     </div>
     </div>

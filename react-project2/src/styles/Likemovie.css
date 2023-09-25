@@ -1,0 +1,42 @@
+.Like-moive{
+  color: var(--font-color);
+}
+
+.like-box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 5rem;
+}
+
+.like-list-box{
+  flex: 1;
+  border: 1px solid var(--line-color);
+  margin-left: 2rem;
+}
+.like-list{
+  border: 1px solid red;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.like-list div{
+  flex: 1.5;
+}
+.like-list h4{
+  flex: 2;
+}
+
+.like-info{
+  flex: 3;
+  border: 1px solid var(--line-color);
+  margin: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

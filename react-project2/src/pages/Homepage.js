@@ -22,19 +22,19 @@ function Homepage(){
   
     const [movies, setMovies] = useState([])
     //API가져오기
-    // useEffect(() => {
-      // fetch('https://yts.mx/api/v2/list_movies.json?limit=50')
-      // .then(res => res.json())
-      // .then(data => {
-      //   const {data: {movies}} = data
-      //   console.log(movies)
-        // setLoading(false)
-        // setMovies(movies)
-    //   })
-    // },[])
+    useEffect(() => {
+      fetch('https://yts.mx/api/v2/list_movies.json?limit=50')
+      .then(res => res.json())
+      .then(data => {
+        const {data: {movies}} = data
+        console.log(movies)
+        setLoading(false)
+        setMovies(movies)
+      })
+    },[])
     
     //추후 1등영화의 장르가 들어올 배열
-    const test = ['Action', 'Crime', 'Drama', 'Horror', "Romance"]
+    const test = ['Action', 'Documentary', 'Drama', 'Horror', 'Comedy']
 
     
     const copyMovies = [...movies]
@@ -105,7 +105,7 @@ function Homepage(){
         <div className="loading">
           <motion.svg 
                 viewBox="0 0 300 300"
-                width="30rem"
+                width="40rem"
                 height="30rem"
 
                 variants={textContainer}
@@ -122,6 +122,9 @@ function Homepage(){
                 <motion.text x="166" y="160" variants={textContents}>i</motion.text>
                 <motion.text x="185" y="160" variants={textContents}>n</motion.text>
                 <motion.text x="226" y="160" variants={textContents}>g</motion.text>
+                <motion.text x="266" y="160" variants={textContents}>.</motion.text>
+                <motion.text x="284" y="160" variants={textContents}>.</motion.text>
+                <motion.text x="302" y="160" variants={textContents}>.</motion.text>
                 
           </motion.svg>
         </div>
