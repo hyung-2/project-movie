@@ -42,5 +42,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  }
+  },
+  "homepage": "https://Galaxy-104.github.io/project2_movie"
 }

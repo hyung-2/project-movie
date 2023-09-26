@@ -3,7 +3,7 @@ import App from "./App"
 
 function Browser(){
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/project2_movie">
             <App/>
         </BrowserRouter>
     )

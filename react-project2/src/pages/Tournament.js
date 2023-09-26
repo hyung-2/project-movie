@@ -28,7 +28,10 @@ function Tournament(){
     useEffect(() => {
         MovieList.forEach((movie) => {
             // tournamentList.push(movie.movies[Math.floor(Math.random() * movie.movies.length)])
-            console.log(movie.movies, movie.movies.length)
+            
+            if(movie.movies){
+                console.log(movie.movies, movie.movies.length)
+            }
         })
     }, [])
 
