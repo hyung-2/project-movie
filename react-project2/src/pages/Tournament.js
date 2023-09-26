@@ -1,8 +1,6 @@
 import React, { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import MovieList from "../api/Tournament.json"
-
 import Match from "../components/Match";
 import Player from "../components/Player";
 import TimeBar from "../components/Timebar";
@@ -26,13 +24,17 @@ function Tournament(){
     const [ counter, setCounter ] = useState(16)
 
     useEffect(() => {
-        MovieList.forEach((movie) => {
-            // tournamentList.push(movie.movies[Math.floor(Math.random() * movie.movies.length)])
-            
-            if(movie.movies){
-                console.log(movie.movies, movie.movies.length)
-            }
+
+        fetch('/api/Tournament.json')
+        .then( res => res.json() )
+        .then( data => {
+            console.log(data[7])
+            data.map((movie) => {
+                console.log(movie.movies)
+            })
         })
+        
+        
     }, [])
 
     useEffect(() => {
