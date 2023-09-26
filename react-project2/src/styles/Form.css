@@ -48,8 +48,12 @@ label{
 }
 
 .input-box{
-  width: 313px;
+  width: 320px;
   margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
 }
 .input-box button{
   margin-top: 2rem;
@@ -62,5 +66,7 @@ label{
 .check-box label{
   right: 0;
   margin-right: 1rem;
+  width: 123px;
+  text-align: start;
 }
 

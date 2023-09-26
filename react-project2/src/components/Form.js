@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import '../styles/Form.css'
+import Genres from '../api/Genres.json'
 
 
 
@@ -109,22 +110,19 @@ function Form({type, handleClick}){
     )
   }else if(type == 'checkBox'){
     //나중에 api확정되면 장르 더 추가하기
+    console.log(Genres)
     return(
       <div className="check-box base">
         <h4>좋아하는 장르를 선택해주세요!</h4>
           <div className="input-box">
-            <input type='checkbox' id="horror" />
-            <label htmlFor='horror'>공포</label>
-            <input type='checkbox' id='drama' />
-            <label htmlFor='drama'>드라마</label>
-            <input type='checkbox' id='action' />
-            <label htmlFor='action'>액션</label>
-            <input type='checkbox' id="horror" />
-            <label htmlFor='horror'>스릴러</label>
-            <input type='checkbox' id='drama' />
-            <label htmlFor='drama'>로맨틱코미디</label>
-            <input type='checkbox' id='action' />
-            <label htmlFor='action'>장르또뭐가있을까용</label>
+            {Genres.genres.map(genre => {
+              return(
+                <>
+                  <input type='checkbox' id={genre.name} value={genre.name}/>
+                  <label htmlFor={genre.name}>{genre.name}</label>
+                </>
+              )
+            })}
           </div>
           <Button handleClick={goresult}>가입완료하기</Button>
         </div>

@@ -3,6 +3,7 @@ import '../styles/Movies.css'
 import Poster from "../components/Poster";
 
 function Movies({pickPoster, movieLists, }){
+
   return(
     <>
       <div className="pickPoster">
