@@ -39,6 +39,7 @@ function MoreGenre(){
     return <div>아직 데이터 없음!</div>
   }
 
+  //나중에 무한스크롤로 데이터 불러오기
 
   return(
     <div className={`MoreGenre`}>

@@ -6,7 +6,7 @@ import Nav from '../components/Nav'
 import ScrollMoive from "../components/ScrollMovie";
 import Button from "../components/Button";
 import Modal from "../components/Modal";
-
+import Genres from '../api/Genres.json'
 
 
 function Homepage(){
@@ -41,17 +41,27 @@ function Homepage(){
     
     //추후 1등영화의 장르가 들어올 배열
     const test = [53, 36, 14]
-
+    const winnerGenres = []
+    console.log(test.map(test => {
+      console.log(Genres)
+      console.log(test)
+      Genres.genres.map(genre => {
+        if(genre.id == test){
+          return winnerGenres.push(genre)
+        }
+      })
+    }))
+    console.log(winnerGenres)
     
     const copyMovies = [...movies]
 
     //장르별 객체배열
-    const filter = test.map(test => {
+    const filter = winnerGenres.map(winnerGenre => {
       const filtered = copyMovies.filter((movie) => {
         // console.log(movie)
-        return movie.genre_ids.includes(test)
+        return movie.genre_ids.includes(winnerGenre.id)
       })
-      return {test, filtered}
+      return {winnerGenre, filtered}
     })
     console.log(filter)
 
@@ -59,12 +69,14 @@ function Homepage(){
     const navigate = useNavigate()
     const movePage = (e) => {
       console.log('더보기클릭')
-      console.log(e.target.parentElement.previousElementSibling.innerText)
+      console.log(e.target.parentElement.previousElementSibling.innerHTML)
       filter.map(filter => {
-        console.log(filter.test === e.target.parentElement.previousElementSibling.innerText)
-        if(filter.test === e.target.parentElement.previousElementSibling.innerText){
+        console.log(filter)
+        console.log(filter.winnerGenre.name)
+        console.log(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML)
+        if(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML){
           console.log(filter)
-          navigate(`/more`, {state: {filter: filter.filtered, title: filter.test}})    
+          navigate(`/more`, {state: {filter: filter.filtered, title: filter.winnerGenre.name}})    
         }
       })
     }
@@ -143,15 +155,15 @@ function Homepage(){
           
           
             {/* 코드중복있어서 나중에 수정 */}
-            {test.map((test, id) => {
+            {winnerGenres.map((winnerGenre, id) => {
               return (
                 <div key={id} className={`scroll-box`}>
-                  <h3>{test}</h3>
+                  <h3>{winnerGenre.name}</h3>
                   <div className="box">
                     <ScrollMoive
                     movies={
                       copyMovies.filter((movie) => {
-                        return movie.genre_ids.includes(test)
+                        return movie.genre_ids.includes(winnerGenre.id)
                       })
                     }
                     pickPoster={pickPoster}
