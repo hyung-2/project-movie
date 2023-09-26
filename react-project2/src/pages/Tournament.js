@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+import MovieList from "../api/Tournament.json"
+
 import Match from "../components/Match";
 import Player from "../components/Player";
 import TimeBar from "../components/Timebar";
@@ -8,6 +10,7 @@ import TimeBar from "../components/Timebar";
 import '../styles/Tournament.css'
 
 const playerList = []
+const tournamentList = []
 
 function Tournament(){
     
@@ -23,13 +26,19 @@ function Tournament(){
     const [ counter, setCounter ] = useState(16)
 
     useEffect(() => {
-        
+        MovieList.forEach((movie) => {
+            // tournamentList.push(movie.movies[Math.floor(Math.random() * movie.movies.length)])
+            console.log(movie.movies, movie.movies.length)
+        })
+    }, [])
+
+    useEffect(() => {
+
         if(!loading){
             fetch('https://yts.mx/api/v2/list_movies.json?limit=16')
             .then( res => res.json())
             .then( result => {
                 const { data: { movies }} = result
-                console.log(movies)
                 movies.map((movie) => {
                     playerList.push(movie)
                     return movie
