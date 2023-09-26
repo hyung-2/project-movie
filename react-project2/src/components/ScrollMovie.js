@@ -41,7 +41,7 @@ function ScrollMoive({pickPoster, movies}){
     <div className={`ScrollMovie`} onMouseDown={mouseDown} onMouseMove={mouseMove} onMouseLeave={deactive} onMouseUp={deactive}>
       {moiveNum.map((movie, id) => {
         return(
-          <Poster key={id} pickPoster={pickPoster} cover={movie.medium_cover_image}></Poster>
+          <Poster key={id} pickPoster={pickPoster} cover={movie.poster_path}></Poster>
           )
       })}
     </div>

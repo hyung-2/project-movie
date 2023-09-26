@@ -12,23 +12,22 @@ function Modal ({children, open, type, close, pickMovie }){
     p.classList.toggle('normalP')
   }
   console.log(open)
-
+  console.log(pickMovie)
   if(type === 'poster' && open){
-    console.log(pickMovie)
     return( 
     <div className={`Modal ${open ? 'open' : 'close'}`}>
       <>
                <div className='img-box'>
-                  <img src={pickMovie.large_cover_image}></img>
+                  <img src={`https://image.tmdb.org/t/p/original/${pickMovie.poster_path}`}></img>
                 </div>
                 <div className="content-box">
                   <div className="modal-contents">
-                    <h2 className="modal-title">{pickMovie.title} ({pickMovie && pickMovie.year})</h2>
-                    <h4>장르: {pickMovie.genres.length !== 0 && pickMovie.genres.join(', ')}</h4>
-                    <h4>평점: {pickMovie.rating}</h4>
-                    <p className="modalP normalP" onClick={openP}>줄거리: {pickMovie.description_full ? pickMovie.description_full : '줄거리가 없습니다.'}</p>
+                    <h2 className="modal-title">{pickMovie.title} ({pickMovie && pickMovie.release_date.slice(0, 10)})</h2>
+                    <h4>장르: {pickMovie.genre_ids.length !== 0 && pickMovie.genre_ids.join(', ')}</h4>
+                    {/* <h4>평점: {pickMovie.rating}</h4> */}
+                    <p className="modalP normalP" onClick={openP}>줄거리: {pickMovie.overview ? pickMovie.overview : '줄거리가 없습니다.'}</p>
                   </div>
-                  <YouTube className='youtube' 
+                  {/* <YouTube className='youtube' 
                     videoId={pickMovie.yt_trailer_code} 
                     opts={{
                     width: '100%',
@@ -40,7 +39,7 @@ function Modal ({children, open, type, close, pickMovie }){
                     controls:0, //동영상컨트롤 표시 x
                     modestbranding: 1,
                     //안먹히는기분
-                  },}} onReady={(e)=> {e.target.mute()}} />
+                  },}} onReady={(e)=> {e.target.mute()}} /> */}
                 </div>
                 <Button btnClass='closeBtn' handleClick={close}>x</Button>
             </>  

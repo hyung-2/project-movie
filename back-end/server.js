@@ -9,7 +9,7 @@ const moviesRouter = require('./src/routes/movies')
 
 
 
-mongoose.connect(`mongodb://127.0.0.1:27017/project-movie`)
+mongoose.connect(config.MONGODB_URL)
 .then(() => console.log('mongodb connected ...'))
 .catch(e => console.log(`failed to connect mongodb: ${e}`))
 
@@ -17,8 +17,11 @@ const corsOptions = {
   origin: `http://localhost:3000`,
   credentials: true
 }
+console.log(config, config.MONGODB_URL)
 
 
+//프록시를 설정해서 cors에러 처리하기 
+//https://velog.io/@lsx2003/CS-React-%EB%A6%AC%EC%95%A1%ED%8A%B8-Proxy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
 
 
 app.use(cors(corsOptions))
@@ -26,7 +29,7 @@ app.use(express.json())
 
 app.use(express.urlencoded({extended: true}))
 
-app.use('/api/movies', moviesRouter)
+app.use('/api/moviesdata', moviesRouter)
 
 
 app.listen(5201, () => {

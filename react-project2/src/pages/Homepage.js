@@ -23,20 +23,16 @@ function Homepage(){
     const [movies, setMovies] = useState([])
     //API가져오기
     useEffect(() => {
-      fetch('https://yts.mx/api/v2/list_movies.json?limit=50'
-      // ,{
-      //   method: 'GET',
-      //   headers: {'Content-Type':'application/json'},
-      // }
+      fetch('http://localhost:5201/api/moviesdata/'
+      ,{
+        method: 'GET',
+        headers: {'Content-Type':'application/json'},
+      }
       )
-      .then(res => {
-        console.log(res)
-        return res.json()
-      })
+      .then(res => res.json())
       .then(data => {
-        console.log('데이터가들어오는거야마는거야')
         console.log(data)
-        const {data: {movies}} = data
+        const {movies} = data
         console.log(movies)
         setLoading(false)
         setMovies(movies)
@@ -44,7 +40,7 @@ function Homepage(){
     },[])
     
     //추후 1등영화의 장르가 들어올 배열
-    const test = ['Action', 'Documentary', 'Drama', 'Horror', 'Comedy']
+    const test = [53, 36, 14]
 
     
     const copyMovies = [...movies]
@@ -52,7 +48,8 @@ function Homepage(){
     //장르별 객체배열
     const filter = test.map(test => {
       const filtered = copyMovies.filter((movie) => {
-        return movie.genres.includes(test)
+        // console.log(movie)
+        return movie.genre_ids.includes(test)
       })
       return {test, filtered}
     })
@@ -78,8 +75,8 @@ function Homepage(){
       console.log(filter.filtered)
       {filter.map((filterMovie, id) => {
         filterMovie.filtered.map(movie => {
-          // console.log(movie.medium_cover_image === e.target.src)
-          if(e.target.src === movie.medium_cover_image){
+          // console.log(`https://image.tmdb.org/t/p/original/${movie.poster_path}` === e.target.src)
+          if(`https://image.tmdb.org/t/p/original/${movie.poster_path}` === e.target.src){
             // console.log(movie)
             return setPickMovie(movie)
           }
@@ -154,7 +151,7 @@ function Homepage(){
                     <ScrollMoive
                     movies={
                       copyMovies.filter((movie) => {
-                        return movie.genres.includes(test)
+                        return movie.genre_ids.includes(test)
                       })
                     }
                     pickPoster={pickPoster}
