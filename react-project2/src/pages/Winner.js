@@ -1,6 +1,8 @@
 import { MotionContext } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { BiRightArrowAlt } from "react-icons/bi"
+import { motion } from "framer-motion"
 
 import WinnerPlayer from "../components/winnerPlayer"
 import Button from "../components/Button";
@@ -35,6 +37,7 @@ function Winner(){
                 })
                 
                 for(let i = 0; i < 3; i++){
+                    
                     recommendGenres.push(filterMovies.movies[Math.floor(Math.random() * filterMovies.movies.length)])    
                 }
 
@@ -62,9 +65,7 @@ function Winner(){
                     <div className="recommend-header">
                         <h2>추천 영화</h2>
                     </div>
-                    <Button btnClass={"mood-join-btn"} handleClick={gohome}>
-                        <img src={Logo} alt="logo"/>
-                    </Button>
+
                     <div className="recommend-movies">
                         {recommendMovies.map((movie) => {
                             console.log(movie)
@@ -75,6 +76,15 @@ function Winner(){
                             )
                         })}
                     </div>
+
+                    <div className="recommend-bottom">
+                        <h3 className="mood-join-msg">더 많은 영화를 보고싶다면 <BiRightArrowAlt/></h3>
+                        <motion.button className="mood-join-btn" onClick={gohome}>
+                            <img src={Logo} alt="logo"/>
+                        </motion.button>
+                    </div>
+                    
+                    
                 </div>
                 <div className="favorite"></div>
                 <div className="stats"></div>
