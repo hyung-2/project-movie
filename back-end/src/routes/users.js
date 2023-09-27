@@ -45,10 +45,15 @@ router.post('/login', expressAsyncHandler(async (req, res, next) => {
     res.json({
       code: 200,
       message: '로그인에 성공하였습니다!',
-      token: makeToken(loginUser)
+      token: makeToken(loginUser),
       userId, email, isAdmin, likeGenre
     })
   }
 }))
 
+//로그아웃
+router.post('/logout', expressAsyncHandler(async (req, res, next) => {
+  console.log(req.body)
+  res.json({code:200, message: '로그아웃하였습니다.'})
+}))
 module.exports = router

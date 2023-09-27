@@ -46,18 +46,18 @@ function MoreGenre(){
   }
 
   //스크롤
+  let offset = 40
+  let Num = 20
   const scrolling = async () => {
     const MoreGenreBox = document.querySelector('.MoreGenre')
     if(MoreGenreBox.scrollTop + MoreGenreBox.clientHeight === MoreGenreBox.scrollHeight){
-      let offset = 40
-      let Num = 20
       const plusList = (offset) => {
         return movieLists.slice(offset, offset+Num)
       }
       console.log('바닥')
       //useEffect에 넣어놧는데 offset이 안늘어난다..?!
       // console.log(offset)
-      setmoreMovieList({firstList: [...firstList, ...plusList(offset)]})
+      setmoreMovieList([...firstList, ...plusList(offset)])
       console.log(offset)
       offset = offset + Num
       console.log(offset)
