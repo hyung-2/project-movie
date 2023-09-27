@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 import Match from "../components/Match";
 import Player from "../components/Player";
 import TimeBar from "../components/Timebar";
+import WinnerPlayer from "../components/winnerPlayer";
 
 import '../styles/Tournament.css'
 
 const playerList = []
-const tournamentList = []
 
 function Tournament(){
     
@@ -23,32 +23,18 @@ function Tournament(){
     const [ winner, setWinner ] = useState([])
     const [ counter, setCounter ] = useState(16)
 
-    useEffect(() => {
-
-        fetch('/api/Tournament.json')
-        .then( res => res.json() )
-        .then( data => {
-            console.log(data[7])
-            data.map((movie) => {
-                console.log(movie.movies)
-            })
-        })
-        
-        
-    }, [])
 
     useEffect(() => {
 
         if(!loading){
-            fetch('https://yts.mx/api/v2/list_movies.json?limit=16')
-            .then( res => res.json())
-            .then( result => {
-                const { data: { movies }} = result
-                movies.map((movie) => {
-                    playerList.push(movie)
-                    return movie
+            fetch('/api/Tournament.json')
+            .then( res => res.json() )
+            .then( data => {
+
+                data.map((movie) => {
+                    playerList.push(movie.movies[Math.floor(Math.random() * movie.movies.length)])
                 })
-                
+
             }).then(() => setLoading(true))
         }else{
             playerList.sort(() => Math.random() - 0.5)
@@ -104,7 +90,7 @@ function Tournament(){
 
     useEffect(() => {
         if(winner.length === 1){
-            setTimeout(moveToResult, 3000)
+            setTimeout(moveToResult, 1000)
         }
 
     }, [winner])
@@ -115,7 +101,7 @@ function Tournament(){
             {match.length === 0 ? "" : 
                 counter < 2 ?            
                 <div className="winner">
-                    <Player player={winner[0]} isVisible={true} isMatch={false}/>
+                    <WinnerPlayer player={winner[0]} isVisible={true}/>
                 </div>
                 :
                 <>
@@ -124,7 +110,6 @@ function Tournament(){
                         match={match} 
                         handleClick={selectMovie}
                         isVisible={isVisible}
-                        isMatch={true} 
                     />    
                 </>
                 
