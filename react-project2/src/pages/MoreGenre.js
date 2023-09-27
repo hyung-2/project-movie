@@ -10,12 +10,17 @@ function MoreGenre(){
 
   const [open, setOpen] = useState(false) 
   const [pickMovie, setPickMovie] = useState({})
-
+  
 
   const location = useLocation()
   console.log(location)
   const movieLists = location.state.filter
   console.log(movieLists)
+
+  const firstList = movieLists.slice(0, 40)
+
+  const [moreMovieList, setmoreMovieList] = useState(firstList)
+  console.log(moreMovieList)
 
 
   const pickPoster = (e) => {
@@ -40,38 +45,43 @@ function MoreGenre(){
     return <div>아직 데이터 없음!</div>
   }
 
-  //무한스크롤로 데이터 불러오기
-  let offset = 0
-  let sliceList = movieLists.slice(offset, offset+10)
-  // const showList = []
-  //movieLists 10개씩 나누기
+  //스크롤
+  const scrolling = async () => {
+    const MoreGenreBox = document.querySelector('.MoreGenre')
+    if(MoreGenreBox.scrollTop + MoreGenreBox.clientHeight === MoreGenreBox.scrollHeight){
+      let offset = 40
+      let Num = 20
+      const plusList = (offset) => {
+        return movieLists.slice(offset, offset+Num)
+      }
+      console.log('바닥')
+      //useEffect에 넣어놧는데 offset이 안늘어난다..?!
+      // console.log(offset)
+      setmoreMovieList({firstList: [...firstList, ...plusList(offset)]})
+      console.log(offset)
+      offset = offset + Num
+      console.log(offset)
 
-  //window로 addEvent하면 다른 컴포넌트에도 적용됨...
-  // window.addEventListener('scroll', (e) => {
-  //     const scrollHeight = Math.max(
-  //       document.body.scrollHeight, document.documentElement.scrollHeight,
-  //       document.body.offsetHeight, document.documentElement.offsetHeight,
-  //       document.body.clientHeight, document.documentElement.clientHeight
-  //     );
-  //     console.log(scrollHeight)
-  //     console.log(window.pageYOffset)
-  //     const moreBox = document.querySelector('.MoreGenre')
-  //     console.log(moreBox.clientHeight)
+      console.log(moreMovieList)
+      
 
-  //     if(scrollHeight - (moreBox.clientHeight + window.pageYOffset) < 160){
-  //       console.log('스크롤아래')
-  //       console.log(sliceList)
-  //       offset = offset + 10
-  //       sliceList = movieLists.slice(offset, offset+10)
-  //       return sliceList
-  //     }
-  //   })
+      
+    }
+  }
+  
+  useEffect = () => {
+    document.querySelector('.MoreGenre').addEventListener('scroll', scrolling)
+
+    // return() => {
+    //   document.querySelector('.MoreGenre').removeEventListener('scroll', scrolling)
+    // }
+  }
 
   return(
-    <div className={`MoreGenre`}>
+    <div className={`MoreGenre`}  onScroll={scrolling}>
       <Nav></Nav>
       <h3 className="maintitle">{location.state.title}</h3>
-      <Movies movieLists={movieLists} pickPoster={pickPoster}></Movies>
+      <Movies movieLists={firstList} pickPoster={pickPoster}></Movies>
       <Modal type='poster' open={open} pickMovie={pickMovie} close={close}></Modal>
     </div>
   )

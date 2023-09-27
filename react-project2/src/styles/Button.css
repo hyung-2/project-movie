@@ -24,6 +24,7 @@
   font-size: 1.2rem;
   scale: 1.5;
   /* padding: 5px; */
+  font-family: 'GoryeongStrawberry';
   
   position: absolute;
   top: 5px;
@@ -55,4 +56,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.signupOK{
+  margin-bottom: 3rem;
 }

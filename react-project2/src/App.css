@@ -3,13 +3,16 @@
 body{
   background-color: black;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 
 
 .App {
   text-align: center;
   background-color: var(--bg-color);
   /* width: 100vw;  */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .App-logo {
