@@ -9,6 +9,7 @@
   color: var(--font-color);
   width: 100%;
   background-color: var(--bg-color);
+  overflow: auto;
 }
 
 .maintitle{

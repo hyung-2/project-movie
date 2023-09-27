@@ -42,15 +42,13 @@ function Homepage(){
     //추후 1등영화의 장르가 들어올 배열
     const test = [53, 36, 14]
     const winnerGenres = []
-    console.log(test.map(test => {
-      console.log(Genres)
-      console.log(test)
+    test.map(test => {
       Genres.genres.map(genre => {
         if(genre.id == test){
           return winnerGenres.push(genre)
         }
       })
-    }))
+    })
     console.log(winnerGenres)
     
     const copyMovies = [...movies]

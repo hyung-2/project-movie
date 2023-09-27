@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Button from "./Button";
 // import YouTube from 'react-youtube'
 import '../styles/Modal.css'
+import Genres from '../api/Genres.json'
 
 function Modal ({children, open, type, close, pickMovie }){
 
@@ -13,6 +14,20 @@ function Modal ({children, open, type, close, pickMovie }){
   }
   console.log(open)
   console.log(pickMovie)
+
+  const pickMovieGenre = []
+  open && pickMovie.genre_ids.length !== 0 && 
+  pickMovie.genre_ids.map(id => {
+    Genres.genres.map(genre => {
+      if(id==genre.id){
+        pickMovieGenre.push(genre.name)
+      }
+
+    })
+  })
+  // console.log(pickMovieGenre)
+
+
   if(type === 'poster' && open){
     return( 
     <div className={`Modal ${open ? 'open' : 'close'}`}>
@@ -23,7 +38,7 @@ function Modal ({children, open, type, close, pickMovie }){
                 <div className="content-box">
                   <div className="modal-contents">
                     <h2 className="modal-title">{pickMovie.title} ({pickMovie && pickMovie.release_date.slice(0, 10)})</h2>
-                    <h4>장르: {pickMovie.genre_ids.length !== 0 && pickMovie.genre_ids.join(', ')}</h4>
+                    <h4>장르: {pickMovieGenre.join(', ')}</h4>
                     {/* <h4>평점: {pickMovie.rating}</h4> */}
                     <p className="modalP normalP" onClick={openP}>줄거리: {pickMovie.overview ? pickMovie.overview : '줄거리가 없습니다.'}</p>
                   </div>

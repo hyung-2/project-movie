@@ -1,28 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import '../styles/MoreGenre.css'
 import Nav from '../components/Nav'
 import Modal from "../components/Modal";
 import Movies from '../components/Movies'
-
+import Button from '../components/Button'
 
 function MoreGenre(){
 
   const [open, setOpen] = useState(false) 
   const [pickMovie, setPickMovie] = useState({})
-
+  
 
   const location = useLocation()
   console.log(location)
   const movieLists = location.state.filter
   console.log(movieLists)
 
+  const firstList = movieLists.slice(0, 40)
+
+  const [moreMovieList, setmoreMovieList] = useState(firstList)
+  console.log(moreMovieList)
+
 
   const pickPoster = (e) => {
     console.log(e.target)
     {movieLists.map((movie, id) => {
-      console.log(movie.medium_cover_image === e.target.src)
-      if(e.target.src === movie.medium_cover_image){
+      // console.log(movie)
+      // console.log(`https://image.tmdb.org/t/p/original/${movie.poster_path}` === e.target.src)
+      if(e.target.src === `https://image.tmdb.org/t/p/original/${movie.poster_path}`){
         console.log(movie)
         return setPickMovie(movie)
       }
@@ -39,13 +45,43 @@ function MoreGenre(){
     return <div>아직 데이터 없음!</div>
   }
 
-  //나중에 무한스크롤로 데이터 불러오기
+  //스크롤
+  const scrolling = async () => {
+    const MoreGenreBox = document.querySelector('.MoreGenre')
+    if(MoreGenreBox.scrollTop + MoreGenreBox.clientHeight === MoreGenreBox.scrollHeight){
+      let offset = 40
+      let Num = 20
+      const plusList = (offset) => {
+        return movieLists.slice(offset, offset+Num)
+      }
+      console.log('바닥')
+      //useEffect에 넣어놧는데 offset이 안늘어난다..?!
+      // console.log(offset)
+      setmoreMovieList({firstList: [...firstList, ...plusList(offset)]})
+      console.log(offset)
+      offset = offset + Num
+      console.log(offset)
+
+      console.log(moreMovieList)
+      
+
+      
+    }
+  }
+  
+  useEffect = () => {
+    document.querySelector('.MoreGenre').addEventListener('scroll', scrolling)
+
+    // return() => {
+    //   document.querySelector('.MoreGenre').removeEventListener('scroll', scrolling)
+    // }
+  }
 
   return(
-    <div className={`MoreGenre`}>
+    <div className={`MoreGenre`}  onScroll={scrolling}>
       <Nav></Nav>
       <h3 className="maintitle">{location.state.title}</h3>
-      <Movies movieLists={movieLists} pickPoster={pickPoster}></Movies>
+      <Movies movieLists={firstList} pickPoster={pickPoster}></Movies>
       <Modal type='poster' open={open} pickMovie={pickMovie} close={close}></Modal>
     </div>
   )

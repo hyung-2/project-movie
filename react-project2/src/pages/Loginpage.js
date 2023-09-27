@@ -24,12 +24,9 @@ function Loginpage(){
   
   //form화면으로 슬라이드
   const gofrom = () => {
-    const form = document.querySelector('.form')
-    console.log(form.scrollHeight)
-    console.log(form.offsetHeigth)
-    
     window.scrollTo({top:850, behavior:"smooth"})
   }
+
  
 
   return(

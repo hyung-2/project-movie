@@ -48,12 +48,21 @@ label{
 }
 
 .input-box{
-  width: 313px;
-  margin-bottom: 10rem;
+  width: 350px;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+.inputs{
+  display: flex;
+  flex: 1;
 }
 .input-box button{
   margin-top: 2rem;
 }
+
 
 .check-box input{
   height: 15px;
@@ -62,5 +71,11 @@ label{
 .check-box label{
   right: 0;
   margin-right: 1rem;
+  width: 123px;
+  text-align: start;
+  padding-left: 10px;
 }
 
+.done h4{
+  width: 350px;
+}

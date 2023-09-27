@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import '../styles/Form.css'
+import Genres from '../api/Genres.json'
 
 
 
@@ -41,6 +42,20 @@ function Form({type, handleClick}){
   const goresult = () => {
     const checkBox = document.querySelector('.check-box')
     const doneBox = document.querySelector('.done')
+    const inputBoxs = document.querySelectorAll('.inputs')
+
+    //장르 체크된것 추출
+    inputBoxs.forEach(inputBox => {
+      // console.log(inputBox)
+      //1등 장르 자동체크되게 하기
+      const isChecked = inputBox.firstElementChild.checked
+      // console.log(isChecked)
+      if(isChecked){
+        console.log(inputBox.firstElementChild.value)
+        //추출된 장르 데이터에 fetch하여 담기
+      }
+    })
+
     checkBox.classList.add('goleft3')
     
     doneBox.classList.add('goleft3')
@@ -66,6 +81,10 @@ function Form({type, handleClick}){
     doneBox.classList.remove('goleft3')
 
   }
+  //이상형월드컵 페이지 다시가기
+  const goworldcup = () => {
+    navigate('/')
+  }
 
   //로그인정보가 틀리면 빨간색보더로 변경해주기
   //회원가입시 이미 존재하는 이메일이면 input창 벗어났을때 바로 알려주기  
@@ -82,6 +101,7 @@ function Form({type, handleClick}){
         </label>
         <Button btnClass='loginbtn' handleClick={login}>로그인</Button>
         <p className="registerbtn" onClick={goSignup}>아직 회원이 아니신가요?</p>
+        <p className="registerbtn" onClick={goworldcup}>이상형 월드컵 다시 하러 가기</p>
       </div>
     )
   }else if(type == 'signup'){
@@ -109,33 +129,28 @@ function Form({type, handleClick}){
     )
   }else if(type == 'checkBox'){
     //나중에 api확정되면 장르 더 추가하기
+    // console.log(Genres)
     return(
       <div className="check-box base">
         <h4>좋아하는 장르를 선택해주세요!</h4>
           <div className="input-box">
-            <input type='checkbox' id="horror" />
-            <label htmlFor='horror'>공포</label>
-            <input type='checkbox' id='drama' />
-            <label htmlFor='drama'>드라마</label>
-            <input type='checkbox' id='action' />
-            <label htmlFor='action'>액션</label>
-            <input type='checkbox' id="horror" />
-            <label htmlFor='horror'>스릴러</label>
-            <input type='checkbox' id='drama' />
-            <label htmlFor='drama'>로맨틱코미디</label>
-            <input type='checkbox' id='action' />
-            <label htmlFor='action'>장르또뭐가있을까용</label>
+            {Genres.genres.map((genre,id) => {
+              return(
+                <div className="inputs" key={id}>
+                  <input type='checkbox' id={genre.name} value={genre.name} onClick={handleClick}/>
+                  <label htmlFor={genre.name}>{genre.name}</label>
+                </div>
+              )
+            })}
           </div>
-          <Button handleClick={goresult}>가입완료하기</Button>
+          <Button btnClass='signupOK' handleClick={goresult}>가입완료하기</Button>
         </div>
     )
   }else if(type == 'done'){
     //백앤드 결과화면으로 회원가입 성공여부 띄워주기
     return(
       <div className="done base">
-        <div className="input-box">
-          <h4>축하합니다! 무드의 회원이 되었습니다.</h4>
-        </div>
+        <h4>축하합니다! 무드의 회원이 되었습니다.</h4>
         <Button handleClick={goLogin}>로그인 하러 가기</Button>
       </div>
     )
