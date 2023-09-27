@@ -1,0 +1,121 @@
+@import url('../global.css');
+
+.Loginpage{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  margin-top: -10rem;
+  scale: .7;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  transition: .2s;
+}
+.imgdown{
+  margin-top: 4rem;
+  opacity: 1;
+}
+
+.form{
+  border: 1px solid var(--line-color);
+  width: 670px;
+  border-radius: 15px;
+  margin: 15rem 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+
+  overflow: hidden;
+}
+.form > div {
+  margin: 0 11.2rem;
+  position: relative;
+  transition: .3s;
+}
+.base{
+  left: 0;
+}
+.goleft{
+  left: -673px;
+}
+.goleft2{
+  left: -1357px;
+}
+.goleft3{
+  left: -2029px;
+}
+.goleft4{
+  left: -2520px;
+}
+.goright{
+  left: 673px;
+}
+.intro{
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 500px;
+  opacity: 0;
+  transition: .2s ease-in-out; 
+  font-family: 'iceJaram-Rg';
+}
+.introText1{
+  left: -43rem;    
+}
+.introText1-right{
+  left: -25rem;
+  opacity: 1;
+}
+.introText2{
+  top: -48px;
+  right: -48rem;
+}
+.introText2-left{
+  right: -20rem;
+  opacity: 1;
+}
+
+.downbtn{
+  margin: -2rem 0;
+  margin-bottom: 5rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: .2s;
+  top: -2rem;
+  animation: bounce 1s infinite linear alternate;
+  opacity: 0;
+}
+.downbtn-up{
+  margin: -1rem 0;
+  opacity: 1;
+}
+
+.introText3{
+  margin: 2rem 0;
+  top: -2rem;
+  width: 100%;
+}
+.introText3-up{
+  top: 0rem;
+  opacity: 1;
+}
+.intro span{
+  font-weight: bold;
+  text-shadow: 0 0 30px yellow;
+}
+.introText3 span{
+  color: var(--main-color);
+}
+
+
+@keyframes bounce {
+  0% {top: 7px;}
+  100% {top: 0px;}
+}

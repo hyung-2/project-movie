@@ -1,12 +1,17 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Player from "../components/Player";
 import '../styles/Winner.css'
+import Button from "../components/Button";
 
 
 function Winner(){
 
     const { state: {winner} } = useLocation()
+    const navigate = useNavigate()
+    const gohome = () => {
+        navigate('/login')
+    }
 
     return (
         <div className="winner-page">
@@ -19,6 +24,7 @@ function Winner(){
                 <div className="stats"></div>
                 {console.log(winner)}  
             </div>
+            <Button handleClick={gohome}>추천영화 보러가기</Button>
         </div>
     )
 }

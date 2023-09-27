@@ -1,4 +1,10 @@
 @import url('../global.css');
+@font-face {
+  font-family: 'IAMAPLAYER';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .Homepage{
   color: var(--font-color) ;
@@ -14,12 +20,18 @@
   align-items: flex-start;
   margin: .5rem 1rem;
 }
+.scroll-box:nth-of-type(2){
+  margin-top: 5rem;
+}
 
 h3{
   text-align: left;
-  margin: 0 3rem;
+  margin: 0 5rem;
   margin-top: 1.5rem;
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 7px white;
+  font-size: 2rem;
+  font-family: 'IAMAPLAYER';
+  letter-spacing: 2px;
 }
 
 .box{
@@ -27,4 +39,12 @@ h3{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.loading{
+  color: var(--font-color);
+  font-size: 3rem;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -9,7 +9,7 @@ function Movies({pickPoster, movieLists, }){
         {movieLists.map((movie, id) => {
           return(
             <div className="movies" key={id}>
-              <Poster key={id} pickPoster={pickPoster} cover={movie.medium_cover_image}></Poster>
+              <Poster key={id} pickPoster={pickPoster} cover={movie.poster_path}></Poster>
               <h2>{movie.title}</h2>
             </div>
             )

@@ -6,7 +6,7 @@
   text-align: left;
   background-color: var(--bg-color);
   border: 2px solid var(--line-color);
-  z-index: 1;
+  z-index: 3;
   overflow: hidden;
 
   position: fixed;
@@ -17,10 +17,18 @@
   justify-content: center;
 }
 
-p{
-  height: 50%;
-  overflow-y: hidden;
+.modalP{
+  /* height: 50%; */
+  /* overflow-y: hidden; */
   margin-right: 1rem;
+  height: 200px;
+  cursor: pointer;
+}
+
+.normalP{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 
@@ -47,9 +55,42 @@ p{
   /* border: 1px solid pink; */
   flex: 2;
   height: 100%;
-  padding-left: 25px;
+  /* padding-left: 25px; */
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  overflow: hidden;
 }
 .content-box h2{
   font-size: 1.7rem;
   font-weight: bold;
+  text-shadow: 0 0 10px black;
+}
+
+.content-box > *{
+  position: relative;
+  padding-left: 25px;
+  z-index: 3;
+}
+.youtube *{
+  z-index: 1;
+}
+.button{
+  z-index: 3;
+}
+.youtube{
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 30px;
+  /* padding-left: 0; */
+  /* right: 144px; */
+  /* border: 1px solid white; */
+}
+.modal-title{
+  margin-top: 50px;
+}
+.modal-contents{
+  height: 100%;
+  top: -30px;
 }

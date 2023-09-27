@@ -7,7 +7,7 @@ function Poster({ pickPoster, cover, id, openModal }){
       return(
         <div className={`Poster`} onClick={pickPoster} key={id}>
           <div className="img-box">
-            <img src={cover}></img>
+            <img src={`https://image.tmdb.org/t/p/original/${cover}`}></img>
           </div>
         </div> 
       )

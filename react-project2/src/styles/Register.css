@@ -1,0 +1,48 @@
+.Register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 670px;
+  /* margin: 0 173px; */
+  position: relative;
+  transition: .3s;
+  left: 0;
+}
+label{
+  position: relative;
+}
+
+.labelname{
+  position: absolute;
+  color: var(--font-color);
+  padding-left: 10px;
+  font-size: 1.3rem;
+  transition: .2s
+}
+
+.Register input{
+  font-size: 1.5rem;
+  border: 1px solid var(--line-color);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: var(--font-color);
+  outline: none;
+  margin: 1rem 0;
+  background-color: rgba(51, 51, 51, .5);
+  width: 310px;
+}
+
+.forcusing{
+  font-size: .5rem;
+  top: 10px;
+}
+
+.toleft{
+  left: -497px;
+}
+
+.totheleft{
+  left: -1000px;
+}
