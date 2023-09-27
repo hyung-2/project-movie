@@ -28,6 +28,10 @@
 }
 .player-img img{
     filter: brightness(.7);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
 }
 .player-img .player-info{
     width: 100%;

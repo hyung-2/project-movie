@@ -3,5 +3,98 @@
     height: 100%;
 }
 .result-container{
+    width: 80%;
+    height: 90%;
     display: grid;
+    gap: 1rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.result-container > div{
+    border: 1px solid #909090;
+}
+.result-container .poster{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+.result-container .poster .player{
+    box-shadow: none;
+    width: 24rem;
+    height: 36rem;
+    filter: brightness(1);
+}
+
+.result-container .recommend{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    padding: 0 1.2rem;
+    position: relative;
+    height: 36rem;
+    align-self: flex-end;
+}
+.result-container .recommend .mood-join-btn{
+    background: none;
+    width: 20rem;
+    height: 5rem;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+}
+.result-container .recommend .mood-join-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+
+.result-container .recommend .recommend-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.result-container .recommend .recommend-header h2{
+    width: 100%;
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+.result-container .recommend .recommend-movies{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result-container .recommend .recommend-movies .recommend-poster{
+    width: 16rem;
+    height: 24rem;
+    margin: .5rem;
+}
+.result-container .recommend .recommend-movies .recommend-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.result-container .favorite{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+.result-container .stats{
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
 }
