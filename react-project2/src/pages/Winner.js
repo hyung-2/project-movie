@@ -6,6 +6,7 @@ import WinnerPlayer from "../components/winnerPlayer"
 import Button from "../components/Button";
 
 import '../styles/Winner.css'
+import Logo from "../assets/logo.png"
 
 
 function Winner(){
@@ -61,7 +62,7 @@ function Winner(){
                     <div className="recommend-header">
                         <h2>추천 영화</h2>
                     </div>
-                    <Button btnClass={"mood-join-btn"}>
+                    <Button btnClass={"mood-join-btn"} handleClick={gohome}>
                         <img src={Logo} alt="logo"/>
                     </Button>
                     <div className="recommend-movies">
@@ -78,7 +79,6 @@ function Winner(){
                 <div className="favorite"></div>
                 <div className="stats"></div>
             </div>
-            <Button handleClick={gohome}>추천영화 보러가기</Button>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Button";
-import YouTube from 'react-youtube'
+// import YouTube from 'react-youtube'
 import '../styles/Modal.css'
 
 function Modal ({children, open, type, close, pickMovie }){

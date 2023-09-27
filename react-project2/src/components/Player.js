@@ -38,13 +38,13 @@ function Player({ player, handleClick, direction, isVisible, className }){
                 >
                     <div className="player-img">
                         <img src={`https://image.tmdb.org/t/p/original/${player.poster_path}`} alt={`${player.title}`}/>
-                            <div className="genres-container">
-                                <div className="genre">{findGenreName(player.genre_ids[0])}</div>
-                                <div className="genre">{findGenreName(player.genre_ids[1])}</div>
-                                <div className="genre">{findGenreName(player.genre_ids[2])}</div>
-                                <div className="genre">{findGenreName(player.genre_ids[3])}</div>
-                                <div className="genre">{findGenreName(player.genre_ids[4])}</div>
-                            </div>                                               
+                        <div className="genres-container">
+                            <div className="genre">{findGenreName(player.genre_ids[0])}</div>
+                            <div className="genre">{findGenreName(player.genre_ids[1])}</div>
+                            <div className="genre">{findGenreName(player.genre_ids[2])}</div>
+                            <div className="genre">{findGenreName(player.genre_ids[3])}</div>
+                            <div className="genre">{findGenreName(player.genre_ids[4])}</div>
+                        </div>                                               
                     </div>
                     
                 </motion.div>            
