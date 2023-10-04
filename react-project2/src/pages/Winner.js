@@ -21,7 +21,7 @@ function Winner(){
     const [recommendMovies, setRecommendMovies] = useState([])
 
     useEffect(() => {
-        const getFavoriteGenreMovies = async (arr) => {
+        const getFavoriteGenreMovies = async (win) => {
 
             const data = await fetch('/api/Tournament.json')
             const res = await data.json()
@@ -31,26 +31,33 @@ function Winner(){
             })
             const recommendGenres = []
 
-            const findMovies = (num) => {
-                const filterMovies = res.find((movie) => {
-                    return movie.code == num
+            const findMovies = () => {
+                const filterMovies = res.filter((movie) => {
+                   const findMv = movie.movies.find((mv) => {
+                        if(mv.id === win.id){
+                            return mv
+                        }
+                    })
+                    return findMv !== undefined
                 })
-                
+
+                const indices = []
+                while(indices.length < 3){
+                    let index = Math.floor(Math.random() * filterMovies[0].movies.length)
+                    if(!indices.includes(index)){
+                        indices.push(index)
+                    }
+                }
+                console.log(filterMovies)
                 for(let i = 0; i < 3; i++){
-                    
-                    recommendGenres.push(filterMovies.movies[Math.floor(Math.random() * filterMovies.movies.length)])    
+                    recommendGenres.push(filterMovies[0].movies[indices[i]])    
                 }
 
                 setRecommendMovies([...recommendGenres])
             }
-
-            if(genreCode.includes(arr[0])){
-                findMovies(arr[0])
-            }else{
-                findMovies(arr[1])
-            }
+            findMovies()
         }
-        getFavoriteGenreMovies(winner[0].genre_ids)
+        getFavoriteGenreMovies(winner[0])
     }, [])
 
 
@@ -68,25 +75,24 @@ function Winner(){
 
                     <div className="recommend-movies">
                         {recommendMovies.map((movie) => {
-                            console.log(movie)
                             return (
                                 <div className="recommend-poster" key={movie.id}>
                                     <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title}/>
                                 </div>
                             )
                         })}
-                    </div>
-
-                    <div className="recommend-bottom">
-                        <h3 className="mood-join-msg">더 많은 영화를 보고싶다면 <BiRightArrowAlt/></h3>
-                        <motion.button className="mood-join-btn" onClick={gohome}>
-                            <img src={Logo} alt="logo"/>
-                        </motion.button>
-                    </div>
-                    
-                    
+                    </div>                    
                 </div>
-                <div className="favorite"></div>
+                <div className="move-to-login">
+                    <h3 className="mood-join-msg">더 많은 영화를 보고싶다면 <BiRightArrowAlt/></h3>
+                    <motion.button className="mood-join-btn" onClick={gohome}>
+                        <img src={Logo} alt="logo"/>
+                    </motion.button>
+                </div>
+                <div className="favorite">
+                    <h2 className="favorite-msg"></h2>
+                    <div className="favorite-genre"></div>
+                </div>
                 <div className="stats"></div>
             </div>
         </div>
