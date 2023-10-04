@@ -6,7 +6,7 @@ const app = express()
 
 
 const moviesRouter = require('./src/routes/movies')
-const ResultRouter = requite('./src/routes/results')
+const ResultRouter = require('./src/routes/results')
 
 
 
