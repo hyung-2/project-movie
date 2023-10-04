@@ -13,7 +13,7 @@ import Logo from "../assets/logo.png"
 
 function Winner(){
 
-    const { state: {winner} } = useLocation()
+    const { state: {winner, result: winnerMoviesGenre } } = useLocation()
     const navigate = useNavigate()
     const gohome = () => {
         navigate('/login')
@@ -32,15 +32,8 @@ function Winner(){
             const recommendGenres = []
 
             const findMovies = () => {
-                const filterMovies = res.filter((movie) => {
-                   const findMv = movie.movies.find((mv) => {
-                        if(mv.id === win.id){
-                            return mv
-                        }
-                    })
-                    return findMv !== undefined
-                })
-
+                console.log(winnerMoviesGenre)
+                const filterMovies = [...winnerMoviesGenre]
                 const indices = []
                 while(indices.length < 3){
                     let index = Math.floor(Math.random() * filterMovies[0].movies.length)
@@ -56,6 +49,13 @@ function Winner(){
                 setRecommendMovies([...recommendGenres])
             }
             findMovies()
+
+            const results = await fetch('http://127.0.0.1:5201/api/result'
+            ,{
+                method: 'GET',
+                headers: {'Content-Type':'application/json'},
+            })
+            const resultsRes = await results.json()
         }
         getFavoriteGenreMovies(winner[0])
     }, [])

@@ -8,10 +8,10 @@ import WinnerPlayer from "../components/winnerPlayer";
 
 import '../styles/Tournament.css'
 
+const tournamentMovies = []
 const playerList = []
 
 function Tournament(){
-    
 
     const [ loading, setLoading ] = useState(false)
     const [ isVisible, setIsVisible ] = useState(true)
@@ -21,6 +21,7 @@ function Tournament(){
     const [ winners, setWinners ] = useState([])
 
     const [ winner, setWinner ] = useState([])
+    const [ winnerMoviesGenre, setWinnerMoivesGenre ] = useState([])
     const [ counter, setCounter ] = useState(16)
 
 
@@ -32,6 +33,7 @@ function Tournament(){
             .then( data => {
 
                 data.map((movie) => {
+                    tournamentMovies.push(movie)
                     playerList.push(movie.movies[Math.floor(Math.random() * movie.movies.length)])
                 })
 
@@ -71,6 +73,26 @@ function Tournament(){
             if(winners.length === 0){
                 setWinner([player])
                 setIsVisible(true)
+
+                const filterMovies = tournamentMovies.filter((movie) => {
+                    const findMv = movie.movies.find((mv) => {
+                         if(mv.id === player.id){
+                             return mv
+                         }
+                     })
+                     return findMv !== undefined
+                })
+                console.log(filterMovies)
+                fetch('http://127.0.0.1:5201/api/result'
+                ,{
+                    method: 'PUT',
+                    headers: {'Content-Type':'application/json'},
+                    body: JSON.stringify({
+                        id: filterMovies[0].code
+                    })
+                })
+                setWinnerMoivesGenre([...filterMovies])
+
             }else{
                 let updatedMovies = [...winners, player]
                 updatedMovies.sort(() => Math.random() - 0.5)
@@ -86,7 +108,7 @@ function Tournament(){
     }, [match])
 
     const navigate = useNavigate()
-    const moveToResult = () => navigate('/result', { state: {winner} })
+    const moveToResult = () => navigate('/result', { state: {winner, result: winnerMoviesGenre}})
 
     useEffect(() => {
         if(winner.length === 1){
