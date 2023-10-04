@@ -10,7 +10,6 @@ import Genres from '../api/Genres.json'
 
 
 function Homepage(){
-  //각 박스에서 스크롤 구현하기
     
     const [open, setOpen] = useState(false) 
     const [pickMovie, setPickMovie] = useState({})
@@ -42,6 +41,7 @@ function Homepage(){
     //추후 1등영화의 장르가 들어올 배열
     const test = [53, 36, 14]
     const winnerGenres = []
+    //장르 번호와 이름 연결
     test.map(test => {
       Genres.genres.map(genre => {
         if(genre.id == test){

@@ -10,6 +10,7 @@ function MoreGenre(){
 
   const [open, setOpen] = useState(false) 
   const [pickMovie, setPickMovie] = useState({})
+  const [offSet, setoffSet] = useState(40)
   
 
   const location = useLocation()
@@ -45,22 +46,21 @@ function MoreGenre(){
     return <div>아직 데이터 없음!</div>
   }
 
+
   //스크롤
-  let offset = 40
-  let Num = 20
-  const scrolling = async () => {
+  let num = 20
+  
+  const scrolling = () => {
     const MoreGenreBox = document.querySelector('.MoreGenre')
     if(MoreGenreBox.scrollTop + MoreGenreBox.clientHeight === MoreGenreBox.scrollHeight){
-      const plusList = (offset) => {
-        return movieLists.slice(offset, offset+Num)
+      const plusList = (offSet) => {
+        return movieLists.slice(offSet, offSet+num)
       }
-      console.log('바닥')
-      //useEffect에 넣어놧는데 offset이 안늘어난다..?!
-      // console.log(offset)
-      setmoreMovieList([...firstList, ...plusList(offset)])
-      console.log(offset)
-      offset = offset + Num
-      console.log(offset)
+      //useEffect에 넣어놧는데 offSet이 안늘어난다..?!
+      console.log(offSet)
+      setoffSet(offSet + num)
+      setmoreMovieList([...moreMovieList, ...plusList(offSet)])
+      console.log(offSet)
 
       console.log(moreMovieList)
       
@@ -81,7 +81,7 @@ function MoreGenre(){
     <div className={`MoreGenre`}  onScroll={scrolling}>
       <Nav></Nav>
       <h3 className="maintitle">{location.state.title}</h3>
-      <Movies movieLists={firstList} pickPoster={pickPoster}></Movies>
+      <Movies movieLists={moreMovieList} pickPoster={pickPoster}></Movies>
       <Modal type='poster' open={open} pickMovie={pickMovie} close={close}></Modal>
     </div>
   )
