@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { BiRightArrowAlt } from "react-icons/bi"
 import { motion } from "framer-motion"
 
+import Chart from "../components/Chart";
 import WinnerPlayer from "../components/winnerPlayer"
 import Button from "../components/Button";
 
@@ -19,6 +20,7 @@ function Winner(){
         navigate('/login')
     }
     const [recommendMovies, setRecommendMovies] = useState([])
+    const [genreData, setGenreData] = useState([])
 
     useEffect(() => {
         const getFavoriteGenreMovies = async (win) => {
@@ -41,7 +43,7 @@ function Winner(){
                         indices.push(index)
                     }
                 }
-                console.log(filterMovies)
+                // console.log(filterMovies)
                 for(let i = 0; i < 3; i++){
                     recommendGenres.push(filterMovies[0].movies[indices[i]])    
                 }
@@ -56,6 +58,9 @@ function Winner(){
                 headers: {'Content-Type':'application/json'},
             })
             const resultsRes = await results.json()
+            const genresRank = await resultsRes.results.sort((a, b) => b.likes - a.likes)
+            console.log(genresRank)
+            setGenreData([...resultsRes])
         }
         getFavoriteGenreMovies(winner[0])
     }, [])
@@ -93,7 +98,12 @@ function Winner(){
                     <h2 className="favorite-msg"></h2>
                     <div className="favorite-genre"></div>
                 </div>
-                <div className="stats"></div>
+                <div className="stats">
+                    <div className="genres-rank"></div>
+                    <div className="genres-chart">
+                        <Chart dataArr={genreData}/>
+                    </div>
+                </div>
             </div>
         </div>
     )

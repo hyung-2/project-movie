@@ -82,7 +82,7 @@ function Tournament(){
                      })
                      return findMv !== undefined
                 })
-                console.log(filterMovies)
+                // console.log(filterMovies)
                 fetch('http://127.0.0.1:5201/api/result'
                 ,{
                     method: 'PUT',
