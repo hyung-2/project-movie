@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import '../styles/Form.css'
@@ -6,8 +6,10 @@ import Genres from '../api/Genres.json'
 
 
 
-function Form({type, handleClick}){
+function Form({type, handleClick, genreLists}){
   
+  const [userPickGenre, setUserPickGenre] =useState([])
+
   //로그인 인풋 꾸미기
   const addClass = (e) => {
     console.log(e.target)
@@ -18,11 +20,7 @@ function Form({type, handleClick}){
       e.target.previousElementSibling.classList.remove('forcusing')
     }
   }
-  //로그인 누르면 홈페이지로 이동
-  const navigate = useNavigate()
-  const login = () => {
-    navigate('/home')
-  }
+ 
 
   //회원가입 페이지 보이기
   const goSignup = () => {
@@ -38,7 +36,9 @@ function Form({type, handleClick}){
     registerBox.classList.add('goleft2')
     checkBox.classList.add('goleft2')
   }
+
   //회원가입 확인창 보이기
+  let arr = []
   const goresult = () => {
     const checkBox = document.querySelector('.check-box')
     const doneBox = document.querySelector('.done')
@@ -47,22 +47,31 @@ function Form({type, handleClick}){
     //장르 체크된것 추출
     inputBoxs.forEach(inputBox => {
       // console.log(inputBox)
-      //1등 장르 자동체크되게 하기
       const isChecked = inputBox.firstElementChild.checked
-      // console.log(isChecked)
       if(isChecked){
         console.log(inputBox.firstElementChild.value)
         //추출된 장르 데이터에 fetch하여 담기
+        return arr.push(inputBox.firstElementChild.value)
       }
     })
-
-    checkBox.classList.add('goleft3')
-    
+    console.log(arr)
+    checkBox.classList.add('goleft3') 
     doneBox.classList.add('goleft3')
+    return arr
   }
+  //왜 리턴을줘도 usestate를써도 값이..저장이안되지...
+
+  //로그인 누르면 홈페이지로 이동
+  const navigate = useNavigate()
+  const login = () => {
+   console.log(arr)
+   //  navigate('/home', {state:{userPickGenre}})
+  }
+
   
   //회원가입후 로그인 페이지 보이기
   const goLogin = () => {
+    console.log(arr)
     const loginBox = document.querySelector('.Login')
     const registerBox = document.querySelector('.Register')
     const checkBox = document.querySelector('.check-box')
@@ -85,7 +94,6 @@ function Form({type, handleClick}){
   const goworldcup = () => {
     navigate('/')
   }
-
   //로그인정보가 틀리면 빨간색보더로 변경해주기
   //회원가입시 이미 존재하는 이메일이면 input창 벗어났을때 바로 알려주기  
   if(type == 'login'){
@@ -128,16 +136,16 @@ function Form({type, handleClick}){
       </div>
     )
   }else if(type == 'checkBox'){
-    //나중에 api확정되면 장르 더 추가하기
     // console.log(Genres)
     return(
       <div className="check-box base">
         <h4>좋아하는 장르를 선택해주세요!</h4>
           <div className="input-box">
             {Genres.genres.map((genre,id) => {
+              // console.log(genre)
               return(
                 <div className="inputs" key={id}>
-                  <input type='checkbox' id={genre.name} value={genre.name} onClick={handleClick}/>
+                  <input type='checkbox' id={genre.name} value={genre.name} onClick={handleClick} defaultChecked={genreLists && genreLists.includes(genre.id) && 'on'}/>
                   <label htmlFor={genre.name}>{genre.name}</label>
                 </div>
               )

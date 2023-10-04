@@ -14,15 +14,18 @@ function MoreGenre(){
   
 
   const location = useLocation()
-  console.log(location)
+  // console.log(location)
   const movieLists = location.state.filter
-  console.log(movieLists)
+  // console.log(movieLists)
 
   const firstList = movieLists.slice(0, 40)
 
   const [moreMovieList, setmoreMovieList] = useState(firstList)
   console.log(moreMovieList)
 
+  useEffect(() => {
+    document.querySelector('.MoreGenre').addEventListener('scroll', scrolling)
+  },[moreMovieList])
 
   const pickPoster = (e) => {
     console.log(e.target)
@@ -60,22 +63,14 @@ function MoreGenre(){
       console.log(offSet)
       setoffSet(offSet + num)
       setmoreMovieList([...moreMovieList, ...plusList(offSet)])
-      console.log(offSet)
 
-      console.log(moreMovieList)
+      // console.log(moreMovieList)
       
 
       
     }
   }
-  
-  useEffect = () => {
-    document.querySelector('.MoreGenre').addEventListener('scroll', scrolling)
 
-    // return() => {
-    //   document.querySelector('.MoreGenre').removeEventListener('scroll', scrolling)
-    // }
-  }
 
   return(
     <div className={`MoreGenre`}  onScroll={scrolling}>

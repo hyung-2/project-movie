@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
 import '../styles/Homepage.css'
 import Nav from '../components/Nav'
@@ -22,6 +22,7 @@ function Homepage(){
     const [movies, setMovies] = useState([])
     //API가져오기
     useEffect(() => {
+      // console.log('패치가안되는거야 뭐야')
       fetch('http://localhost:5201/api/moviesdata/'
       ,{
         method: 'GET',
@@ -37,14 +38,21 @@ function Homepage(){
         setMovies(movies)
       })
     },[])
+    const location = useLocation()
+    console.log(location)
+    const userPickLists = location.state.userPickGenre
     
     //추후 1등영화의 장르가 들어올 배열
-    const test = [53, 36, 14]
+    // const test = [53, 36, 14]
     const winnerGenres = []
+
+    console.log(userPickLists)
     //장르 번호와 이름 연결
-    test.map(test => {
+    userPickLists.map(userPickList => {
+      console.log(userPickList)
       Genres.genres.map(genre => {
-        if(genre.id == test){
+        console.log(genre.id)
+        if(genre.id == userPickList){
           return winnerGenres.push(genre)
         }
       })
@@ -69,9 +77,9 @@ function Homepage(){
       console.log('더보기클릭')
       console.log(e.target.parentElement.previousElementSibling.innerHTML)
       filter.map(filter => {
-        console.log(filter)
-        console.log(filter.winnerGenre.name)
-        console.log(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML)
+        // console.log(filter)
+        // console.log(filter.winnerGenre.name)
+        // console.log(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML)
         if(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML){
           console.log(filter)
           navigate(`/more`, {state: {filter: filter.filtered, title: filter.winnerGenre.name}})    

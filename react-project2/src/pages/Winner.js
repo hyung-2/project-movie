@@ -14,7 +14,8 @@ function Winner(){
     const { state: {winner} } = useLocation()
     const navigate = useNavigate()
     const gohome = () => {
-        navigate('/login')
+        navigate('/login', {state: {genres: winner[0].genre_ids}})
+        // navigate('/home', {state: {genres: winner[0].genre_ids}})
     }
     const [recommendMovies, setRecommendMovies] = useState([])
 
