@@ -28,11 +28,11 @@ function Loginpage(){
   }
   
   const location = useLocation()
+  console.log(location)
   const genreLists = location.state.genres
 
-  // console.log(genreLists)
+  console.log(genreLists)
     
-
  
 
   return(

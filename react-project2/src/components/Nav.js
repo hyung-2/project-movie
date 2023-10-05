@@ -14,7 +14,7 @@ function Nav(){
 
   //로그아웃 클릭
   const logout = () => {
-    navigate('/login')
+    navigate('/login', {state:{genres:[]}})
   }
 
   //즐겨찾기 클릭

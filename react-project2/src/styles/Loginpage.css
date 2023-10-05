@@ -22,7 +22,7 @@
 
 .form{
   border: 1px solid var(--line-color);
-  width: 670px;
+  width: 672px; height: 562px;
   border-radius: 15px;
   margin: 15rem 0;
 

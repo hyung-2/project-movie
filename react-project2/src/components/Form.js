@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import '../styles/Form.css'
@@ -7,8 +7,6 @@ import Genres from '../api/Genres.json'
 
 
 function Form({type, handleClick, genreLists}){
-  
-  const [userPickGenre, setUserPickGenre] =useState([])
 
   //로그인 인풋 꾸미기
   const addClass = (e) => {
@@ -38,8 +36,8 @@ function Form({type, handleClick, genreLists}){
   }
 
   //회원가입 확인창 보이기
-  let arr = []
   const goresult = () => {
+    let arr = []
     const checkBox = document.querySelector('.check-box')
     const doneBox = document.querySelector('.done')
     const inputBoxs = document.querySelectorAll('.inputs')
@@ -50,28 +48,28 @@ function Form({type, handleClick, genreLists}){
       const isChecked = inputBox.firstElementChild.checked
       if(isChecked){
         console.log(inputBox.firstElementChild.value)
-        //추출된 장르 데이터에 fetch하여 담기
         return arr.push(inputBox.firstElementChild.value)
       }
     })
-    console.log(arr)
     checkBox.classList.add('goleft3') 
     doneBox.classList.add('goleft3')
-    return arr
+    
+    console.log(arr)
+
+    //데이터를 저장해서 좋아하는 장르에 있는 데이터를 fetch해서 메인페이지로 가져와야하나?
+    //암튼 여기서 fetch post로 유저 등록
   }
-  //왜 리턴을줘도 usestate를써도 값이..저장이안되지...
 
   //로그인 누르면 홈페이지로 이동
   const navigate = useNavigate()
   const login = () => {
-   console.log(arr)
-   //  navigate('/home', {state:{userPickGenre}})
+
+    navigate('/home')
   }
 
   
   //회원가입후 로그인 페이지 보이기
   const goLogin = () => {
-    console.log(arr)
     const loginBox = document.querySelector('.Login')
     const registerBox = document.querySelector('.Register')
     const checkBox = document.querySelector('.check-box')
@@ -88,7 +86,6 @@ function Form({type, handleClick, genreLists}){
     doneBox.classList.add('goleft4')
     doneBox.classList.remove('goleft4')
     doneBox.classList.remove('goleft3')
-
   }
   //이상형월드컵 페이지 다시가기
   const goworldcup = () => {

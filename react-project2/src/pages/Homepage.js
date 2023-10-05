@@ -40,7 +40,8 @@ function Homepage(){
     },[])
     const location = useLocation()
     console.log(location)
-    const userPickLists = location.state.userPickGenre
+    const userPickLists = [53, 36, 14]
+    // location.state.userPickGenre
     
     //추후 1등영화의 장르가 들어올 배열
     // const test = [53, 36, 14]
@@ -49,15 +50,15 @@ function Homepage(){
     console.log(userPickLists)
     //장르 번호와 이름 연결
     userPickLists.map(userPickList => {
-      console.log(userPickList)
+      // console.log(userPickList)
       Genres.genres.map(genre => {
-        console.log(genre.id)
+        // console.log(genre.id)
         if(genre.id == userPickList){
           return winnerGenres.push(genre)
         }
       })
     })
-    console.log(winnerGenres)
+    // console.log(winnerGenres)
     
     const copyMovies = [...movies]
 
@@ -104,8 +105,6 @@ function Homepage(){
       return setOpen(true)
     }
 
-    
-    console.log(open)
 
     if(loading){
       //로딩화면
@@ -174,7 +173,7 @@ function Homepage(){
                     }
                     pickPoster={pickPoster}
                     ></ScrollMoive>
-                    <Button btnClass='moreBtn' handleClick={movePage}>더보기</Button>
+                    <Button btnClass='moreBtn' handleClick={movePage}>more</Button>
                   </div>
                 </div>
               )

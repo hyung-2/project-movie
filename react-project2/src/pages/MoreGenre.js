@@ -60,7 +60,7 @@ function MoreGenre(){
         return movieLists.slice(offSet, offSet+num)
       }
       //useEffect에 넣어놧는데 offSet이 안늘어난다..?!
-      console.log(offSet)
+      // console.log(offSet)
       setoffSet(offSet + num)
       setmoreMovieList([...moreMovieList, ...plusList(offSet)])
 
