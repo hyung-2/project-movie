@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 
 import Chart from "../components/Chart";
 import WinnerPlayer from "../components/winnerPlayer"
-import Button from "../components/Button";
 
 import '../styles/Winner.css'
 import Logo from "../assets/logo.png"
@@ -21,9 +20,10 @@ function Winner(){
     }
     const [recommendMovies, setRecommendMovies] = useState([])
     const [genreData, setGenreData] = useState([])
+    const [genresRank, setGenresRank] = useState([])
 
     useEffect(() => {
-        const getFavoriteGenreMovies = async (win) => {
+        const getFavoriteGenreMovies = async () => {
 
             const data = await fetch('/api/Tournament.json')
             const res = await data.json()
@@ -57,14 +57,15 @@ function Winner(){
                 method: 'GET',
                 headers: {'Content-Type':'application/json'},
             })
-            const resultsRes = await results.json()
-            const genresRank = await resultsRes.results.sort((a, b) => b.likes - a.likes)
-            console.log(genresRank)
-            setGenreData([...resultsRes])
+            .then(res => res.json())
+            .then((data) => {
+                setGenreData([...data.results])
+                setGenresRank([...data.results.sort((a, b) => b.likes - a.likes)]) 
+                
+            })            
         }
-        getFavoriteGenreMovies(winner[0])
+        getFavoriteGenreMovies()
     }, [])
-
 
     return (
         <div className="winner-page">
@@ -101,7 +102,7 @@ function Winner(){
                 <div className="stats">
                     <div className="genres-rank"></div>
                     <div className="genres-chart">
-                        <Chart dataArr={genreData}/>
+                        {genreData.length === 0? "" : <Chart dataArr={genreData}/>}   
                     </div>
                 </div>
             </div>

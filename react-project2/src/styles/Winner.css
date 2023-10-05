@@ -111,4 +111,15 @@
 .result-container .stats{
     grid-column: 1 / 4;
     grid-row: 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.result-container .stats .genres-rank{
+    width: 50%;
+    height: 100%;
+}
+.result-container .stats .genres-chart{
+    width: 50%;
+    height: 100%;
 }
