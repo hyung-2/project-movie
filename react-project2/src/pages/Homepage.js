@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
 import '../styles/Homepage.css'
 import Nav from '../components/Nav'
@@ -10,7 +10,6 @@ import Genres from '../api/Genres.json'
 
 
 function Homepage(){
-  //각 박스에서 스크롤 구현하기
     
     const [open, setOpen] = useState(false) 
     const [pickMovie, setPickMovie] = useState({})
@@ -23,6 +22,7 @@ function Homepage(){
     const [movies, setMovies] = useState([])
     //API가져오기
     useEffect(() => {
+      // console.log('패치가안되는거야 뭐야')
       fetch('http://localhost:5201/api/moviesdata/'
       ,{
         method: 'GET',
@@ -38,18 +38,25 @@ function Homepage(){
         setMovies(movies)
       })
     },[])
+    const location = useLocation()
+    console.log(location)
+    //1등영화의 장르가 들어올 배열
+    const userPickLists = [28, 12, 16, 35, 80, 99, 18, 10751, 14, 36, 27, 10402, 9648, 10749, 878, 10770, 53, 10752, 37] // location.state.userPickGenre
     
-    //추후 1등영화의 장르가 들어올 배열
-    const test = [53, 36, 14]
     const winnerGenres = []
-    test.map(test => {
+
+    console.log(userPickLists)
+    //장르 번호와 이름 연결
+    userPickLists.map(userPickList => {
+      // console.log(userPickList)
       Genres.genres.map(genre => {
-        if(genre.id == test){
+        // console.log(genre.id)
+        if(genre.id == userPickList){
           return winnerGenres.push(genre)
         }
       })
     })
-    console.log(winnerGenres)
+    // console.log(winnerGenres)
     
     const copyMovies = [...movies]
 
@@ -69,9 +76,9 @@ function Homepage(){
       console.log('더보기클릭')
       console.log(e.target.parentElement.previousElementSibling.innerHTML)
       filter.map(filter => {
-        console.log(filter)
-        console.log(filter.winnerGenre.name)
-        console.log(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML)
+        // console.log(filter)
+        // console.log(filter.winnerGenre.name)
+        // console.log(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML)
         if(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML){
           console.log(filter)
           navigate(`/more`, {state: {filter: filter.filtered, title: filter.winnerGenre.name}})    
@@ -96,8 +103,6 @@ function Homepage(){
       return setOpen(true)
     }
 
-    
-    console.log(open)
 
     if(loading){
       //로딩화면
@@ -166,7 +171,7 @@ function Homepage(){
                     }
                     pickPoster={pickPoster}
                     ></ScrollMoive>
-                    <Button btnClass='moreBtn' handleClick={movePage}>더보기</Button>
+                    <Button btnClass='moreBtn' handleClick={movePage}>more</Button>
                   </div>
                 </div>
               )

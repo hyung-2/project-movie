@@ -3,6 +3,10 @@
   /* flex: 1; */
   margin-right: 15px;
   width: 140px;
+  transition: .3s;
+}
+.Poster .img-box img:hover{
+  opacity: .7;
 }
 .img-box{
   width: 140px;

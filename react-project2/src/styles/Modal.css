@@ -94,3 +94,10 @@
   height: 100%;
   top: -30px;
 }
+
+.modal-title svg{
+  fill: yellow;
+  margin-left: 0.8rem;
+  scale: 1.2;
+  cursor: pointer;
+}

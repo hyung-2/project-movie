@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import '../styles/Player.css'
 
 function WinnerPlayer({ player, handleClick, direction, isVisible, className }){
-    
+    console.log(player)
     return (
         <AnimatePresence>
             {isVisible && (

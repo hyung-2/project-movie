@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import '../styles/Form.css'
@@ -6,22 +6,44 @@ import Genres from '../api/Genres.json'
 
 
 
-function Form({type, handleClick}){
-  
+function Form({type, handleClick, genreLists}){
+
   //로그인 인풋 꾸미기
   const addClass = (e) => {
-    console.log(e.target)
-    console.log(e.target.value)
-    if(e.target.value !== ''){
-      e.target.previousElementSibling.classList.add('forcusing')
+    // console.log(e.target)
+    // console.log(e.target.value)
+    const label = e.target.previousElementSibling
+    if(e.target.value !== ''){ //로그인 인풋이 빈칸일때
+      label.classList.add('forcusing')
+      if(e.target.id == 'loginEmail'|| e.target.id == 'userEmail'){ //이메일칸만 적용
+        if(checkEmail(e.target.value) === false){ //이메일 형식이 올바르지 않을때
+          e.target.classList.add('error')
+          label.classList.add('errorfont')
+          label.innerText = '이메일 형식이 올바르지 않습니다.'
+        }else if(checkEmail(e.target.value) === true){  //이메일 형식이 올바를때
+          e.target.classList.remove('error')
+          label.classList.remove('errorfont')
+          label.innerText = '이메일을 입력하세요'
+        }
+      }
+      // if(e.target.id == 'loginPw'){  //나중에 비밀번호 자리수 제한걸기
+      // }
     }else{
-      e.target.previousElementSibling.classList.remove('forcusing')
+      label.classList.remove('forcusing')
+      label.classList.remove('errorfont')
+      label.innerText = '이메일을 입력하세요'
+      e.target.classList.remove('error')
     }
   }
-  //로그인 누르면 홈페이지로 이동
-  const navigate = useNavigate()
-  const login = () => {
-    navigate('/home')
+
+  //이메일 유효성 검사
+  const checkEmail = (value) => {
+    let pattern = /^[0-9a-zA-z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-z]{2,3}$/i;
+    if(!pattern.test(value)){
+      return false
+    }else{
+      return true
+    }
   }
 
   //회원가입 페이지 보이기
@@ -32,14 +54,26 @@ function Form({type, handleClick}){
     registerBox.classList.add('goleft')
   }
   //좋아하는 장르 체크 페이지 보이기
-  const goCheckBox = () => {
+  const goCheckBox = (e) => {
     const registerBox = document.querySelector('.Register')
     const checkBox = document.querySelector('.check-box')
     registerBox.classList.add('goleft2')
     checkBox.classList.add('goleft2')
+
+    const signUpId = e.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.lastElementChild.value
+    const signUpEmail = e.target.previousElementSibling.previousElementSibling.previousElementSibling.lastElementChild.value
+    const signUpPw = e.target.previousElementSibling.previousElementSibling.lastElementChild.value
+    const signUpPw2 = e.target.previousElementSibling.lastElementChild.value
+
+    console.log('id:', signUpId)
+    console.log('email:', signUpEmail)
+    console.log('pw:', signUpPw)
+    console.log('pw2:', signUpPw2)
   }
+
   //회원가입 확인창 보이기
   const goresult = () => {
+    let arr = []
     const checkBox = document.querySelector('.check-box')
     const doneBox = document.querySelector('.done')
     const inputBoxs = document.querySelectorAll('.inputs')
@@ -47,19 +81,32 @@ function Form({type, handleClick}){
     //장르 체크된것 추출
     inputBoxs.forEach(inputBox => {
       // console.log(inputBox)
-      //1등 장르 자동체크되게 하기
       const isChecked = inputBox.firstElementChild.checked
-      // console.log(isChecked)
       if(isChecked){
         console.log(inputBox.firstElementChild.value)
-        //추출된 장르 데이터에 fetch하여 담기
+        return arr.push(inputBox.firstElementChild.value)
       }
     })
-
-    checkBox.classList.add('goleft3')
-    
+    checkBox.classList.add('goleft3') 
     doneBox.classList.add('goleft3')
+    
+    console.log(arr)
+
+    //데이터를 저장해서 좋아하는 장르에 있는 데이터를 fetch해서 메인페이지로 가져와야하나?
+    //암튼 여기서 fetch post로 유저 등록
   }
+
+  //로그인 누르면 홈페이지로 이동
+  const navigate = useNavigate()
+  const login = (e) => {
+    const loginId = e.target.parentElement.firstElementChild.lastElementChild.value
+    const loginPw = e.target.parentElement.firstElementChild.nextElementSibling.lastElementChild.value
+
+    console.log('id:',loginId)
+    console.log('pw:',loginPw)
+    // navigate('/home')
+  }
+
   
   //회원가입후 로그인 페이지 보이기
   const goLogin = () => {
@@ -79,13 +126,11 @@ function Form({type, handleClick}){
     doneBox.classList.add('goleft4')
     doneBox.classList.remove('goleft4')
     doneBox.classList.remove('goleft3')
-
   }
   //이상형월드컵 페이지 다시가기
   const goworldcup = () => {
     navigate('/')
   }
-
   //로그인정보가 틀리면 빨간색보더로 변경해주기
   //회원가입시 이미 존재하는 이메일이면 input창 벗어났을때 바로 알려주기  
   if(type == 'login'){
@@ -93,11 +138,11 @@ function Form({type, handleClick}){
       <div className="Login base">
         <label htmlFor='loginEmail'>
           <p className="labelname">이메일을 입력하세요</p>
-          <input onKeyUp={addClass} type='text' id='loginEmail'></input>
+          <input onChange={addClass} type='text' id='loginEmail'></input>
         </label>
         <label htmlFor='loginPw'>
           <p className="labelname">비밀번호를 입력하세요</p>
-          <input onKeyUp={addClass} type='password' id='loginPw'></input>
+          <input onChange={addClass} type='password' id='loginPw'></input>
         </label>
         <Button btnClass='loginbtn' handleClick={login}>로그인</Button>
         <p className="registerbtn" onClick={goSignup}>아직 회원이 아니신가요?</p>
@@ -110,34 +155,34 @@ function Form({type, handleClick}){
         <h3>계정 만들기</h3>
         <label htmlFor='userId'>
           <p className="labelname">아이디를 입력하세요</p>
-          <input onKeyUp={addClass} type='text' id='userId'></input>
+          <input onChange={addClass} type='text' id='userId'></input>
         </label>
         <label htmlFor='userEmail'>
           <p className="labelname">이메일을 입력하세요</p>
-          <input onKeyUp={addClass} type='text' id='userEmail'></input>
+          <input onChange={addClass} type='text' id='userEmail'></input>
         </label>
         <label htmlFor='userPw'>
           <p className="labelname">비밀번호를 입력하세요</p>
-          <input onKeyUp={addClass} type='password' id='userPw'></input>
+          <input onChange={addClass} type='password' id='userPw'></input>
         </label>
         <label htmlFor='userPw2'>
           <p className="labelname">비밀번호를 다시 입력하세요</p>
-          <input onKeyUp={addClass} type='password' id='userPw2'></input>
+          <input onChange={addClass} type='password' id='userPw2'></input>
         </label>
         <Button btnClass='loginbtn' handleClick={goCheckBox}>다음</Button>
       </div>
     )
   }else if(type == 'checkBox'){
-    //나중에 api확정되면 장르 더 추가하기
     // console.log(Genres)
     return(
       <div className="check-box base">
         <h4>좋아하는 장르를 선택해주세요!</h4>
           <div className="input-box">
             {Genres.genres.map((genre,id) => {
+              // console.log(genre)
               return(
                 <div className="inputs" key={id}>
-                  <input type='checkbox' id={genre.name} value={genre.name} onClick={handleClick}/>
+                  <input type='checkbox' id={genre.name} value={genre.name} onClick={handleClick} defaultChecked={genreLists && genreLists.includes(genre.id) && 'on'}/>
                   <label htmlFor={genre.name}>{genre.name}</label>
                 </div>
               )

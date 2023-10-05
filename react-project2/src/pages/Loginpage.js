@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Button from "../components/Button";
 import '../styles/Loginpage.css'
 import logo from '../assets/logo.png'
@@ -21,12 +21,18 @@ function Loginpage(){
       downBtn.classList.add('downbtn-up')
     },2500)
   })
-  
+    
   //form화면으로 슬라이드
   const gofrom = () => {
     window.scrollTo({top:850, behavior:"smooth"})
   }
+  
+  const location = useLocation()
+  console.log(location)
+  const genreLists = location.state.genres
 
+  console.log(genreLists)
+    
  
 
   return(
@@ -47,7 +53,7 @@ function Loginpage(){
       <div className="form">
         <Form type='login'></Form>
         <Form type='signup'></Form>
-        <Form type='checkBox'></Form>
+        <Form type='checkBox' genreLists={genreLists}></Form>
         <Form type='done'></Form>
       </div>
     </div>

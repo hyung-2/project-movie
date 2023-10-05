@@ -79,3 +79,15 @@ label{
 .done h4{
   width: 350px;
 }
+
+
+.error{
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.error:focus{
+  border: 1.5px solid var(--main-color);
+}
+.errorfont{
+  color: var(--main-color);
+}
