@@ -6,6 +6,7 @@ const app = express()
 
 
 const moviesRouter = require('./src/routes/movies')
+const ResultRouter = require('./src/routes/results')
 
 
 
@@ -30,6 +31,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 app.use('/api/moviesdata', moviesRouter)
+app.use('/api/result', ResultRouter)
 
 
 app.listen(5201, () => {
