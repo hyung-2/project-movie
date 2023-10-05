@@ -13,6 +13,7 @@ function Form({type, handleClick, genreLists}){
     // console.log(e.target)
     // console.log(e.target.value)
     const label = e.target.previousElementSibling
+    const loginBtn = document.querySelector('.loginbtn')
     if(e.target.value !== ''){ //로그인 인풋이 빈칸일때
       label.classList.add('forcusing')
       if(e.target.id == 'loginEmail'|| e.target.id == 'userEmail'){ //이메일칸만 적용
@@ -20,6 +21,11 @@ function Form({type, handleClick, genreLists}){
           e.target.classList.add('error')
           label.classList.add('errorfont')
           label.innerText = '이메일 형식이 올바르지 않습니다.'
+          console.log(loginBtn)
+          console.log(e.target.parentElement.parentElement)
+          console.log(e.target.parentElement.parentElement.lastElementChild)
+          //이메일 형식이 올바르지 않으면 다음 버튼 비활성화 ( disabled )
+          //나중에 회원가입email중복검사도 여기서
         }else if(checkEmail(e.target.value) === true){  //이메일 형식이 올바를때
           e.target.classList.remove('error')
           label.classList.remove('errorfont')
@@ -69,6 +75,7 @@ function Form({type, handleClick, genreLists}){
     console.log('email:', signUpEmail)
     console.log('pw:', signUpPw)
     console.log('pw2:', signUpPw2)
+
   }
 
   //회원가입 확인창 보이기
@@ -104,7 +111,7 @@ function Form({type, handleClick, genreLists}){
 
     console.log('id:',loginId)
     console.log('pw:',loginPw)
-    // navigate('/home')
+    navigate('/home')
   }
 
   
