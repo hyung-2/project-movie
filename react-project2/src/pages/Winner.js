@@ -109,7 +109,7 @@ function Winner(){
                             if(index < 6 && genre.id !== 0){
                                 const percent = Math.floor((genre.likes / total) * 100)
                                 return (
-                                    <div className="rank-info">
+                                    <div className="rank-info" key={`${genre.name}-${index}`}>
                                         {index === 1 ? <MedalGold/> :
                                             index === 2 ? <MedalSilver/> :
                                             index === 3 ? <MedalBronze/> : 

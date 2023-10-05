@@ -37,13 +37,25 @@ function Chart({ dataArr }){
         labels,
         datasets: [{
             data: likesData,
-            label: "해당 장르를 좋아하는 사용자 수"
+            label: "해당 장르를 좋아하는 사용자 수",
+            borderColor: "rgba(182, 12, 12, .7)",
+            backgroundColor: "rgba(182, 12, 12, .7)"
         }]
+    }
+
+    const options = {
+        plugins: {
+            legend: {
+                labels: {
+                    color: "#fff"
+                }
+            }
+        }
     }
 
     return (
         <div className='chart-container'>
-            <Bar data={chartData}/>
+            <Bar data={chartData} options={options} />
         </div>
     )
 }
