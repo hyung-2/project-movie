@@ -4,10 +4,9 @@
 }
 .result-container{
     width: 80%;
-    height: 90%;
     display: grid;
     gap: 1rem;
-    margin: 0 auto;
+    margin: 4rem auto;
     position: relative;
 }
 
@@ -108,6 +107,7 @@
     grid-column: 1 / 4;
     grid-row: 4 / 5;
 }
+/* 통계 */
 .result-container .stats{
     grid-column: 1 / 4;
     grid-row: 5 / 7;
@@ -118,6 +118,42 @@
 .result-container .stats .genres-rank{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.result-container .stats .genres-rank .rank-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.result-container .stats .genres-rank .rank-info > span{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.result-container .stats .genres-rank .rank-info .rank-number{
+    font-family: 'Black Ops One', cursive;
+}
+.result-container .stats .genres-rank .rank-info .rank-name{
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: start;
+    width: 9rem;
+}
+.result-container .stats .genres-rank .rank-info .rank-percent{
+    width: 10rem;
+    height: 1.5rem;
+    border: 1px solid #909090;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+.result-container .stats .genres-rank .rank-info .rank-percent .percent-bar{
+    background-color: var(--hover-color);
+    height: 100%;
+    position: relative;
+}
+.result-container .stats .genres-rank .rank-info .rank-percent .percent-bar span{
+    position: absolute;
+    right: -2.5rem;
 }
 .result-container .stats .genres-chart{
     width: 50%;

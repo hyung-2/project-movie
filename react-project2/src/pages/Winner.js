@@ -9,6 +9,9 @@ import WinnerPlayer from "../components/winnerPlayer"
 
 import '../styles/Winner.css'
 import Logo from "../assets/logo.png"
+import { ReactComponent as MedalGold } from "../assets/medal-gold.svg"
+import { ReactComponent as MedalSilver } from "../assets/medal-silver.svg"
+import { ReactComponent as MedalBronze } from "../assets/medal-bronze.svg"
 
 
 function Winner(){
@@ -100,7 +103,29 @@ function Winner(){
                     <div className="favorite-genre"></div>
                 </div>
                 <div className="stats">
-                    <div className="genres-rank"></div>
+                    <div className="genres-rank">
+                        {genresRank.map((genre, index) => {
+                            const total = genresRank[0].likes
+                            if(index < 6 && genre.id !== 0){
+                                const percent = Math.floor((genre.likes / total) * 100)
+                                return (
+                                    <div className="rank-info">
+                                        {index === 1 ? <MedalGold/> :
+                                            index === 2 ? <MedalSilver/> :
+                                            index === 3 ? <MedalBronze/> : 
+                                            <div className="rank-blank" style={{ width: "60px", height: "60px"}}></div>
+                                        }
+                                        <span className="rank-number">{index}</span>
+                                        <span className="rank-name">{genre.name}</span>
+                                        <div className="rank-percent">
+                                            <div className="percent-bar" style={{width: `${percent}%`}}>
+                                                <span className="percent-text">{percent}%</span></div>    
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        })}
+                    </div>
                     <div className="genres-chart">
                         {genreData.length === 0? "" : <Chart dataArr={genreData}/>}   
                     </div>
