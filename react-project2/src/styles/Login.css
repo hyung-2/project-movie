@@ -1,0 +1,56 @@
+
+
+.Login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 670px;
+  margin: 0 173px;
+  position: relative;
+  transition: .3s;
+  left: 0;
+}
+label{
+  position: relative;
+}
+
+.labelname{
+  position: absolute;
+  color: var(--font-color);
+  padding-left: 10px;
+  font-size: 1.3rem;
+  transition: .2s
+}
+
+.Login input{
+  font-size: 1.5rem;
+  border: 1px solid var(--line-color);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: var(--font-color);
+  outline: none;
+  margin: 1rem 0;
+  background-color: rgba(51, 51, 51, .5);
+  width: 310px;
+}
+
+.registerbtn{
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+.registerbtn:hover{
+  text-decoration: underline;
+}
+
+.forcusing{
+  font-size: .5rem;
+  top: 10px;
+}
+
+.goleft{
+  left: -507px;
+}

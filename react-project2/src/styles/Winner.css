@@ -1,0 +1,219 @@
+.winner-page{
+    width: 100%;
+    height: 100%;
+}
+.result-container{
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    margin: 4rem auto;
+    position: relative;
+}
+
+/* 이상형 월드컵 1등 영화 */
+.result-container .poster{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    position: relative;
+}
+.result-container .poster .champion{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 2.5rem;
+}
+.result-container .poster .player{
+    box-shadow: none;
+    width: 24rem;
+    height: 36rem;
+    filter: brightness(1);
+}
+
+/* 추천 영화 */
+.result-container .recommend{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    padding: 0 1.2rem;
+    height: 36rem;
+    align-self: flex-end;
+}
+.result-container .recommend .recommend-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.result-container .recommend .recommend-header h2{
+    width: 100%;
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+.result-container .recommend .recommend-movies{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result-container .recommend .recommend-movies .recommend-poster{
+    width: 16rem;
+    height: 24rem;
+    margin: .5rem;
+}
+.result-container .recommend .recommend-movies .recommend-poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* 홈페이지로 이동하는 버튼 */
+.result-container .move-to-login{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+.result-container .move-to-login{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.result-container .move-to-login .mood-join-msg{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.result-container .move-to-login .mood-join-btn{
+    background: none;
+    width: 16rem;
+    height: 4rem;
+    transition: .5s;
+    border: none;
+    cursor: pointer;
+}
+.result-container .move-to-login .mood-join-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+/* 가장 좋아하는 장르 */
+.result-container .favorite{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2rem;
+}
+.result-container .favorite .favorite-msg{
+    width: auto;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.result-container .favorite .favorite-genre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-container .favorite .favorite-genre .favorite-point{
+    position: relative;
+    font-size: 3rem;
+    padding: .3rem;
+    margin: 0 2.3rem;
+}
+.result-container .favorite .favorite-genre .favorite-point .crown-icon{
+    position: absolute;
+    top: -32px;
+    left: -28px;
+    transform: rotate(-30deg);
+}
+.result-container .favorite .favorite-genre .favorite-point .favorite-name{
+    border-bottom: 3px solid #ffea8a;
+}
+.result-container .favorite .favorite-genre .favorite-rank{
+    display: flex;
+    align-items: center;
+}
+.result-container .favorite .favorite-genre .favorite-rank > *{
+    margin: 0 1rem;
+}
+.result-container .favorite .favorite-genre .favorite-rank .favorite-percent{
+    width: 15rem;
+    height: 3rem;
+    border: 1px solid #909090;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.result-container .favorite .favorite-genre .favorite-rank .favorite-percent .percent-text{
+    right: -3.8rem;
+}
+
+/* 통계 */
+.result-container .stats{
+    grid-column: 1 / 4;
+    grid-row: 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.result-container .stats .genres-rank{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+.result-container .stats .genres-rank .rank-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .5rem 0;
+}
+.result-container .stats .genres-rank .rank-info > span{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.result-container .stats .genres-rank .rank-info .rank-number{
+    font-family: 'Black Ops One', cursive;
+}
+.result-container .stats .genres-rank .rank-info .rank-name{
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: start;
+    width: 9rem;
+}
+.result-container .stats .genres-rank .rank-info .rank-percent{
+    width: 10rem;
+    height: 1.5rem;
+    border: 1px solid #909090;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.result-container .stats .genres-chart{
+    width: 50%;
+    height: 100%;
+}
+
+/* 퍼센트 바 디자인 */
+.result-container .percent-bar{
+    background-color: var(--hover-color);
+    height: 100%;
+    position: relative;
+}
+.result-container .percent-bar span{
+    position: absolute;
+    right: -2.5rem;
+}

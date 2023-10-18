@@ -1,0 +1,116 @@
+@import url('../global.css');
+@font-face {
+  font-family: 'GoryeongStrawberry';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button{
+  color: var(--font-color);
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: var(--hover-color);
+}
+
+.closeBtn{
+  background-color: transparent;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  scale: 1.5;
+  /* padding: 5px; */
+  font-family: 'GoryeongStrawberry';
+  
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  
+}
+.closeBtn:hover{
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.moreBtn{
+  /* position: absolute; */
+  /* right: 5%; */
+  /* margin: auto ; */
+  border-radius: 50%;
+  width: 60px; height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.loginbtn{
+  margin: 1rem 0;
+}
+
+.downbtn{
+  font-family: 'GoryeongStrawberry';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupOK{
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+.unLikeBtn{
+  margin-top: 2rem;
+}
+
+/* 버튼 비활성화 */
+.disabled{
+  background-color: var(--hover-color);
+  text-decoration: line-through;
+  cursor: auto;
+}
+
+
+.toTop{
+  position: absolute;
+  bottom: 7%;
+  right: 5%;
+  transition: .2s ;
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  display: none;
+}
+
+.btnOpen{
+  display: block;
+}
+
+@media (max-width: 420px){
+  .moreBtn{
+    border-radius: 10px;
+    height: auto;
+    min-height: auto;
+    position: absolute;
+    left: 1.5rem;
+  }
+}
+@media (max-width: 380px){
+  .unLikeBtn{
+    scale: .9;
+  }
+}
+@media (max-width: 280px){
+  .moreBtn{
+    scale: .7;
+    left: 1rem;
+  }
+  .closeBtn{
+    scale: 1;
+    top: -4px;
+    right: -2px;
+  }
+}

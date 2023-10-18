@@ -1,0 +1,40 @@
+.ScrollMovie{
+  width: 80%;
+  height: 200px;
+  border: 1px solid var(--line-color);
+  /* box-shadow: 0 0 10px var(--main-color); */
+  margin: 1rem 2rem;
+  margin-left: 5rem;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: center;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.ScrollMovie::-webkit-scrollbar{
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .ScrollMovie{
+    width: 84%;
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 420px){
+  .ScrollMovie{
+    width: 95%;
+    margin-left: 0.5rem;
+    height: 157px;
+  }
+}
+@media (max-width: 280px){
+  .ScrollMovie{
+    width: 95%;
+    height: 95px;
+    margin: .5rem;
+  }
+}
