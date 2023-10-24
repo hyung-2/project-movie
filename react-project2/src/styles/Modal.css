@@ -1,8 +1,6 @@
 @import url('../global.css');
 
 .Modal{
-  width: 80%; height: 60%;
-  padding: 20px;
   text-align: left;
   background-color: var(--bg-color);
   border: 2px solid var(--line-color);
@@ -23,6 +21,7 @@
   margin-right: 1rem;
   height: 200px;
   cursor: pointer;
+  text-shadow: 0 0 4px black;
 }
 
 .normalP{
@@ -30,7 +29,17 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+/* 사이즈 */
+.posterSize{
+  width: 80%; height: 60%;
+  padding: 20px;
+}
+.messageSize{
+  width: 35%; height: 20%;
+  padding: 20px;
+  box-shadow: 0 0 10px var(--main-color);
+  border: 1px solid var(--main-color);
+}
 
 
 .open{
@@ -82,10 +91,13 @@
   width: 100%;
   z-index: -1;
   position: absolute;
-  top: 30px;
+  top: 12rem;
   /* padding-left: 0; */
   /* right: 144px; */
   /* border: 1px solid white; */
+}
+.youtube2{
+  width: 100%;
 }
 .modal-title{
   margin-top: 50px;
@@ -100,4 +112,100 @@
   margin-left: 0.8rem;
   scale: 1.2;
   cursor: pointer;
+}
+
+.infoMovie{
+  position: relative;
+  left: 0; top: 0; 
+  transform: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px){
+  .posterSize{
+    height: 34%;
+  }
+}
+@media (max-width: 800px){
+  .posterSize{
+    height: 45%;
+  }
+  .youtube{
+    top: 10rem;
+  }
+}
+@media (max-width: 420px){
+  .posterSize{
+    height: 55%;
+  }
+  .youtube{
+    top: 11rem;
+    padding-left: 0;
+  }
+  .Modal .img-box{
+    height: 25%;
+    scale: .7;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    display: none;
+  }
+  .modal-contents{
+    padding-left: 0;
+  }
+  .modalP{
+    margin: 0;
+  }
+}
+@media (max-width: 380px){
+  .posterSize{
+    height: 75%;
+  }
+  .modal-contents h2{
+    font-size: 1.3rem;
+  }
+  .modal-contents h4{
+    font-size: .8rem;
+  }
+  .modalP{
+    font-size: .9rem;
+  }
+}
+@media (max-width: 280px){
+  .Modal{
+    top: 44%;
+  }
+  .posterSize{
+    height: 55%;
+    padding: 15px;
+  }
+  .moreBtn{
+    scale: .7;
+    left: 1rem;
+  }
+  .modal-title{
+    margin-top: 40px;
+  }
+  .modal-contents h2{
+    font-size: 1rem;
+  }
+  .modal-contents h2 svg{
+    position: relative;
+    top: 4px;
+    scale: .9;
+    margin-left: .3rem;
+  }
+  .modal-contents h4{
+    font-size: .5rem;
+  }
+  .modalP{
+    font-size: .5rem;
+  }
+  .youtube{
+    top: 4rem;
+  }
 }

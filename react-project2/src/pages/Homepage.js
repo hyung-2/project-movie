@@ -1,12 +1,16 @@
 import React,{ useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
+import YouTube from 'react-youtube'
+
 import '../styles/Homepage.css'
+import Genres from '../api/Genres.json'
+
 import Nav from '../components/Nav'
 import ScrollMoive from "../components/ScrollMovie";
 import Button from "../components/Button";
 import Modal from "../components/Modal";
-import Genres from '../api/Genres.json'
+import LoadingPage from "../components/LoadingPage";
 
 
 function Homepage(){
@@ -14,6 +18,8 @@ function Homepage(){
     const [open, setOpen] = useState(false) 
     const [pickMovie, setPickMovie] = useState({})
     const [loading, setLoading] = useState(true)
+    const [likeMovieList, setLikeMovieList] = useState([])
+    const [randomPick, setRandomPick] = useState()
 
     const close = () => {
       return setOpen(false)
@@ -22,7 +28,6 @@ function Homepage(){
     const [movies, setMovies] = useState([])
     //API가져오기
     useEffect(() => {
-      // console.log('패치가안되는거야 뭐야')
       fetch('http://localhost:5201/api/moviesdata/'
       ,{
         method: 'GET',
@@ -38,14 +43,35 @@ function Homepage(){
         setMovies(movies)
       })
     },[])
-    const location = useLocation()
-    console.log(location)
+
+    const [ usersGenre, setUsersGenre ] = useState([])
+
+    useEffect(() => {
+      
+      fetch('http://localhost:5201/api/users/check', 
+      {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+          'Content-Type':'application/json',
+          Authorization: window.localStorage.getItem('accessToken')  
+        },
+      })
+      .then( res => res.json() )
+      .then( result => {
+        console.log(result)
+        setUsersGenre(result.user.likeGenre)
+        setLikeMovieList(result.user.likeMovie)
+      })
+      console.log(likeMovieList)
+    }, [])
+
     //1등영화의 장르가 들어올 배열
-    const userPickLists = [28, 12, 16, 35, 80, 99, 18, 10751, 14, 36, 27, 10402, 9648, 10749, 878, 10770, 53, 10752, 37] // location.state.userPickGenre
-    
-    const winnerGenres = []
+    const userPickLists = [...usersGenre]
 
     console.log(userPickLists)
+    const winnerGenres = []
+
     //장르 번호와 이름 연결
     userPickLists.map(userPickList => {
       // console.log(userPickList)
@@ -60,6 +86,8 @@ function Homepage(){
     
     const copyMovies = [...movies]
 
+    
+
     //장르별 객체배열
     const filter = winnerGenres.map(winnerGenre => {
       const filtered = copyMovies.filter((movie) => {
@@ -69,6 +97,22 @@ function Homepage(){
       return {winnerGenre, filtered}
     })
     console.log(filter)
+
+    //랜덤으로 영화 선택
+    const randomPickMoive = () => {
+      if(randomPick === undefined){
+        console.log('함수실행')
+        const random = Math.floor(Math.random() * filter[0].filtered.length)
+        console.log(random)
+        console.log(filter[0].filtered[random])
+        filter[0].filtered[random].video_path.length !== 0 && setRandomPick(filter[0].filtered[random])  
+      }
+    }
+
+
+
+    console.log(randomPick)
+
 
     //더보기 버튼 클릭
     const navigate = useNavigate()
@@ -81,15 +125,16 @@ function Homepage(){
         // console.log(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML)
         if(filter.winnerGenre.name == e.target.parentElement.previousElementSibling.innerHTML){
           console.log(filter)
-          navigate(`/more`, {state: {filter: filter.filtered, title: filter.winnerGenre.name}})    
+          window.scrollTo({top:0})
+          navigate(`/more`, {state: {filter: filter.filtered, title: filter.winnerGenre.name, likeMovieList: likeMovieList}})    
         }
       })
     }
 
     //포스터 클릭
     const pickPoster = (e) => {
-      console.log(e.target)
-      console.log(filter.filtered)
+      // console.log(e.target)
+      // console.log(filter.filtered)
       {filter.map((filterMovie, id) => {
         filterMovie.filtered.map(movie => {
           // console.log(`https://image.tmdb.org/t/p/original/${movie.poster_path}` === e.target.src)
@@ -106,56 +151,34 @@ function Homepage(){
 
     if(loading){
       //로딩화면
-      const textContainer = {
-        start: { strokeDashoffset: 50, fill: "rgba(255, 255, 255, 0)" },
-        end: {
-            strokeDashoffset: 0, 
-            fill: "rgba(255, 255, 255, .7)",
-            transition: {
-                when: "beforeChildren",
-                staggerChildren: .5
-            }            
-         }
-      };
-      const textContents = {
-          start: { x: 1, fill: "rgba(255, 255, 255, 0)" },
-          end: { x: 0, fill: "rgba(255, 255, 255, 1)"}
-        }
-
-
-      return(
-        <div className="loading">
-          <motion.svg 
-                viewBox="0 0 300 300"
-                width="40rem"
-                height="30rem"
-
-                variants={textContainer}
-                initial="start"
-                animate="end"
-                strokeWidth=".7"
-                transition={{ default: { duration: 0.3 }}}
-                
-            >
-                <motion.text x="0" y="160" variants={textContents}>L</motion.text>
-                <motion.text x="40" y="160" variants={textContents}>o</motion.text>
-                <motion.text x="83" y="160" variants={textContents}>a</motion.text>
-                <motion.text x="124" y="160" variants={textContents}>d</motion.text>
-                <motion.text x="166" y="160" variants={textContents}>i</motion.text>
-                <motion.text x="185" y="160" variants={textContents}>n</motion.text>
-                <motion.text x="226" y="160" variants={textContents}>g</motion.text>
-                <motion.text x="266" y="160" variants={textContents}>.</motion.text>
-                <motion.text x="284" y="160" variants={textContents}>.</motion.text>
-                <motion.text x="302" y="160" variants={textContents}>.</motion.text>
-                
-          </motion.svg>
-        </div>
-      )
+      return <LoadingPage/>
     }else{
       return(
-        <div className={`Homepage`}>
+        <div className={`Homepage`}  onLoad={randomPickMoive}>
           <Nav></Nav>
           
+          <div className="main-movie">
+            <div className="main-movieInfo">
+              <h2>{randomPick && randomPick.title}</h2>
+              <h4>{randomPick && randomPick.release_date.slice(0, 10)}</h4>
+            </div>
+            <div className="dummy"></div>
+            <div className="main-videoBox">
+              {randomPick && randomPick.video_path[0] && 
+                <YouTube className='mainyoutube' 
+                videoId={randomPick && randomPick.video_path[0].key} 
+                opts={{
+                  width: '100%', height: '100%',
+                  playerVars: {
+                    autoplay: 1, //자동 재생 여부 
+                    fs:0, //전체화면버튼없앰
+                    disablekb:1, //키보드조작막기
+                    controls:0, //동영상컨트롤 표시 x
+                    modestbranding: 1,
+                  },}} onReady={(e)=> {e.target.mute()}} />
+              }
+            </div>
+          </div>
           
             {/* 코드중복있어서 나중에 수정 */}
             {winnerGenres.map((winnerGenre, id) => {
@@ -178,7 +201,7 @@ function Homepage(){
             })}
         
             
-          <Modal type='poster' open={open} close={close} pickMovie={pickMovie}>
+          <Modal type='poster' open={open} close={close} pickMovie={pickMovie} size='posterSize' likeMovieList={likeMovieList}>
           </Modal>
           
         </div>

@@ -6,6 +6,8 @@ import logo from '../assets/logo.png'
 import Form from "../components/Form";
 
 function Loginpage(){
+
+
   //동적 효과
   useEffect(()=> {
     const img = document.querySelector('img')
@@ -13,7 +15,7 @@ function Loginpage(){
     const introText2 = document.querySelector('.introText2')
     const introText3 = document.querySelector('.introText3')
     const downBtn = document.querySelector('.downbtn')
-    setTimeout(()=>img.classList.add('imgdown'), 1000)
+    setTimeout(() => img.classList.add('imgdown'), 1000)
     setTimeout(() => introtext1.classList.add('introText1-right'),1500)
     setTimeout(() => introText2.classList.add('introText2-left'),2000)
     setTimeout(() => {
@@ -24,15 +26,15 @@ function Loginpage(){
     
   //form화면으로 슬라이드
   const gofrom = () => {
-    window.scrollTo({top:850, behavior:"smooth"})
+    const form = document.querySelector('.form')
+    window.scrollTo({top:document.body.scrollHeight, behavior:"smooth"})
+    form.classList.add('show')
   }
   
   const location = useLocation()
   console.log(location)
-  const genreLists = location.state.genres
-
-  console.log(genreLists)
-    
+  const [genreLists, setGenreLists] = useState(location.state && location.state.genres)
+  
  
 
   return(
@@ -52,8 +54,8 @@ function Loginpage(){
       <Button btnClass='downbtn' handleClick={gofrom}>↓</Button>
       <div className="form">
         <Form type='login'></Form>
-        <Form type='signup'></Form>
-        <Form type='checkBox' genreLists={genreLists}></Form>
+        <Form type='signup' genreLists={genreLists}></Form>
+        {/* <Form type='checkBox' genreLists={genreLists}></Form> */}
         <Form type='done'></Form>
       </div>
     </div>

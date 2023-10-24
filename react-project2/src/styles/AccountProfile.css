@@ -1,0 +1,21 @@
+.user-profile {
+  margin: 15rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInfo-container{
+  display: flex;
+  flex-direction: column;
+}
+.userInfo-container > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.userInfo-container > label > input {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}

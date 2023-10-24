@@ -74,6 +74,7 @@ label{
   width: 123px;
   text-align: start;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .done h4{
@@ -90,4 +91,20 @@ label{
 }
 .errorfont{
   color: var(--main-color);
+}
+
+.login-error{
+  padding: 0;
+  margin: 0;
+  color: var(--main-color);
+}
+
+.message{
+  text-align: center;
+}
+.message > span{
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: rem;
 }
