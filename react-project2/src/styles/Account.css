@@ -5,6 +5,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center; 
+  flex-direction: column;
 
   overflow: hidden;
 }
@@ -25,6 +26,9 @@
     border: 1px solid #909090;
 }
 
+.user-likes h4{
+  text-align: left;
+}
 
 .close{
     display: block;

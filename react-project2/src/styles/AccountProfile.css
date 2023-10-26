@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .userInfo-container{
@@ -18,4 +19,11 @@
 .userInfo-container > label > input {
   margin-left: 1rem;
   margin-bottom: 0;
+  padding-left: 1rem;
+  width: 300px;
+  height: 40px;
+}
+
+.toleft{
+  left:-40.5rem;
 }

@@ -3,15 +3,12 @@
 }
 
 input {
-  width: 300px;
-  height: 40px;
+  /* width: 300px;
+  height: 40px; */
   background-color: transparent;
   border: 1px solid var(--line-color);
   border-radius: 40px;
-  padding-left: 16px;
   font-size: 1rem;
-  padding-top: 10px;
-  margin-bottom: 1rem;
   outline: none;
 }
 input:focus{
@@ -19,6 +16,7 @@ input:focus{
 }
 label{
   position: relative;
+  margin-left: 1rem
 }
 
 .labelname{
@@ -48,8 +46,8 @@ label{
 }
 
 .input-box{
-  width: 350px;
-  margin-bottom: 5rem;
+  width: 320px;
+  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -57,7 +55,9 @@ label{
 }
 .inputs{
   display: flex;
-  flex: 1;
+  /* flex: 1; */
+  width: 10rem;
+  margin-bottom: 1rem;
 }
 .input-box button{
   margin-top: 2rem;

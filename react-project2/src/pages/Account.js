@@ -11,11 +11,10 @@ import Form from '../components/Form'
 function Account(){
 
     const [ userInfo, setUserInfo ] = useState({})
+    const [ newUserInfo, setNewUserInfo ] = useState({})
 
-    const next = () => {
-        console.log('다음')
-      }
-    
+    console.log('새로운정보:',newUserInfo)
+
     useEffect(() => {
 
         const formCon = document.querySelector('.form')
@@ -43,11 +42,11 @@ function Account(){
 
     return (
         <>
-          <Nav></Nav>
+          <Nav userInfo={userInfo}></Nav>
           <div className="form">
-            {/* <AccountProfile userInfo={userInfo} next={next}/>
-            <AccountGenres/> */}
-            <Form type='signup'></Form>
+            <AccountProfile userInfo={userInfo} newUserInfo={newUserInfo} setNewUserInfo={setNewUserInfo}/>
+            <AccountGenres userInfo={userInfo}/>
+            {/* <Form type='signup'></Form> */}
           </div>
         </>
     )
