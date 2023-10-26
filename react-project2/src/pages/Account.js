@@ -5,12 +5,22 @@ import { FiUser } from "react-icons/fi"
 import '../styles/Account.css'
 
 import AccountProfile from '../components/AccountProfile'
+import AccountGenres from '../components/AccountGenres'
+import Form from '../components/Form'
 
 function Account(){
 
     const [ userInfo, setUserInfo ] = useState({})
+
+    const next = () => {
+        console.log('다음')
+      }
     
     useEffect(() => {
+
+        const formCon = document.querySelector('.form')
+        formCon.classList.add('show')
+
         fetch('http://localhost:5201/api/users/check', 
         {
             method: 'GET',
@@ -28,13 +38,18 @@ function Account(){
 
     }, [])
 
+
     console.log(userInfo)
 
     return (
-        <div className="account-page">
-            <Nav></Nav>
-            <AccountProfile userInfo={userInfo}/>
-        </div>
+        <>
+          <Nav></Nav>
+          <div className="form">
+            {/* <AccountProfile userInfo={userInfo} next={next}/>
+            <AccountGenres/> */}
+            <Form type='signup'></Form>
+          </div>
+        </>
     )
 }
 

@@ -50,7 +50,7 @@
   display: none;
 }
 
-.img-box{
+.Modal .img-box{
   /* border: 1px solid blue; */
   flex: 1;
   height: 100%;

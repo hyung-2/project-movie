@@ -1,7 +1,18 @@
 .account-page{
     width: 100%;
     height: 100vh;
+    
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+
+  overflow: hidden;
 }
+.account-page > div {
+    margin: 0 11.2rem;
+    position: relative;
+    transition: .3s;
+  }
 .account-page .account-container{
     margin-top: 4rem;
     width: 100%;
@@ -14,6 +25,7 @@
     border: 1px solid #909090;
 }
 
-.user-profile{
-    margin: auto;
+
+.close{
+    display: block;
 }

@@ -7,13 +7,13 @@ import Modal from './Modal'
 
 
 
-function Form({type, handleClick, genreLists}){
+function Form({type, handleClick, genreLists, winnerTitle}){
 
   const [disabled, setDisabled] = useState(true)
   const [open, setOpen] = useState(false) 
   const [checked, setChecked] = useState(genreLists)
   
-
+  console.log(checked)
   //인풋꾸미기에서 인풋기능들이 추가되버린..
   const addClass = (e) => {
     // console.log(e.target)
@@ -207,7 +207,7 @@ function Form({type, handleClick, genreLists}){
     const doneBox = document.querySelector('.done')
     
     
-    
+    console.log(winnerTitle)
     console.log(checked)
     console.log(userInfo)
     //데이터를 저장해서 좋아하는 장르에 있는 데이터를 fetch해서 메인페이지로 가져와야하나?
@@ -220,7 +220,8 @@ function Form({type, handleClick, genreLists}){
           userId: userInfo.userid,
           email: userInfo.userEmail,
           password: userInfo.userpw,
-          likeGenre: checked
+          likeGenre: checked,
+          winnerMovie: winnerTitle
       })
     })
     .then( res => res.json() )

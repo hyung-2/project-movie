@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React,{ useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"
 import YouTube from 'react-youtube'
@@ -20,6 +20,7 @@ function Homepage(){
     const [loading, setLoading] = useState(true)
     const [likeMovieList, setLikeMovieList] = useState([])
     const [randomPick, setRandomPick] = useState()
+    const userInfo = useRef()
 
     const close = () => {
       return setOpen(false)
@@ -60,6 +61,7 @@ function Homepage(){
       .then( res => res.json() )
       .then( result => {
         console.log(result)
+        userInfo.current = result
         setUsersGenre(result.user.likeGenre)
         setLikeMovieList(result.user.likeMovie)
       })
@@ -155,7 +157,7 @@ function Homepage(){
     }else{
       return(
         <div className={`Homepage`}  onLoad={randomPickMoive}>
-          <Nav></Nav>
+          <Nav userInfo={userInfo}></Nav>
           
           <div className="main-movie">
             <div className="main-movieInfo">

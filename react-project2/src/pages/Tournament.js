@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import { useAsyncError, useInRouterContext, useNavigate } from "react-router-dom";
+import { useAsyncError, useInRouterContext, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion"
 import { useMediaQuery } from "react-responsive"
 
@@ -37,6 +37,11 @@ function Tournament(){
     const [ counter, setCounter ] = useState(16)
 
     const [ matchIndex, setMatchIndex ] = useState(0)
+
+    const location = useLocation()
+    console.log('로케이션확인',location)
+
+
 
     useEffect(() => {
 
@@ -145,7 +150,7 @@ function Tournament(){
     }, [isQuarter, isSemi, isFinal])
 
     const navigate = useNavigate()
-    const moveToResult = () => navigate('/result', { state: {winner, result: winnerMoviesGenre}})
+    const moveToResult = () => navigate('/result', { state: {winner, result: winnerMoviesGenre, userInfo: location}})
 
     useEffect(() => {
         if(isFinal && winner.length === 1){
@@ -178,7 +183,12 @@ function Tournament(){
     }, [winnerMoviesGenre])
 
     const gohome = () => {
-        navigate('/login')
+        if(location){
+            console.log('유저정보있음')
+        }else{
+            console.log('유저정보없음')
+        }
+        // navigate('/login')
         // navigate('/home', {state: {genres: winner[0].genre_ids}})
     }
 

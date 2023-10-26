@@ -29,6 +29,10 @@ const userSchema = new Schema({
   likeMovie: [{
     type: String,
   }],
+  //1등으로 뽑은 영화 목록
+  winnerMovie: [{
+    type: String,
+  }],
   createdAt: {
     type: Date,
     default: Date.now,

@@ -19,10 +19,34 @@ import { ReactComponent as Point } from "../assets/point.svg"
 
 function Winner(){
 
-    const { state: {winner, result: winnerMoviesGenre } } = useLocation()
+    const { state: {winner, result: winnerMoviesGenre, userInfo: location } } = useLocation()
+    console.log('위너:',location)
     const navigate = useNavigate()
     const gohome = () => {
-        navigate('/login', {state: {genres: winner[0].genre_ids}})
+        //사용자 정보가 없을때
+        if(location.state === null){
+            navigate('/login', {state: {genres: winner[0].genre_ids, title: winner[0].title}})
+        }else{
+            //사용자 정보가 있을때
+            console.log('사용자정보있음', window.localStorage.getItem('accessToken'))
+            fetch('http://127.0.0.1:5201/api/users/edit', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type':'application/json',
+                    Authorization: window.localStorage.getItem('accessToken')},
+                body: JSON.stringify({
+                    winnerMovie: winner[0]._id.$oid,
+                    likeGenre: winner[0].genre_ids
+                })
+            })
+            .then( res => res.json() )
+            .then( result => {
+              console.log(result)
+              window.localStorage.setItem('accessToken', `${result.accessToken}`)
+              navigate('/home')
+            })
+            // navigate('/home', {state: })
+        }
         // navigate('/home', {state: {genres: winner[0].genre_ids}})
     }
     const [ recommendMovies, setRecommendMovies ] = useState([])

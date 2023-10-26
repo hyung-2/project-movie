@@ -4,7 +4,7 @@ import Button from "./Button";
 import '../styles/Nav.css'
 import logo from '../assets/logo.png'
 
-function Nav(){
+function Nav({ userInfo }){
   
   const [open, setOpen] = useState(false)
   //로고클릭
@@ -40,6 +40,12 @@ function Nav(){
     }
   }
 
+  //이상형월드컵 다시 하기
+  const goworldCup = () => {
+    console.log(userInfo)
+    navigate('/Tournament', {state: {userInfo:userInfo.current.user}})
+    //전에 내가 1위로 뽑았던 영화정보 나오면 좋을듯?
+  }
   //메뉴 외부, 즐겨찾기버튼 클릭시 메뉴 닫히기
   useEffect(() => {
     document.addEventListener('click', function(e){
@@ -62,6 +68,7 @@ function Nav(){
     <div className="btn-box">
       <div onClick={toLike} className='menu'>즐겨찾기</div>
       <div onClick={account} className='menu'>프로필 수정</div>
+      <div onClick={goworldCup} className='menu'>이상형 월드컵 다시하기</div>
       <div onClick={logout} className='menu'>로그아웃</div>
     </div>
     </div>

@@ -15,18 +15,19 @@ router.post('/signup', expressAsyncHandler(async (req, res, next) => {
     email: req.body.email,
     password: req.body.password,
     likeGenre: req.body.likeGenre,
+    winnerMovie: req.body.winnerMovie,
   })
 
   const newUser = await user.save()
   if(!newUser){
     res.status(401).json({code: 401, message: '계정 생성에 실패하였습니다.'})
   }else{
-    const { userId, email, likeGenre, isAdmin, createdAt } = newUser
+    const { userId, email, likeGenre, winnerMovie, isAdmin, createdAt } = newUser
     res.json({
       code: 200,
       message: '성공적으로 계정을 생성하였습니다.',
       token: makeToken(newUser),
-      userId, email, likeGenre, isAdmin, createdAt
+      userId, email, likeGenre, winnerMovie, isAdmin, createdAt
     })
   }
 }))
@@ -75,17 +76,27 @@ router.put('/edit', isAuth, expressAsyncHandler(async (req, res, next) => {
     user.email = req.body.email || user.email
     user.password = req.body.password || user.password
     user.likeGenre = req.body.likeGenre || user.likeGenre
+    user.winnerMovie = [...user.winnerMovie, req.body.winnerMovie]
     user.lastModifiedAt = new Date()
   }
+
+  const updateUser = await user.save()
+  const { userId, email, likeGenre, winnerMovie, lastModifiedAt } = updateUser
+  res.json({
+    code: 200,
+    message: '사용자 정보를 변경하였습니다.',
+    accessToken: makeToken(updateUser),
+    userId, email, likeGenre, winnerMovie, lastModifiedAt
+  })
 }))
 
 // 로그인 중인 유저 확인하기
 router.get('/check', isAuth, expressAsyncHandler(async (req, res, next) => {
   const user = await User.findOne({ _id: req.user._id })
-  const { userId, email, likeGenre, _id, likeMovie } = user
+  const { userId, email, likeGenre, _id, likeMovie, winnerMovie } = user
 
   res.json({
-    code: 200, user: { userId, email, likeGenre, _id, likeMovie }
+    code: 200, user: { userId, email, likeGenre, _id, likeMovie, winnerMovie }
   })
 }))
 

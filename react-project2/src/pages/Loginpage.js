@@ -33,9 +33,11 @@ function Loginpage(){
   
   const location = useLocation()
   console.log(location)
+
   const [genreLists, setGenreLists] = useState(location.state && location.state.genres)
-  
- 
+  const [winnerTitle, setWinnerTitle] = useState(location.state && location.state.title)
+
+  console.log(winnerTitle)
 
   return(
     <div className="Loginpage">
@@ -54,7 +56,7 @@ function Loginpage(){
       <Button btnClass='downbtn' handleClick={gofrom}>↓</Button>
       <div className="form">
         <Form type='login'></Form>
-        <Form type='signup' genreLists={genreLists}></Form>
+        <Form type='signup' genreLists={genreLists}  winnerTitle={winnerTitle}></Form>
         {/* <Form type='checkBox' genreLists={genreLists}></Form> */}
         <Form type='done'></Form>
       </div>

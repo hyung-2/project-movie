@@ -8,10 +8,13 @@ import { AiFillCheckSquare, AiOutlineCheckCircle } from "react-icons/ai"
 
 import '../styles/AccountProfile.css'
 
-function AccountProfile({ handleChange, userInfo }){
+function AccountProfile({ handleChange, userInfo, next }){
 
     // console.log(userInfo)
-    console.log(window.localStorage.getItem('accessToken'))
+    // console.log(window.localStorage.getItem('accessToken'))
+
+ 
+
   useEffect(() => {
     if(userInfo.userId !== undefined){
       const idInput = document.getElementById('userId')
@@ -44,7 +47,7 @@ function AccountProfile({ handleChange, userInfo }){
           {/* <p className="labelname">비밀번호를 다시 입력하세요</p> */}
           <input type='password' id='userPw2' placeholder="비밀번호를 다시 입력하세요"></input>
         </label>
-        <Button btnClass='loginbtn'>정보 수정</Button>
+        <Button btnClass='loginbtn' handleClick={next}>다음</Button>
       </div>
     </div>
       
