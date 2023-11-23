@@ -5,22 +5,10 @@ import Button from './Button'
 
 function AccountGenres({ handleClick, userInfo }){
 
+    console.log(userInfo.likeGenre)
     const [checked, setChecked] = useState(userInfo.likeGenre)
-    
-    useEffect(() => {
-        console.log(userInfo)
-        
-        if(userInfo.likeGenre !== undefined){
-            // console.log(userInfo.likeGenre)
-            const genreCheckBoxes = document.querySelectorAll('.account-page .inputs input')
-            genreCheckBoxes.forEach((checkBox) => {
-                if(userInfo.likeGenre.includes(checkBox.value)){
-                    checkBox.checked = true
-                }
-            })
-        }
-       
-    }, [userInfo])
+    const [disabled, setDisabled] = useState(true)
+
 
     //이전버튼
     const goProfile = () => {
@@ -40,26 +28,37 @@ function AccountGenres({ handleClick, userInfo }){
 
     let arr = []
     const checkInputs = () => {
-        console.log(userInfo)
+        // console.log(userInfo)
         const inputBoxs = document.querySelectorAll('.inputs')
         //장르 체크된것 추출
         
         inputBoxs.forEach(inputBox => {
+            // console.log(inputBox)
           //체크되어 들어온 장르 미리 배열에 담기
           const isChecked = inputBox.firstElementChild.checked
           // console.log(isChecked)
           if(isChecked){
             // console.log(inputBox.firstElementChild.value)
             arr.indexOf(inputBox.firstElementChild.value) == -1 && arr.push(inputBox.firstElementChild.value)
-            console.log(arr)
+            // console.log(arr)
             return setChecked(arr)
           }
-          console.log(checked)
+        //   console.log(checked)
         })
         return checked
-      }
+    }
 
-      console.log(checked)
+    useEffect(() => {
+        // userInfo.likeGenre && userInfo.likeGenre.length >= 3 ? setDisabled(false) : setDisabled(true) 
+        // ||
+        arr && arr.length >= 3 ? setDisabled(false) : setDisabled(true)
+    },[arr])
+
+    console.log(arr)
+    console.log(checked)
+
+
+    
     return (
         <div className="user-likes">
             <h4>좋아하는 장르를 3개 이상 선택해주세요!</h4>
@@ -75,7 +74,7 @@ function AccountGenres({ handleClick, userInfo }){
             })}
             </div>
             <Button btnClass='signupOK' handleClick={goProfile}>이전</Button>
-            <Button btnClass='signupOK' handleClick={changeUserInfo}>다음</Button>
+            <Button btnClass='signupOK' handleClick={changeUserInfo} disabled={disabled}>다음</Button>
         </div>
     )
 }

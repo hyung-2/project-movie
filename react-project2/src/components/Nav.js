@@ -43,7 +43,7 @@ function Nav({ userInfo }){
   //이상형월드컵 다시 하기
   const goworldCup = () => {
     console.log(userInfo)
-    navigate('/Tournament', {state: {userInfo}})
+    navigate('/Tournament', {state: {userInfo:userInfo}})
     //전에 내가 1위로 뽑았던 영화정보 나오면 좋을듯?
   }
   //메뉴 외부, 즐겨찾기버튼 클릭시 메뉴 닫히기
